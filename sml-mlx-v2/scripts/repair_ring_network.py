@@ -98,7 +98,7 @@ def invoke(rank, action='inspect', before=None, relay=False):
     # Embed dependencies so remote project copies need not be up to date.
     source = SELF.read_text().replace('import configure_rdma_mesh as mesh', '')
     mesh_source = (ROOT / 'scripts/configure_rdma_mesh.py').read_text()
-    common_source = (ROOT / 'train/jaccl_common.py').read_text()
+    common_source = (ROOT / 'sml_v2/cluster/jaccl_common.py').read_text()
     code = f'''import types
 m = types.ModuleType("ring_mesh_helper")
 exec(compile({mesh_source!r}, "mesh_helper.py", "exec"), m.__dict__)
@@ -140,9 +140,9 @@ def main():
     changing = bool(args.apply or args.restore)
     mesh.require(not changing or sys.stdin.isatty(), 'Run --apply/--restore in your interactive Terminal for sudo')
     common = {'__name__': 'ring_common_local'}
-    exec(compile((ROOT / 'train/jaccl_common.py').read_text(), 'ring_common_local.py', 'exec'), common)
+    exec(compile((ROOT / 'sml_v2/cluster/jaccl_common.py').read_text(), 'ring_common_local.py', 'exec'), common)
     inspect(0, common)
-    lockdir = ROOT / 'train/checkpoints/jaccl_benchmark_inputs'
+    lockdir = ROOT / 'runs/cluster_setup_locks'
     lockdir.mkdir(parents=True, exist_ok=True)
     with (lockdir / '.launcher.lock').open('a+') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)

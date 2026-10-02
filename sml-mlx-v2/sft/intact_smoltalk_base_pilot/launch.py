@@ -51,7 +51,7 @@ def code_files():
                  'conversation_completion_2048/evaluate.py','conversation_completion_2048/dialogues.py'):
         files.append(ROOT/'sft'/name)
     files.append(ROOT/'evaluation/generation_comparison/run.py')
-    files.append(ROOT.parent/'sml-mlx-v1/scripts/completion_playground.py')
+    files.append(ROOT/'scripts/completion_playground.py')
     return sorted(set(files))
 
 

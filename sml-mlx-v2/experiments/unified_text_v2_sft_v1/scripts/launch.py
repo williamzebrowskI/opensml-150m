@@ -53,7 +53,7 @@ def contract(cfg):
     files+=INPUTS+exclusion_files()+[ROOT/'sft/text_followup_512_v1/config.json']
     for bundle in (cfg['source_bundle'],'runs/sft_conversation_foundation_v1/step_0000512_156a108611bc','runs/sft_text_followup_512_v1/step_0000768_10f5ea2a3354'):
         files+=[ROOT/bundle/n for n in ('model.safetensors','model.safetensors.json','manifest.json')]
-    files+=[ROOT.parent/'sml-mlx-v1/scripts/completion_playground.py']
+    files+=[ROOT/'scripts/completion_playground.py']
     files+=list((ROOT/'diagnostics/text_followup_512_benchmarks_v1/text-followup-512-768').glob('*/summary.json'))
     return dict(config=cfg,protected={str(p):file_sha256(p) for p in sorted(set(files)) if p.is_file()},
                 runtime={p:importlib.metadata.version(p) for p in ('mlx','mlx-lm','numpy','tokenizers','pyarrow','requests')})

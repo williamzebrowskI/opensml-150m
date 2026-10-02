@@ -14,5 +14,13 @@
     "Exact training replay requires external weights and frozen prepared data inputs.",
     "Site-specific cluster setup and relocated integrity manifests require review.",
     "Baseline dependency pins differ from the production custom MLX build."
-  ]
+  ],
+  "v2_only_cleanup": {
+    "pipeline_tests": 27,
+    "network_helper_imports": "passed",
+    "ring_hostfile": "passed",
+    "inference_argmax": "passed",
+    "playground_import": "passed",
+    "launch_help_checks": 4
+  }
 }

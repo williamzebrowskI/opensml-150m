@@ -13,8 +13,8 @@ import socket
 import subprocess
 
 import benchmark_jaccl_ring as ring
-from train.jaccl_common import atomic_json
-from train.jaccl_ring_transport import MODE, PORT_ENV, ssh_command
+from sml_v2.cluster.jaccl_common import atomic_json
+from sml_v2.cluster.jaccl_ring_transport import MODE, PORT_ENV, ssh_command
 
 mesh = ring.mesh
 ROOT = mesh.ROOT

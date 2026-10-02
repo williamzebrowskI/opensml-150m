@@ -16,7 +16,7 @@ import shlex
 import subprocess
 import sys
 
-ROOT = Path('/Users/williamzebrowski/sml-mlx/sml-mlx-v1')
+ROOT = Path(__file__).resolve().parents[1]
 PYTHON = str(ROOT / '.venv/bin/python')
 SELF = ROOT / 'scripts/configure_rdma_mesh.py'
 POOL = ipaddress.IPv4Network('10.77.0.0/24')

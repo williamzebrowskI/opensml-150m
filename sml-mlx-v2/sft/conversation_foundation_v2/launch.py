@@ -51,7 +51,7 @@ def contract(cfg):
         files+=list((ROOT/'sft'/directory).glob('*.py'))
     files+=list((ROOT/'tokenizer/bytebpe32k_v1').glob('*'))
     files+=exclusion_files()+[ROOT/cfg['source_bundle']/n for n in ('model.safetensors','model.safetensors.json','manifest.json')]
-    files+=[ROOT/'sft/intact_smoltalk_base_pilot/review_rejections.json',ROOT.parent/'sml-mlx-v1/scripts/completion_playground.py']
+    files+=[ROOT/'sft/intact_smoltalk_base_pilot/review_rejections.json',ROOT/'scripts/completion_playground.py']
     files += [Path(p) for p in read_json(DIR/'prepared.json')['receipt']['inputs']]
     review=read_json(DIR/'review.json')
     if review.get('status')!='sample-reviewed' or review['sample_sha256']!=file_sha256(DIR/'review_samples.json'):

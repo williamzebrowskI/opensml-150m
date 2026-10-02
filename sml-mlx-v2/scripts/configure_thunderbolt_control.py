@@ -151,7 +151,7 @@ def assert_idle():
     common = sys.modules.get('sml_jaccl_common')
     if common is None:
         scope = {}
-        exec(compile((ROOT / 'train/jaccl_common.py').read_text(), 'jaccl_common.py', 'exec'), scope)
+        exec(compile((ROOT / 'sml_v2/cluster/jaccl_common.py').read_text(), 'jaccl_common.py', 'exec'), scope)
     else:
         scope = vars(common)
     busy = scope['training_processes']()
@@ -225,7 +225,7 @@ def worker_source():
     # Ship every project dependency, including the last-minute GPU-worker guard.
     source = ['import sys,types']
     for name, path in (('configure_rdma_mesh', mesh.SELF),
-                       ('sml_jaccl_common', ROOT / 'train/jaccl_common.py')):
+                       ('sml_jaccl_common', ROOT / 'sml_v2/cluster/jaccl_common.py')):
         source += [f'module=types.ModuleType({name!r})',
                    f'sys.modules[{name!r}]=module',
                    f'exec(compile({path.read_text()!r}, {str(path)!r}, "exec"), module.__dict__)']
@@ -375,7 +375,7 @@ def main():
             invoke_change(rank, states[rank], mac4_via_mac2=relay)
     subprocess.run([mesh.PYTHON, str(SELF), '--verify'], check=True)
     (audit / 'verified.json').write_text(json.dumps(dict(control_transport='thunderbolt', cpu_rdma=True)))
-    print('Ready. Resume yourself with:\nbash ' + str(ROOT / 'train/launch_pretrain_jaccl.sh'))
+    print('Ready. Resume yourself with:\nbash ' + str(ROOT / 'stage_b/launch.py'))
 
 
 if __name__ == '__main__':

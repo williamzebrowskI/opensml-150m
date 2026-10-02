@@ -34,7 +34,7 @@ difference. Both round to 150.44M.
 | `sml-mlx-v2/evaluation/` | Multiple-choice and IFEval evaluators; MT-Bench implementation retained |
 | `sml-mlx-v2/docs/` | Current technical report and historical operational guides |
 | `docs/figures/`, `results/` | Pretraining charts and selected benchmark/provenance record |
-| `sml-mlx-v1/`, `scripts/`, `train/` | Legacy transport/inference helpers imported by V2; no V1 weights |
+| `sml-mlx-v2/sml_v2/cluster/`, `sml-mlx-v2/scripts/` | V2 cluster and inference utilities |
 | `provenance/` | Snapshot source hashes, runtime versions and selected checkpoint metadata |
 
 ## Setup

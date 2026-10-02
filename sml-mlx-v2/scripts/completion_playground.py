@@ -26,9 +26,9 @@ from pydantic import BaseModel, Field, ConfigDict, model_validator
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-V2_ROOT = ROOT.parent / 'sml-mlx-v2'
+V2_ROOT = ROOT
 sys.path.insert(0, str(V2_ROOT))
-DEFAULT_RUN = ROOT / 'train/checkpoints/dolma_cosmo_152m_prose_from_zero_v1'
+DEFAULT_RUN = ROOT / 'runs/stage_b_prose_v1'
 DEFAULT_V2_RUN = V2_ROOT / 'runs/full_15b_five_mac_shuffled_v1'
 DEFAULT_V2_TOKENIZER = V2_ROOT / 'tokenizer/bytebpe32k_v1'
 ASSETS = ROOT / 'playground'
@@ -208,13 +208,15 @@ class Checkpoint:
 
     @property
     def family(self):
-        return 'v2' if self.model_type == 'sft' or 'v2_contract' in self.metadata else 'v1'
+        if self.model_type != 'sft' and 'v2_contract' not in self.metadata:
+            raise ValueError('Only V2 checkpoint metadata is supported')
+        return 'v2'
 
     @property
     def config(self):
         if self.model_type == 'sft':
             return self.metadata['model']
-        return self.metadata['recipe']['model'] if self.family == 'v2' else self.metadata['config']
+        return self.metadata['recipe']['model']
 
     def public(self):
         meta = self.metadata
@@ -237,14 +239,14 @@ class Checkpoint:
         return dict(checkpoint=self.bundle.name, step=meta['step'],
                     training_format=meta.get('training_format'),
                     single_turn_only=meta.get('training_format') == PLAIN_SFT_FORMAT,
-                    tokens=meta.get('tokens') if self.family == 'v2' else meta['tokens_processed'],
+                    tokens=meta.get('tokens'),
                     model_type=self.model_type, family=self.family,
                     token_kind='assistant targets' if self.model_type == 'sft' else 'pretraining tokens',
                     validation_kind=validation_kind,
-                    tokenizer='Own 32K byte-BPE' if self.family == 'v2' else 'Cosmo2',
+                    tokenizer='Own 32K byte-BPE',
                     validation_loss=validation_loss,
                     selection=self.selection, quality=quality, context_limit=self.config['max_seq_len'],
-                    max_output_tokens=min(2048, self.config['max_seq_len']) if self.family == 'v2' else 192,
+                    max_output_tokens=min(2048, self.config['max_seq_len']),
                     ffn_impl=self.config.get('ffn_impl', 'reference'))
 
 
@@ -300,14 +302,7 @@ def checkpoint_tokenizer(checkpoint, tokenizer_dir=None):
         if tokenizer.vocab_size != checkpoint.config['vocab_size']:
             raise ValueError('Tokenizer vocabulary does not match the model')
         return V2TokenizerAdapter(tokenizer)
-    from train.tokenization import load_tokenizer
-    tokenizer_path = Path(meta['args']['tokenizer_path'])
-    if not tokenizer_path.is_absolute():
-        tokenizer_path = ROOT / tokenizer_path
-    tokenizer = load_tokenizer(tokenizer_path=str(tokenizer_path))
-    if tokenizer.fingerprint != meta['args']['tokenizer_fingerprint']:
-        raise ValueError('Tokenizer fingerprint mismatch')
-    return tokenizer
+    raise ValueError('Only V2 checkpoints are supported')
 
 
 def read_best(run):
@@ -430,19 +425,16 @@ def read_best_loss(run):
 
 class InferenceEngine:
     """All MLX operations run on one dedicated worker thread."""
-    def __init__(self, run=DEFAULT_RUN, sources=None, default_model='v1'):
+    def __init__(self, run=DEFAULT_RUN, sources=None, default_model='v2'):
         self.run = Path(run)
-        self.sources = sources or {'v1': ModelSource('v1', 'V1 prose - best', self.run, 'v1')}
+        self.sources = sources or {'v2': ModelSource('v2', 'V2 pretrained - best', self.run, 'v2')}
         self.default_model = default_model
         self.model = self.tokenizer = self.identity = None
 
     def load(self, checkpoint, tokenizer_dir=None):
         import mlx.core as mx
-        if checkpoint.family == 'v2':
-            from sml_v2.model import TransformerConfig, TransformerLM
-        else:
-            from train.model import TransformerConfig, TransformerLM
-        from train.train import _cast_model_floats
+        from sml_v2.model import TransformerConfig, TransformerLM
+        from sml_v2.inference import _cast_model_floats
 
         identity = (str(checkpoint.bundle.resolve()), checkpoint.family,
                     checkpoint.manifest['files']['model.safetensors']['sha256'],
@@ -492,7 +484,7 @@ class InferenceEngine:
     def generate(self, options, emit, cancelled):
         import mlx.core as mx
         import numpy as np
-        from train.train import _sample_next_id
+        from sml_v2.inference import _sample_next_id
 
         source = self.sources[options.model_id or self.default_model]
         checkpoint = None
@@ -638,9 +630,9 @@ class GenerationService:
         self.pool.shutdown(wait=False, cancel_futures=True)
 
 
-def create_app(run=DEFAULT_RUN, engine=None, sources=None, default_model='v1'):
+def create_app(run=DEFAULT_RUN, engine=None, sources=None, default_model='v2'):
     app = FastAPI(docs_url=None, redoc_url=None)
-    sources = sources or {'v1': ModelSource('v1', 'V1 prose - best', Path(run), 'v1')}
+    sources = sources or {'v2': ModelSource('v2', 'V2 pretrained - best', Path(run), 'v2')}
     if default_model not in sources:
         raise ValueError('Default model is not configured')
     service = GenerationService(engine or InferenceEngine(run, sources, default_model))
@@ -754,7 +746,6 @@ def main():
     sources = {
         'v2': ModelSource('v2', 'V2 pretrained - best', args.v2_run_dir.resolve(),
                           'v2', args.v2_tokenizer_dir.resolve()),
-        'v1': ModelSource('v1', 'V1 prose - best', args.run_dir.resolve(), 'v1'),
     }
     if args.sft_run_dir is not None:
         label = args.sft_label or ('V2 SFT - best available loss' if args.sft_selection == 'best-loss' else 'V2 SFT - best')

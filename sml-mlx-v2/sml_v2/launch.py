@@ -24,8 +24,8 @@ PACKAGES = ('mlx', 'mlx-metal', 'numpy', 'tokenizers', 'datasets', 'huggingface-
 
 
 def network_helpers():
-    sys.path.insert(0, str(PARENT))
-    sys.path.insert(0, str(PARENT / 'scripts'))
+    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / 'scripts'))
     import check_ring_thunderbolt as wired
     import jaccl_benchmark as bench
     import benchmark_jaccl_ring as ring

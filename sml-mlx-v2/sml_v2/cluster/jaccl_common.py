@@ -54,21 +54,6 @@ def verify_files(root, files):
             raise ValueError(f'Integrity check failed: {path}')
 
 
-def verify_input(root):
-    root = Path(root)
-    manifest = json.loads((root / 'input.json').read_text())
-    if manifest.get('format') != INPUT_FORMAT:
-        raise ValueError('Not a JACCL benchmark input')
-    required = {'bundle/model.safetensors', 'bundle/model.safetensors.optimizer.safetensors',
-                'bundle/model.safetensors.json', 'bundle/manifest.json',
-                'code/train/jaccl_worker.py', 'code/train/jaccl_common.py',
-                'code/tokenizer/cosmo2/manifest.json', 'code/tokenizer/cosmo2/tokenizer.json'}
-    if not required <= manifest['files'].keys():
-        raise ValueError('Incomplete benchmark input')
-    verify_files(root, manifest['files'])
-    return dict(step=manifest['step'], model_sha256=manifest['files']['bundle/model.safetensors']['sha256'],
-                input_sha256=sha256(root / 'input.json'),
-                packages={name: importlib.metadata.version(name) for name in PACKAGES})
 
 
 def parse_splits(value):
@@ -119,8 +104,8 @@ def training_processes():
         # training itself. Workers are checked separately on every host.
         script = Path(fields[2].split()[0])
         if (script.name == 'mlx.launch'
-                or script in (Path.home() / 'sml-mlx/sml-mlx-v1/train/jaccl_ring_transport.py',
-                              Path.home() / 'sml-mlx/train/jaccl_ring_transport.py')):
+                or script in (Path(__file__).resolve().with_name('jaccl_ring_transport.py'),
+                              Path.home() / 'sml-mlx/sml_v2/cluster/jaccl_ring_transport.py')):
             # The wired SSH launcher waits for rank 0 but never trains a model.
             continue
         if ('python' in executable or executable.startswith('mlx_lm')) and pattern.search(' '.join(fields[1:])):

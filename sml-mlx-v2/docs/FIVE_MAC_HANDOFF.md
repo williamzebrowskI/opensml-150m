@@ -130,7 +130,7 @@ state, best/latest pointers, run logs, and staged job provenance. Originals
 remain on the M3 Ultra. No dataset download or credential copy was performed.
 
 The M5 has a recreated CPython 3.11.13 arm64 environment at root `.venv`,
-with `sml-mlx-v1/.venv -> ../.venv`. All 105 package versions match the source.
+with `sml-mlx-v2/.venv -> ../.venv`. All 105 package versions match the source.
 MLX and mlx-metal are **0.32.3.dev20260920+7241f12**, the existing native
 all-gather fix build, not stable 0.32.2. Verified wheels are retained in
 `/Users/williamzebrowski/.cache/opensml/mlx-pr4443/wheels/`.

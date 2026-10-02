@@ -37,7 +37,7 @@ ring runtime. Follow [the build provenance](MLX_NATIVE_BUILD.md), including
 the wheel checksums, and validate compatibility on new hardware before use.
 
 The current orchestration references both the repository-root `.venv` and
-`sml-mlx-v1/.venv`. Configure and verify those interpreter paths explicitly.
+`sml-mlx-v2/.venv`. Configure and verify those interpreter paths explicitly.
 Do not reinstall shared packages on the existing Macs while training runs.
 
 Configure Hugging Face authentication and SSH access locally. Credentials,

@@ -28,7 +28,7 @@ def code_files():
         paths.append(ROOT/'sft'/name)
     paths += list((ROOT/'sml_v2').glob('*.py'))
     paths += [ROOT/'sft/conversation_ab/data.py',ROOT/'sft/reading_repair/source.py',ROOT/'sft/transfer_control/launch.py']
-    paths += [ROOT/'evaluation/generation_comparison/run.py',ROOT.parent/'sml-mlx-v1/scripts/completion_playground.py']
+    paths += [ROOT/'evaluation/generation_comparison/run.py',ROOT/'scripts/completion_playground.py']
     return sorted(set(paths))
 
 
