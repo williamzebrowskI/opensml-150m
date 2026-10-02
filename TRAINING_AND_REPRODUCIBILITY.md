@@ -109,7 +109,7 @@ Recorded likelihood evaluation covers 15,428 examples across ARC-Easy, ARC-Chall
 
 MT-Bench tooling is included; no MT-Bench score is claimed for the selected checkpoint. External-model comparisons use published scores. No new external-model evaluation is required to read or reproduce those comparison tables.
 
-Native inference requires separately supplied checkpoint weights and the frozen tokenizer. A tested standalone weight export remains pending; cross-framework inference parity is unverified.
+The unchanged selected weights and frozen tokenizer are available in the Hugging Face native inference bundle (authorized access is required while that repository is private). Loading and short generation were verified on the recorded local MLX runtime. See the root README and inference_native/INFERENCE_VERIFICATION.json. Earlier checkpoints and optimizer state remain external; cross-framework inference parity is unverified.
 
 ## Verification status
 

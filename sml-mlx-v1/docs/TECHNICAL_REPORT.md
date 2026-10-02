@@ -21,14 +21,11 @@ historical appendix.
 
 ## Availability and Inference
 
-This repository currently documents the selected fine-tuned model and its pretrained
-base, and provides their shared tokenizer
-and historical configuration files. It does not provide model weights or a tested
-standalone inference bundle. A download-and-generate quick start is therefore not
-yet available. The local project uses native MLX inference on Apple hardware;
-compatibility with Transformers AutoModel, GGUF, ONNX, vLLM, and llama.cpp has not
-been established for this repository. The selected SFT checkpoint uses the native plain User/Assistant format described
-below; the pretrained base remains a completion model.
+The selected OpenSML-150M checkpoint is distributed as an unchanged FP32 native MLX bundle on [Hugging Face](https://huggingface.co/wzebrowski/OpenSML-150M). The model repository currently requires authorized access. The bundle includes model weights, the frozen tokenizer, configuration, standalone inference source, checkpoint provenance and file hashes; optimizer state is excluded.
+
+The CLI uses greedy FP32 reference attention and the plain `User: {prompt}\nAssistant:` format. Local strict loading, short generation, a checked cached/full-prefix argmax, and context-overflow rejection passed on MLX `0.32.3.dev20260920+7241f12`. The PyPI pins are a baseline, not a verified clean-environment parity claim. See the [root README](../../README.md) and [verification record](../../inference_native/INFERENCE_VERIFICATION.json).
+
+This export is not a Transformers AutoModel or mlx-lm loader package. Other formats, full download-bundle benchmark parity and production readiness remain unverified. The pretrained base remains a completion model and is not included as a second weight release.
 
 ## At a Glance
 
@@ -46,7 +43,7 @@ below; the pretrained base remains a completion model.
 | Selected pretrained base | Step 73,243; 7,800,086,528 lifetime pretraining tokens |
 | Original exposure target | 15B total tokens; a plan, not the completed exposure of the selected base |
 | Selected fine-tuned model | OpenSML-150M; total SFT step 768 |
-| Current status | Base and selected SFT checkpoint documented; weight release pending |
+| Current status | Selected SFT weights exported as a native MLX bundle; pretrained base documented |
 
 ## Model Specification
 
@@ -518,8 +515,7 @@ revisions, evaluator source hashes, and runtime settings. The full-benchmark
 integrity receipt records 15,428 completed examples with unchanged inputs.
 The tokenizer round-trip audit is described above. These checks establish
 artifact identity and the scope of the recorded evaluation; they do not establish
-cross-framework inference parity or deployment readiness. A released-weight
-export verification and reproducible inference guide remain pending.
+cross-framework inference parity or deployment readiness. An unchanged native weight export and inference guide are included. Local loading/generation checks are recorded separately; a full benchmark rerun of the exported bundle remains pending.
 
 ## Limitations and Intended Use
 

@@ -1,0 +1,29 @@
+{
+  "model_name": "OpenSML-150M",
+  "weights_sha256": "cbd3e3fb4ada74d7264371b79cee7598f513b7b950f1f141ef9f1a43bd2e1b4e",
+  "strict_loading": "passed",
+  "prompt": "Say hello in one sentence.",
+  "generation": {
+    "text": " I am a student.",
+    "token_ids": [
+      345,
+      768,
+      261,
+      2560,
+      17,
+      1
+    ],
+    "stop_reason": "eos",
+    "prompt_tokens": 13,
+    "generated_tokens": 6
+  },
+  "precision": "FP32",
+  "attention": "vanilla",
+  "ffn": "reference",
+  "scope": "Short local loading/generation check; no benchmark rerun or cross-framework parity claim.",
+  "parameter_count": 150439168,
+  "tested_mlx_runtime": "0.32.3.dev20260920+7241f12",
+  "cached_full_prefix_argmax": "matched on checked prompt",
+  "context_overflow": "rejected",
+  "dependency_scope": "PyPI requirements are a baseline; smoke check used the recorded local development runtime."
+}

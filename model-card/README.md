@@ -40,10 +40,7 @@ fine-tuning stages produced the selected OpenSML-150M checkpoint.
 
 ## Availability and Inference
 
-This repository provides documentation, the tokenizer, and historical configuration
-files. **Model weights and a tested standalone inference bundle are not yet
-published**, so a download-and-generate quick start is pending. Local inference
-uses native MLX on Apple hardware; other loading and export formats remain unverified.
+The selected native MLX weight bundle is available on [Hugging Face](https://huggingface.co/wzebrowski/OpenSML-150M). See the [root README](../README.md) for download commands and [verification record](../inference_native/INFERENCE_VERIFICATION.json) for the loading checks and their limits. Authorized access is required while the model repository is private.
 
 ## Model Specification
 
@@ -207,8 +204,7 @@ a comprehensive contamination audit has not been established.
 ## Checkpoint Verification
 
 Saved hashes and integrity receipts identify the selected weights and completed
-evaluations. They do not establish cross-framework inference parity. A released
-weight export and reproducible inference guide remain pending. See the
+evaluations. They do not establish cross-framework inference parity. A selected native weight export and CLI are available on Hugging Face; see the repository root README for loading instructions. See the
 [results and provenance record](../results/OPENSMl_150M_RESULTS.json) and technical report.
 
 ## Licensing and Data Provenance

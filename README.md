@@ -8,7 +8,7 @@
 
 OpenSML-150M explores small-language-model training on Apple Silicon with a custom byte-level BPE tokenizer, **7.800B pretraining tokens**, three supervised fine-tuning stages, and evaluations of both completion likelihood and instruction following.
 
-The selected **research checkpoint is OpenSML-150M, SFT step 768**. This repository contains its code, recipes, tokenizer, recorded results, and documentation. Model weights are not yet published.
+The selected **research checkpoint is OpenSML-150M, SFT step 768**. This repository contains its code, recipes, tokenizer, recorded results, and documentation. Selected weights and a native inference bundle are hosted on Hugging Face; the model repository currently requires authorized access.
 
 ## At a glance
 
@@ -76,9 +76,16 @@ Generation is zero-shot and greedy, using plain `User: {prompt}\nAssistant:` for
 
 ## Run the model
 
-Native inference uses MLX on Apple Silicon. **A released weight export and tested standalone inference bundle are still pending**, so this repository does not yet offer a download-and-generate quick start.
+Native inference uses MLX on Apple Silicon. Download the complete bundle from [Hugging Face](https://huggingface.co/wzebrowski/OpenSML-150M); authenticate first if the model repository is private.
 
-The included playground supports existing local checkpoint bundles. Its prerequisites and the archived training entry points are described in the [run guide](RUN_GUIDE.md). Cross-framework exports and inference parity remain unverified.
+```bash
+hf download wzebrowski/OpenSML-150M --local-dir ./OpenSML-150M
+cd OpenSML-150M
+python -m pip install -r requirements.txt
+python inference.py --prompt "Say hello in one sentence." --max-new-tokens 32
+```
+
+The standalone CLI verifies the weight hash and frozen tokenizer, then generates with greedy FP32 reference MLX inference. It reports text, token IDs, and stop reason. Prompt plus generation budget must fit 2,048 tokens. See [inference source](inference_native/) and [local verification](inference_native/INFERENCE_VERIFICATION.json). This is a native MLX package; Transformers AutoModel and mlx-lm loading are not supported by this export. A full benchmark rerun and cross-framework parity have not been established.
 
 ## Intended use and limitations
 
