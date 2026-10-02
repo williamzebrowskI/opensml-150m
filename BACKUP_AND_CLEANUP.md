@@ -23,3 +23,13 @@ Any removal receipt should record exact paths, hashes, sizes and verified hosted
 Download [the selected training record archive](https://huggingface.co/wzebrowski/OpenSML-150M/blob/main/OpenSML-150M-training-records.tar.gz) and [its manifest](https://huggingface.co/wzebrowski/OpenSML-150M/blob/main/TRAINING_RECORDS_MANIFEST.json). The archive preserves original workspace-relative V2 names, independently of the V1 release naming. Verify the compressed SHA-256 and each required member before restoring. Extract into a separate directory first, then restore selected files to their original paths; do not overwrite active work blindly.
 
 The archive contains selected SFT prepared source pools, experiment recipes, logs and evaluation records. It is not a complete pretraining-data backup and excludes every optimizer/model tensor.
+
+## Completed local cleanup
+
+Seven prepared training-input copies and two duplicate model-release exports were removed only after hosted content verification. About 1.4 GiB was reclaimed. The selected checkpoint serving the local playground, every other model checkpoint, optimizer tensors, code and logs remain local. Exact removed paths and hosted restore locations are in [the cleanup receipt](provenance/CLEANUP_RECEIPT.json). This is a verified limited cleanup, not a complete workspace wipe.
+
+To verify a downloaded archive without extracting it:
+
+```bash
+python scripts/verify_training_archive.py --archive OpenSML-150M-training-records.tar.gz --manifest TRAINING_RECORDS_MANIFEST.json
+```

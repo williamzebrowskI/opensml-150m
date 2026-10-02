@@ -2377,14 +2377,16 @@
     "inference_native/inference.py": "f53e9934693d5513a3500c4ba31462b406b4537cf23d37bfc803a962c3b94827",
     "inference_native/native_utils.py": "2be27ef4bac5f2490b1faaf12e9487eda46356225be220139939459f5105e7af",
     "inference_native/native_tokenizer.py": "a4b98c7860e40509313e719e3cd235dbf7afa7b81965d217af57416e5ff7c9bb",
-    "BACKUP_AND_CLEANUP.md": "1b263a3eee57913f393b9306d84043f499240b2266c4eb3934f561d9faca3164",
+    "BACKUP_AND_CLEANUP.md": "e1d8d55e2d5a898a69e7595cf754da83d380c7e9f3b39e29834a098adcecc1b4",
     "results/training_history/selected768/training.jsonl": "efb12c11675f1d2dda94aebcb272bee59515beecd7a4e3c9d01260ce5e77ea7c",
     "results/training_history/unified384/training.jsonl": "3efcb695ada8965ce9bc0851203df562e37d63d457341f812a36a61d975e5c4f",
     "results/training_history/repair512/training.jsonl": "5079a346d48f459f73fab6b72f051150bcc19fded5ad9549853a9365461a34ba",
     "provenance/CHECKPOINT_INVENTORY.json": "e81ac0c97b703026cf435b14f5a7594ece4b776c6a4571c5e485a7140bce170b",
     "provenance/TRAINING_RECORDS_MANIFEST.json": "8fe60123f9193944caa82da8dfbc70183868ecdd359848554d6bdeb132bf1ad5",
     "provenance/CLEAN_DOWNLOAD_VERIFICATION.json": "428cfd5c954b5d5f1c6edfa3b62a8a01b77e119ccdc5c09797082a883c7670f7",
-    "provenance/HOSTED_BACKUP_VERIFICATION.json": "2ea395dd3eba7250806349fd67579279ec2748c8f017ec53346b493199c74a6b"
+    "provenance/HOSTED_BACKUP_VERIFICATION.json": "2ea395dd3eba7250806349fd67579279ec2748c8f017ec53346b493199c74a6b",
+    "provenance/CLEANUP_RECEIPT.json": "53f823f36dc270b339eb0eb9d4668fa35f35688e758ac1c779e23909a296b896",
+    "scripts/verify_training_archive.py": "1b84c814e37a94de4c98b52f1f7ba074d46fa842f271571a95fa3ca1f5dc49a6"
   },
   "cleanup": "Removed V1 trainer, architecture, tokenizer adapters and duplicate trees; consolidated required transport and inference helpers under V2.",
   "release_naming": "Dedicated pipeline renamed V2 to V1; historical receipts, dataset names and serialized contract identifiers preserved."

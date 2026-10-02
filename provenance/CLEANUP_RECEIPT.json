@@ -1,0 +1,70 @@
+{
+  "status": "completed",
+  "scope": "Selected prepared-input copies and duplicate release-export weights only. Original selected checkpoint, all other checkpoints, optimizer state, source code and logs retained.",
+  "files": [
+    {
+      "path": "sml-mlx-v2/experiments/public_repair_384_v1/data/prepared.json",
+      "bytes": 8450457,
+      "sha256": "71090fe7bd30f9454090ec48fc92ff7af4a27a7443ec4d2b4539aef9c4c0909a",
+      "hosted_copy": "https://huggingface.co/wzebrowski/OpenSML-150M/resolve/54546287dd52d6873a22aa29b1686b5092cead11/OpenSML-150M-training-records.tar.gz",
+      "archive_member": "sml-mlx-v2/experiments/public_repair_384_v1/data/prepared.json"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/data.json",
+      "bytes": 15034926,
+      "sha256": "a2d4d9401de47eb44030168be8bb04e865de467081019a7624110f08637f4dfa",
+      "hosted_copy": "https://huggingface.co/wzebrowski/OpenSML-150M/resolve/54546287dd52d6873a22aa29b1686b5092cead11/OpenSML-150M-training-records.tar.gz",
+      "archive_member": "sml-mlx-v2/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/data.json"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/unified_text_v2_sft_v1/data/prepared.json",
+      "bytes": 47629159,
+      "sha256": "14e3e79cce495d880feddd2b905622157b5b796ee43ae06965a86dfb5fff3b1f",
+      "hosted_copy": "https://huggingface.co/wzebrowski/OpenSML-150M/resolve/54546287dd52d6873a22aa29b1686b5092cead11/OpenSML-150M-training-records.tar.gz",
+      "archive_member": "sml-mlx-v2/experiments/unified_text_v2_sft_v1/data/prepared.json"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v1/prepared.json",
+      "bytes": 179779711,
+      "sha256": "ae8a93a306bda7b996e33292ad9e25c9efda11379f772ccadad054430975dd29",
+      "hosted_copy": "https://huggingface.co/wzebrowski/OpenSML-150M/resolve/54546287dd52d6873a22aa29b1686b5092cead11/OpenSML-150M-training-records.tar.gz",
+      "archive_member": "sml-mlx-v2/sft/conversation_foundation_v1/prepared.json"
+    },
+    {
+      "path": "sml-mlx-v2/sft/grounded_rank_384/prepared.json",
+      "bytes": 5298180,
+      "sha256": "cf0a379a6bd78440152a57ffc1d98853de6ac25932052926e1d451f44d5a9454",
+      "hosted_copy": "https://huggingface.co/wzebrowski/OpenSML-150M/resolve/54546287dd52d6873a22aa29b1686b5092cead11/OpenSML-150M-training-records.tar.gz",
+      "archive_member": "sml-mlx-v2/sft/grounded_rank_384/prepared.json"
+    },
+    {
+      "path": "sml-mlx-v2/sft/preference_long_640/prepared.json",
+      "bytes": 29979623,
+      "sha256": "56d24fa9b368a17870c82e10320c2286297f3b6d389c50afb099822dce21af13",
+      "hosted_copy": "https://huggingface.co/wzebrowski/OpenSML-150M/resolve/54546287dd52d6873a22aa29b1686b5092cead11/OpenSML-150M-training-records.tar.gz",
+      "archive_member": "sml-mlx-v2/sft/preference_long_640/prepared.json"
+    },
+    {
+      "path": "sml-mlx-v2/sft/text_followup_512_v1/prepared.json",
+      "bytes": 14235573,
+      "sha256": "f7676dd515a9755bd26d460b486eb940e484081ae8910c044008f03bada61c51",
+      "hosted_copy": "https://huggingface.co/wzebrowski/OpenSML-150M/resolve/54546287dd52d6873a22aa29b1686b5092cead11/OpenSML-150M-training-records.tar.gz",
+      "archive_member": "sml-mlx-v2/sft/text_followup_512_v1/prepared.json"
+    },
+    {
+      "path": "exports/opensml-150m-native/model.safetensors",
+      "bytes": 601772434,
+      "sha256": "cbd3e3fb4ada74d7264371b79cee7598f513b7b950f1f141ef9f1a43bd2e1b4e",
+      "hosted_copy": "https://huggingface.co/wzebrowski/OpenSML-150M/resolve/27ba9cd101492c0dbfeb6cea0147e429a86d8648/model.safetensors"
+    },
+    {
+      "path": "exports/release-verification/download/model.safetensors",
+      "bytes": 601772434,
+      "sha256": "cbd3e3fb4ada74d7264371b79cee7598f513b7b950f1f141ef9f1a43bd2e1b4e",
+      "hosted_copy": "https://huggingface.co/wzebrowski/OpenSML-150M/resolve/27ba9cd101492c0dbfeb6cea0147e429a86d8648/model.safetensors"
+    }
+  ],
+  "planned_bytes": 1503952497,
+  "completed_at": "2026-10-02T16:03:09.965289+00:00",
+  "removed_bytes": 1503952497
+}
