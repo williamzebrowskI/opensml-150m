@@ -1,0 +1,8 @@
+{
+  "repo": "wzebrowski/OpenSML-150M",
+  "revision": "54546287dd52d6873a22aa29b1686b5092cead11",
+  "archive": "OpenSML-150M-training-records.tar.gz",
+  "archive_sha256": "45d442f2a9713b73f14d4301d96a0c4b1d963985c706b3c7a7ec9631029503a3",
+  "files_verified": 168,
+  "scope": "Fresh public download, compressed archive hash and every inner file verified"
+}

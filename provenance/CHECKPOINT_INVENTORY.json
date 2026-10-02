@@ -1,0 +1,1291 @@
+{
+  "source_project": "original V2 training workspace",
+  "checkpoint_count": 62,
+  "checkpoints": [
+    {
+      "local_bundle": "experiments/stage_b_v1/parent/step_0073008_58d174e2c177",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "4167dc480d67f866010a753c6b3df05da6c825d2a2152d29963f59d175596363"
+        },
+        "model.safetensors.json": {
+          "bytes": 7790,
+          "sha256": "76d0736b6cc19a9c5514800f21434815740d6545e4c08619b7911ad5f85c61f3"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "546f6b3dc2753e1c875fa7a7c38d680c0bc0cec97c5833b33c24c07f6016d871"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 2417818,
+          "sha256": "4dbf21f0657bc60397358936e75160d27e04bcca5f955609c22063074ad8a700"
+        }
+      },
+      "step": 73008,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "experiments/public_repair_384_v1/runs/sft/step_0000448_e6272c82afad",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "fcbebe2e7aa9804fde513052251144cbc091c7b26a4fea33257e74484548f7be"
+        },
+        "model.safetensors.json": {
+          "bytes": 560,
+          "sha256": "00e3b5bc1cf131ad80d3788ba546ea155e6a3dc7fc89dbddf4885782938d4796"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "e17e2544f6db4b2db309a11ff036df71e8a7b5449add3ea355c436a3546af008"
+        }
+      },
+      "step": 448,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "experiments/public_repair_384_v1/runs/sft/step_0000512_6972bbf9be08",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "465ce42aad2e7c765f169aa75aa4124ec03fec17b46e6f5eabf75c2c4a8d4772"
+        },
+        "model.safetensors.json": {
+          "bytes": 561,
+          "sha256": "418784fc8da5cea97100a704f00e646d0feac8613d49b62c0d1e6baea8574c0f"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "b7b5dac2bf23a9a5d01e241aa5f84fee84df92333d4a0c7281c27c58a5b91832"
+        }
+      },
+      "step": 512,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "experiments/public_repair_384_v1/runs/sft/step_0000640_c0d26296ef71",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "1cab20c7679a8ab7892003dea0173ce1f91f66730430afc1ad0f05dc7b0aefcb"
+        },
+        "model.safetensors.json": {
+          "bytes": 561,
+          "sha256": "266b4501faad19f123268121f392469564d322f044c3e6b8066c48a7800400e2"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "0777a17cd676e768fd842fae3db34304599c8842dcbf4c692a64483d1d2983b2"
+        }
+      },
+      "step": 640,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "experiments/public_repair_384_v1/runs/sft/step_0000576_69e1ad1810fd",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "650413cc23b5832dbdab25db058d3ab00854fe7a6979f29feee5a95ec51279bd"
+        },
+        "model.safetensors.json": {
+          "bytes": 561,
+          "sha256": "c1826e8f9f9dde192515bde18c80b1b4a15d0e13007f11751f9beb0573d22e99"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "e36a3189236cddec92a5703d3533795a4709393192c558b2e5a2b23fd1a0cb50"
+        }
+      },
+      "step": 576,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "experiments/repair512_search_v1/candidates/028-broad-public-long-stable/runs/sft/step_0000768_4980617cb301",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "cbd3e3fb4ada74d7264371b79cee7598f513b7b950f1f141ef9f1a43bd2e1b4e"
+        },
+        "model.safetensors.json": {
+          "bytes": 525,
+          "sha256": "7c0e307d7bc1973a1d5b8c683b2911c4dd2fead65d49226cdce53d6dfe098908"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "a23dd9b5ca2af99ac3a7648a7b9a70acb04c183aacbea71fdaabd2a1fdc2c720"
+        }
+      },
+      "step": 768,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "experiments/lr_trial_v1/parent/step_0073008_58d174e2c177",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "4167dc480d67f866010a753c6b3df05da6c825d2a2152d29963f59d175596363"
+        },
+        "model.safetensors.json": {
+          "bytes": 7790,
+          "sha256": "76d0736b6cc19a9c5514800f21434815740d6545e4c08619b7911ad5f85c61f3"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "546f6b3dc2753e1c875fa7a7c38d680c0bc0cec97c5833b33c24c07f6016d871"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 2417818,
+          "sha256": "4dbf21f0657bc60397358936e75160d27e04bcca5f955609c22063074ad8a700"
+        }
+      },
+      "step": 73008,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "experiments/unified_text_v2_sft_v1/runs/sft/step_0000768_bbb87b1b9e42",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "347c825d2e690412de1e001a310141cdad0217b206067201bea020befa2e8639"
+        },
+        "model.safetensors.json": {
+          "bytes": 575,
+          "sha256": "8d3b044abedcd35b9583fc365aee8d081e783a32ed18f45323dd1cdd59262c7a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "98883ab3bf889db0f29ad0bb941ef8f15133d2bb12d6a706407f3e016a6bcd30"
+        }
+      },
+      "step": 768,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "experiments/unified_text_v2_sft_v1/runs/sft/step_0000640_000f4e4da94e",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "021a233541112799733fa0d007d9a1bb7a463a2f71847af47f9d1ab1031a1d32"
+        },
+        "model.safetensors.json": {
+          "bytes": 575,
+          "sha256": "3d30d9b7ec060c3f5f8414930544ebe9206cb2a855025406b3bb26566fd7a5f2"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "6b485f117cad6e8e224ccca9c9a3786f14e4a438c36063962549642820fbc1cc"
+        }
+      },
+      "step": 640,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "experiments/unified_text_v2_sft_v1/runs/sft/step_0000256_b0e8d0cf7cb2",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "f7415f2e4c1ba38aa1135af3be3b241b500c03a3a959c0007f7554cd6e9f6169"
+        },
+        "model.safetensors.json": {
+          "bytes": 574,
+          "sha256": "0a1ef903461c68f8e31ff7848758534380b88e236dd7ef48cd0ab1cd669f5b0f"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "2a8a0e153205c5800e0128d4ee31143047f9530e1aa522e8f7c8d607910d6fa1"
+        }
+      },
+      "step": 256,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "experiments/unified_text_v2_sft_v1/runs/sft/step_0000128_158ec2e1d74f",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "6a4857479757e9066876ef432ff69eda8d7170f2c2091881704300ee727d560c"
+        },
+        "model.safetensors.json": {
+          "bytes": 574,
+          "sha256": "caed696ea736885cac4b4cff1b422efece12c8b20b2101f325cec37bf6f46e1a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "6dfad9d17d486d2f59062ef6481f3c4b10ab0cc7fb32c4b9aba5dab66123ffbb"
+        }
+      },
+      "step": 128,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "experiments/unified_text_v2_sft_v1/runs/sft/step_0000064_26e5f8d01db6",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "5b90de37418057ebd155e38307264b779620a9eaa9538773672e7bde89bfbfde"
+        },
+        "model.safetensors.json": {
+          "bytes": 572,
+          "sha256": "134dfc9bd5dcd077a48b31863f6aa7bebc10c4b861db3a678611683eaf82d7e0"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "572f807c279d2b98c90deb307aaa6c73e7ecbfc7e266d780c631bd4af04e30cc"
+        }
+      },
+      "step": 64,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "experiments/unified_text_v2_sft_v1/runs/sft/step_0000512_0d93b325c545",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "ff706e3b9d13ad54bc92193a1678e87e49c301cb972b4cb4f86b2df94f6f849f"
+        },
+        "model.safetensors.json": {
+          "bytes": 574,
+          "sha256": "0413ed5c82b1bf3e5fb58d87aafc4e8472cf0a6ef99a259f6a0db890aedd250d"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "9873849cfaaf1d0de7aad324357e393b3e2a74cb53ccc1449f2cdb20355ea1f4"
+        }
+      },
+      "step": 512,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "experiments/unified_text_v2_sft_v1/runs/sft/step_0000384_807628c9dbdc",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "fcc23cd8a204762f05ee43bd84c88846383dccfda40eec06cd390a59666656db"
+        },
+        "model.safetensors.json": {
+          "bytes": 574,
+          "sha256": "ca07ddc3db511d5458397e4d0651dc791f0e3ac6b0279a2f887dd4ef7df5bc6b"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "c1adb366f5e18507e113725881a6f3b2b0eeef7fb97ff1f01315c1e53f212f1e"
+        }
+      },
+      "step": 384,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "diagnostics/base_capability_20260924/reference",
+      "files": {},
+      "step": null,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "diagnostics/m5_migration_20260922/collectives_20260923_203034/tiny_rank0/step_0000001_7cc340ee29e4",
+      "files": {
+        "model.safetensors": {
+          "bytes": 8159,
+          "sha256": "d219ac2f0d9be9933f3e7cc729b445851b3ed2607881f3fbfebdcdc1aed6de88"
+        },
+        "model.safetensors.json": {
+          "bytes": 92,
+          "sha256": "51292e178b8590b9c4f42ce7bc0150e412406f4c89b167c7306798ac2d35af2a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 46587,
+          "sha256": "030a0c02e06325d921b9587abb7db4af5cd256c35de92ec743f2c56f004da7ef"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 116,
+          "sha256": "6c67f94a9af2a048052403393693194f44554d50703a4d5bf7f8d337a51fbc9e"
+        }
+      },
+      "step": 1,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "diagnostics/m5_migration_20260922/collectives_20260923_222728/tiny_rank0/step_0000001_60588b97ff52",
+      "files": {
+        "model.safetensors": {
+          "bytes": 8159,
+          "sha256": "d219ac2f0d9be9933f3e7cc729b445851b3ed2607881f3fbfebdcdc1aed6de88"
+        },
+        "model.safetensors.json": {
+          "bytes": 92,
+          "sha256": "51292e178b8590b9c4f42ce7bc0150e412406f4c89b167c7306798ac2d35af2a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 46587,
+          "sha256": "030a0c02e06325d921b9587abb7db4af5cd256c35de92ec743f2c56f004da7ef"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 116,
+          "sha256": "c6d744d4529cdb0a00532a08dc0256bd7877cf529497314eeced47dddec8b2a6"
+        }
+      },
+      "step": 1,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "diagnostics/m5_migration_20260922/collectives_20260923_171716/tiny_rank0/step_0000001_4d63177fce43",
+      "files": {
+        "model.safetensors": {
+          "bytes": 8159,
+          "sha256": "d219ac2f0d9be9933f3e7cc729b445851b3ed2607881f3fbfebdcdc1aed6de88"
+        },
+        "model.safetensors.json": {
+          "bytes": 92,
+          "sha256": "51292e178b8590b9c4f42ce7bc0150e412406f4c89b167c7306798ac2d35af2a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 46587,
+          "sha256": "030a0c02e06325d921b9587abb7db4af5cd256c35de92ec743f2c56f004da7ef"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 116,
+          "sha256": "1d0dbafd5c8bb158fcad1f47b91d5ede61b08fb7e9ef37afdb2d2795e7af3d3a"
+        }
+      },
+      "step": 1,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "diagnostics/m5_migration_20260922/collectives_20260923_223704/tiny_rank0/step_0000001_373f221b1e57",
+      "files": {
+        "model.safetensors": {
+          "bytes": 8159,
+          "sha256": "d219ac2f0d9be9933f3e7cc729b445851b3ed2607881f3fbfebdcdc1aed6de88"
+        },
+        "model.safetensors.json": {
+          "bytes": 92,
+          "sha256": "51292e178b8590b9c4f42ce7bc0150e412406f4c89b167c7306798ac2d35af2a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 46587,
+          "sha256": "030a0c02e06325d921b9587abb7db4af5cd256c35de92ec743f2c56f004da7ef"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 116,
+          "sha256": "f9e8ab053bb774182d9b59c3db34f6365570594b9c829ae1e2d39c6906bfb7b6"
+        }
+      },
+      "step": 1,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "diagnostics/m5_migration_20260922/collectives_20260923_171303/tiny_rank0/step_0000001_e231e393c263",
+      "files": {
+        "model.safetensors": {
+          "bytes": 8159,
+          "sha256": "d219ac2f0d9be9933f3e7cc729b445851b3ed2607881f3fbfebdcdc1aed6de88"
+        },
+        "model.safetensors.json": {
+          "bytes": 92,
+          "sha256": "51292e178b8590b9c4f42ce7bc0150e412406f4c89b167c7306798ac2d35af2a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 46587,
+          "sha256": "030a0c02e06325d921b9587abb7db4af5cd256c35de92ec743f2c56f004da7ef"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 116,
+          "sha256": "48a153a057274589c6a588c01e6f8f941d752f6e7f1981a2bcd9ba5c4229e734"
+        }
+      },
+      "step": 1,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "diagnostics/m5_migration_20260922/collectives_20260923_072444/tiny_rank0/step_0000001_13aa9f8b7f0f",
+      "files": {
+        "model.safetensors": {
+          "bytes": 8159,
+          "sha256": "d219ac2f0d9be9933f3e7cc729b445851b3ed2607881f3fbfebdcdc1aed6de88"
+        },
+        "model.safetensors.json": {
+          "bytes": 92,
+          "sha256": "51292e178b8590b9c4f42ce7bc0150e412406f4c89b167c7306798ac2d35af2a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 46587,
+          "sha256": "030a0c02e06325d921b9587abb7db4af5cd256c35de92ec743f2c56f004da7ef"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 116,
+          "sha256": "f7b163379c8b0a1402f82e89a48d512382c277f2686f400d4981310f48c49a43"
+        }
+      },
+      "step": 1,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "diagnostics/m5_migration_20260922/collectives_20260922_120342/tiny_rank0/step_0000001_97a66cea12c9",
+      "files": {
+        "model.safetensors": {
+          "bytes": 8159,
+          "sha256": "d219ac2f0d9be9933f3e7cc729b445851b3ed2607881f3fbfebdcdc1aed6de88"
+        },
+        "model.safetensors.json": {
+          "bytes": 92,
+          "sha256": "51292e178b8590b9c4f42ce7bc0150e412406f4c89b167c7306798ac2d35af2a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 46587,
+          "sha256": "030a0c02e06325d921b9587abb7db4af5cd256c35de92ec743f2c56f004da7ef"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 116,
+          "sha256": "d1d2f9c56f80ad0edee46dc608cb89336c28072fb4179059acb574e86e98c374"
+        }
+      },
+      "step": 1,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "diagnostics/m5_migration_20260922/collectives_20260922_121027/tiny_rank0/step_0000001_aeb5e9573da1",
+      "files": {
+        "model.safetensors": {
+          "bytes": 8159,
+          "sha256": "d219ac2f0d9be9933f3e7cc729b445851b3ed2607881f3fbfebdcdc1aed6de88"
+        },
+        "model.safetensors.json": {
+          "bytes": 92,
+          "sha256": "51292e178b8590b9c4f42ce7bc0150e412406f4c89b167c7306798ac2d35af2a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 46587,
+          "sha256": "030a0c02e06325d921b9587abb7db4af5cd256c35de92ec743f2c56f004da7ef"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 116,
+          "sha256": "194d143c431bdce0c816077742f94fd895f72b793ac7742bbf9dc7e902e0b5eb"
+        }
+      },
+      "step": 1,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "diagnostics/m5_migration_20260922/collectives_20260922_120531/tiny_rank0/step_0000001_f2d3496f4e48",
+      "files": {
+        "model.safetensors": {
+          "bytes": 8159,
+          "sha256": "d219ac2f0d9be9933f3e7cc729b445851b3ed2607881f3fbfebdcdc1aed6de88"
+        },
+        "model.safetensors.json": {
+          "bytes": 92,
+          "sha256": "51292e178b8590b9c4f42ce7bc0150e412406f4c89b167c7306798ac2d35af2a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 46587,
+          "sha256": "030a0c02e06325d921b9587abb7db4af5cd256c35de92ec743f2c56f004da7ef"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 116,
+          "sha256": "7ce46390f4d159be1c0f660ada1afa3529a384ef0aada8fa696de8193642b57d"
+        }
+      },
+      "step": 1,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "evaluation/external_baselines/_models/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46",
+      "files": {},
+      "step": null,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "evaluation/external_baselines/_models/models--openai-community--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e",
+      "files": {},
+      "step": null,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "evaluation/external_baselines/_models/models--facebook--opt-125m/snapshots/1f9886ce095904096e22b0f4d9e7ba932fa7df2a",
+      "files": {},
+      "step": null,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "evaluation/external_baselines/_models/models--facebook--opt-125m/.no_exist/27dcfa74d334bc871f3234de431e71c6eeba5dd6",
+      "files": {},
+      "step": null,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_lr_rewarm_v1/step_0073947_7b921821e93e",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "34bb3bc74e8d710398239f607e54714cc4d2710c0904838aa6ff14531ba2392c"
+        },
+        "model.safetensors.json": {
+          "bytes": 9111,
+          "sha256": "82edf7864be02f6adf2325653563be6212a1131e0cc0d9e5f942923baafbdade"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "651608da3147a79b9d98cf466ead81014efb32b3b4da5774551aef64651fbdf0"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 2348697,
+          "sha256": "dcfc48dce37c48a353ced43f37b23a9b8e852941c3e8163663d7b2ec753d36fa"
+        }
+      },
+      "step": 73947,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_lr_rewarm_v1/step_0073008_f5b97355f141",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "4167dc480d67f866010a753c6b3df05da6c825d2a2152d29963f59d175596363"
+        },
+        "model.safetensors.json": {
+          "bytes": 9113,
+          "sha256": "17670db565743968016d84f6a52e6e6506707ffa6098e242f798341394a95c06"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "546f6b3dc2753e1c875fa7a7c38d680c0bc0cec97c5833b33c24c07f6016d871"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 2417818,
+          "sha256": "7f6b088a020558ce8bf474cf903a4b83a1931b745d210ed81dbc4927a42ebae6"
+        }
+      },
+      "step": 73008,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_lr_rewarm_v1/jobs/20260923_210157_85e5684d/input/checkpoint",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "4167dc480d67f866010a753c6b3df05da6c825d2a2152d29963f59d175596363"
+        },
+        "model.safetensors.json": {
+          "bytes": 7790,
+          "sha256": "76d0736b6cc19a9c5514800f21434815740d6545e4c08619b7911ad5f85c61f3"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "546f6b3dc2753e1c875fa7a7c38d680c0bc0cec97c5833b33c24c07f6016d871"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 2417818,
+          "sha256": "4dbf21f0657bc60397358936e75160d27e04bcca5f955609c22063074ad8a700"
+        }
+      },
+      "step": 73008,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_lr_rewarm_v1/step_0073994_357695b4c620",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "93bfea751a88759ec8d02db0f978e88eceae2a79aab426ebf5bd96972ef56e56"
+        },
+        "model.safetensors.json": {
+          "bytes": 9111,
+          "sha256": "b6a4834404f212c6b37306523b6158929380ec0085925830e7f65b162645d207"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "02e7206279cf0f69f648db60d599bb8dd027e4a9e928e7f313d5e87b3fd9028b"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 2524271,
+          "sha256": "9ff834cf90b2b750410e1384ad4334d242f070ad6b808af420fc705fc8b19907"
+        }
+      },
+      "step": 73994,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/sft_conversation_foundation_v1/step_0000512_156a108611bc",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "9f9574d7ba0cae82720e139f7889c1ea3a4b8ac81e9664fd59883839c669c5f2"
+        },
+        "model.safetensors.json": {
+          "bytes": 574,
+          "sha256": "e7174164b3c48771806a8ee4d8808b3cff6ff11642300e235a2f34988698bd47"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "dc2730320c1bab91367059d68e5b8acaed33df6d1987f0f79e48f2f4f9cd1786"
+        }
+      },
+      "step": 512,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/sft_text_followup_512_v1/step_0000768_10f5ea2a3354",
+      "files": {
+        "model.safetensors": {
+          "bytes": 601772434,
+          "sha256": "309ad719dc8569e482444b47b05f3fd24e02e7b7470dad2af132a976bf11ca02"
+        },
+        "model.safetensors.json": {
+          "bytes": 586,
+          "sha256": "2e1eb7bbeffd44caad672c1ae39a3365beddb730503c43151f63fee8435a461e"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "a0147795804f524b48eeebb7aec27e8f33657d2cd89a228454c065dcb1e34897"
+        }
+      },
+      "step": 768,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_v1/step_0057749_42405f54c408",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "38ec128b8ed525df45c869797ebb0bb7443bcff2a4e86d14a35f91018a90ab90"
+        },
+        "model.safetensors.json": {
+          "bytes": 4978,
+          "sha256": "537efb87c92c10b57333d4a3283f01296895926757ebaedbc5f2f328b3387300"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "70ff540395674de01dcb89779a2c64e97f65c74da573f82a95f20b533cd3d833"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 386587,
+          "sha256": "d2b7903c94f49b4f09c67bab2220b9f546467524f2d89630424008ed33d1eb95"
+        }
+      },
+      "step": 57749,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_v1/step_0060263_1799b58cbf36",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "fdb1cac18014ea515bcbc45b2bbbc26fe7a395e57db0c3b93fd6111c2ac213cc"
+        },
+        "model.safetensors.json": {
+          "bytes": 4978,
+          "sha256": "0af444d922ad4e9e4a585447950ebade6a93ad1184f58333e5cefc6fb58ab19a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "d92b45d4ccc20b039b1c2e856c010f4dc46b09673076f65870e2dd32698128ca"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 399037,
+          "sha256": "d12fa41c7ec58097058175a50c67b35060ad0a36be2d73fb0c22c71bee0498e1"
+        }
+      },
+      "step": 60263,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_v1/step_0060191_324352d94847",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "fead00820208a2a73abc10bae8391b6b6a40ca200bfe1a761de11dca53fe474d"
+        },
+        "model.safetensors.json": {
+          "bytes": 4978,
+          "sha256": "a696c9afcb3da09bc4f312321a818551a7bdf0134c957f5bf070e9a1a80c3182"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "b81ffa375936ee2db89a95d00a3879d0444f44f6b8bbd36e5577287a4e966c6f"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 392056,
+          "sha256": "9a1c52241cb8c91c8b77d3f3f4510aa145cea34d824d2627603e963126e7631d"
+        }
+      },
+      "step": 60191,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_v1/jobs/20260922_122144_269b24fa/input/checkpoint",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "d9b884745391f1e999151738672753a8d57386973f82785c23e02946419a9f0a"
+        },
+        "model.safetensors.json": {
+          "bytes": 4147,
+          "sha256": "57664eaa3a2e10a3746244d1ce020e163a464568ef123ec3075943140ddbf629"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "fe2055a821b65966202238fbb5d9487f386359b90ebda79efdda14bf2929272a"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 389864,
+          "sha256": "9613973f7709055fa6487af6d10539f03e04558f53a003192f57d0780d246b42"
+        }
+      },
+      "step": 50096,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_shuffled_v1/step_0073008_58d174e2c177",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "4167dc480d67f866010a753c6b3df05da6c825d2a2152d29963f59d175596363"
+        },
+        "model.safetensors.json": {
+          "bytes": 7790,
+          "sha256": "76d0736b6cc19a9c5514800f21434815740d6545e4c08619b7911ad5f85c61f3"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "546f6b3dc2753e1c875fa7a7c38d680c0bc0cec97c5833b33c24c07f6016d871"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 2417818,
+          "sha256": "4dbf21f0657bc60397358936e75160d27e04bcca5f955609c22063074ad8a700"
+        }
+      },
+      "step": 73008,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_shuffled_v1/jobs/20260923_174912_cabb59c9/input/checkpoint",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "b5c50a5ef9ae3643ccbf3f1f4f4b66e9735739cb5b8c4f96358fc564792838e2"
+        },
+        "model.safetensors.json": {
+          "bytes": 6107,
+          "sha256": "7de185facdb0c1d192bcedac0ce536edf75f231742b81aa0d99bb8fc45dcb290"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "464ad6c9a4c9b8fe1b33e8aea059500e60bfbfb93952199205714b8402a0dcf0"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 391026,
+          "sha256": "84e45d4eaf83d5b1f480b1c9f518abb69397e1796737d9118d4d68f37caead01"
+        }
+      },
+      "step": 70710,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_shuffled_v1/step_0073055_9bb74901eee1",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "34141f8f50212299bc8ab85350bc68d2d272feb36ff59bb71a7fb26b0f02a298"
+        },
+        "model.safetensors.json": {
+          "bytes": 7789,
+          "sha256": "fb8dfe8406e7bfbcb572bd77c6fea8a6e39487a623d3c5411cbf82d530933e86"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "6df450b527b265ae986918c561d3f0767af7c2fcef2e5f043a05aef3af51f8f6"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 2326407,
+          "sha256": "b6e6d8abca4563f555f5f1a3537016c5eb2818acf2cdf770ba346313cae7acd5"
+        }
+      },
+      "step": 73055,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_shuffled_v1/step_0073060_da5579367b79",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "c31f3e41f24d429be1b74573e12ef3ccc83bc46c28c0fadd86dca176ec3ace27"
+        },
+        "model.safetensors.json": {
+          "bytes": 7789,
+          "sha256": "7704e1d6fac7c3f56f7f7590a1ae320489150d5cea02c9e346b0e754b4fcb0f1"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "ff576fab70652563a1b1b0e476685c213e7fff1320da5e827ae9f2320731fa88"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 2415794,
+          "sha256": "572c5c128bf2c4d246c77163d40dfc80524fb78b857173244c1fb4bb48905542"
+        }
+      },
+      "step": 73060,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_v1/step_0038030_773eb4025b94",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "15249516bb353641ad8b436c30daf9b6c2ddaab6b05e82d1cf4888800d0d3b20"
+        },
+        "model.safetensors.json": {
+          "bytes": 2884,
+          "sha256": "56644ddf2b511c14347d6cd8fda7768409b10bbed1d77827103b888d4d7686fb"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "fbc2b236a6b6b86290357697d5575656ef3a78121281751c3f9c96780c5963a9"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 400147,
+          "sha256": "f1b363023737d19ab951eb6e4513985b1d25efe8c31251fcf186ceb709ea93ab"
+        }
+      },
+      "step": 38030,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_v1/step_0038056_d8195134518a",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "3e7b946e2935384581aef0da3faac740b6ad2d31a27beec5e2fb8bdc8857f2f9"
+        },
+        "model.safetensors.json": {
+          "bytes": 2884,
+          "sha256": "ca59aca5fa6a73ba84055016124e13adf042b93f167a05e25eef03e4cbeb529a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "79f84972cec8287377a8c80e2b3d6bed206c59447933acde3266a5532ddcbf0c"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 388417,
+          "sha256": "7d8b9d0a355dd3cc1070625b838b24d07b0cf02f695befcd3ef6492d41a472e8"
+        }
+      },
+      "step": 38056,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_v1/step_0034744_492f01d01afe",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "d74a7953c2ecac144292348185397baec4655ac84deb85afdf26680edde6b557"
+        },
+        "model.safetensors.json": {
+          "bytes": 2883,
+          "sha256": "bb2c156ba1f852d4d1b26de22fccd9ebc76341bb25a34369bb25acc7627b4687"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "7ce5bd12acfd2de2530b4a4bec5bef986eaf033cfdef96b6bd7c7db627324100"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 403348,
+          "sha256": "79e9999be84f79b5e3726da4d661b4a5179db845e9102d4e6069338735413052"
+        }
+      },
+      "step": 34744,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_v1/jobs/20260920_202525_23c6b775/input/checkpoint",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "ff459f6967ea9a5d31c714ad6cca4c08a6291b59dcc2e65aba9a9a88f1e44e43"
+        },
+        "model.safetensors.json": {
+          "bytes": 2884,
+          "sha256": "7e9e431faf34bf725ef38aafd875c5a48cb4b2f2fe88d676c839d6bb77ab736a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "17045315b64dc12dbccb0b23ed575d066c038f56373cd4da9c3582c280510b4d"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 391338,
+          "sha256": "2e7031f5d684069f14da4b4c8fc72b5f5f0adb2e446efa9d73b76bac99230715"
+        }
+      },
+      "step": 31463,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_v1/jobs/20260918_085811_b4e5c849/input/checkpoint",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "deb3026c55674851f94e60a3ded7d84162542b758e2693037274e86f3515b400"
+        },
+        "model.safetensors.json": {
+          "bytes": 2175,
+          "sha256": "765872b68bb579a27b726b2574d624a075c24358a14a08a81b67b5d36ac716ea"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "b36fc967c38baaf7a7897876bda6d75fbcd93dd1142e1c6d12e7f3a4e5c1b6d3"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 387128,
+          "sha256": "1ba9e6dfa361cf540e8a462d84f92f4367182db0a292d77c063eaea60a2f7eb6"
+        }
+      },
+      "step": 4696,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/pilot_v1/step_0004602_cd1428bc4f04",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "ad59b4cc8e0d7342af36b9116258f1df4dd53ddc536af21ff7844c74a433480c"
+        },
+        "model.safetensors.json": {
+          "bytes": 2176,
+          "sha256": "9f993798ff754bfda270b96955961bd62c8ec24c20c3abd48fedec1567ce99bc"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "31a53088898aa7e40774b0481f6ef6e6d0e125e16a37d2c70ca907b162cc263f"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 386421,
+          "sha256": "03ebd7d86b9d78dd82f5a7a08a521be1fb2e99823ab6bd490c3fa5b8b969b0a4"
+        }
+      },
+      "step": 4602,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/pilot_v1/jobs/20260917_222411_0c7bcdb4/input/checkpoint",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "f90d242dcc98f835dd17c1066db8dd0d760df628675e8d06bd6d8594c68a6bc2"
+        },
+        "model.safetensors.json": {
+          "bytes": 2156,
+          "sha256": "eab7a5d30c3ef9d0bbe8fd00d51ca20fe0adfb4bd4d0c7e89f7af07e3cd6d1a9"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319748,
+          "sha256": "a1e40e4e4123731b2c1b8368dc79d1c4492060eb58df0382b1f8fb1de2a5a04a"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 10492,
+          "sha256": "000a0d60d7d51e6fdd20792ace6a2303d184a36106f5085e52c2fc3d87738ae6"
+        }
+      },
+      "step": 1,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/pilot_v1/step_0004696_2c67c3baa1ed",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "deb3026c55674851f94e60a3ded7d84162542b758e2693037274e86f3515b400"
+        },
+        "model.safetensors.json": {
+          "bytes": 2175,
+          "sha256": "765872b68bb579a27b726b2574d624a075c24358a14a08a81b67b5d36ac716ea"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "b36fc967c38baaf7a7897876bda6d75fbcd93dd1142e1c6d12e7f3a4e5c1b6d3"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 387128,
+          "sha256": "1ba9e6dfa361cf540e8a462d84f92f4367182db0a292d77c063eaea60a2f7eb6"
+        }
+      },
+      "step": 4696,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/stage_b_prose_v1/step_0074557_fb06cd5de9f7",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "d6630eb20e8e0a50d99feb6e163c3f6bc3d6e9f0e83af052267fefc0e49bc82f"
+        },
+        "model.safetensors.json": {
+          "bytes": 9162,
+          "sha256": "ae34e12b49dd7b83b8c810c55ba30ac6c1ef29f10f3d5ac9398a60e6dc686242"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "feee161e039e0b9c7f004362a9742ec8a66e2ca47feb8932d85c09349e47d320"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 23792034,
+          "sha256": "91ac6aee58915ff2bdb19beecf5a629f157e0210e8d9921f654886c918180f1c"
+        }
+      },
+      "step": 74557,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/stage_b_prose_v1/step_0073243_7f3070237eea",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "ca9bd5d82005f28e77f319d3a5a29f29fb4e4f86e7ceea049f01162fd8aae80f"
+        },
+        "model.safetensors.json": {
+          "bytes": 9156,
+          "sha256": "602e96af792ed3255694e86701c00d953490bd0738d32c10860bc9a766fc249d"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "c53c9ceadba4dfd5cbda7533430c9620309c8b764bf98149fb9127f669f93b47"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 5597408,
+          "sha256": "9f5d66165d76bee06dd6d5b782234e4ff88f5a565268dfc173d39e6dfe38893a"
+        }
+      },
+      "step": 73243,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/stage_b_prose_v1/step_0074564_51616eb1b63e",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "c50d609170fe420d5528fe1906732aff5833ad5e15e1e4cecf0e123d2045cb5a"
+        },
+        "model.safetensors.json": {
+          "bytes": 9161,
+          "sha256": "d58326cd8edf4d21b1eb4b47caad000539de833a445652883ecda76722da99bb"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "9a86ac30d29dd137c13b027065f13508a5f6a93572228a3f784428d758edb0f0"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 23944114,
+          "sha256": "3eb50e3ade64a177f63845c2b9938df858cea6a408396fcfb22dbf076863521a"
+        }
+      },
+      "step": 74564,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/stage_b_prose_v1/jobs/20260923_224042_5e1b87e2/input/checkpoint",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "4167dc480d67f866010a753c6b3df05da6c825d2a2152d29963f59d175596363"
+        },
+        "model.safetensors.json": {
+          "bytes": 7790,
+          "sha256": "76d0736b6cc19a9c5514800f21434815740d6545e4c08619b7911ad5f85c61f3"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "546f6b3dc2753e1c875fa7a7c38d680c0bc0cec97c5833b33c24c07f6016d871"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 2417818,
+          "sha256": "4dbf21f0657bc60397358936e75160d27e04bcca5f955609c22063074ad8a700"
+        }
+      },
+      "step": 73008,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_plateau_v1/step_0050049_583400e972d1",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "b9e62f3b01d6ef98b80c340ec9d0f6e2143499960d3932c76fbd20d43f23116f"
+        },
+        "model.safetensors.json": {
+          "bytes": 4148,
+          "sha256": "f1d27413c1a117cb6c8338f6a75a0c2d9d8c28d890560452ec74a99195c15f5b"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "49556f5dad9e7888500b6c4c5d687792d2185af8ed60613496b6766d0a310451"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 385249,
+          "sha256": "ddf13c6e67ba8560fe7e7948a3b4a3d1289545334e3441ec1df66adcdf588c66"
+        }
+      },
+      "step": 50049,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_plateau_v1/step_0050096_92102f67c5ca",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "d9b884745391f1e999151738672753a8d57386973f82785c23e02946419a9f0a"
+        },
+        "model.safetensors.json": {
+          "bytes": 4147,
+          "sha256": "57664eaa3a2e10a3746244d1ce020e163a464568ef123ec3075943140ddbf629"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "fe2055a821b65966202238fbb5d9487f386359b90ebda79efdda14bf2929272a"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 389864,
+          "sha256": "9613973f7709055fa6487af6d10539f03e04558f53a003192f57d0780d246b42"
+        }
+      },
+      "step": 50096,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_plateau_v1/jobs/20260921_110217_66f6c1dd/input/checkpoint",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "3e7b946e2935384581aef0da3faac740b6ad2d31a27beec5e2fb8bdc8857f2f9"
+        },
+        "model.safetensors.json": {
+          "bytes": 2884,
+          "sha256": "ca59aca5fa6a73ba84055016124e13adf042b93f167a05e25eef03e4cbeb529a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "79f84972cec8287377a8c80e2b3d6bed206c59447933acde3266a5532ddcbf0c"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 388417,
+          "sha256": "7d8b9d0a355dd3cc1070625b838b24d07b0cf02f695befcd3ef6492d41a472e8"
+        }
+      },
+      "step": 38056,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_plateau_v1/step_0050002_666b002c4e31",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "b5251b3c9fd3778bc6458d117b910561157d17c6b612bcdb6b5786e0214f4658"
+        },
+        "model.safetensors.json": {
+          "bytes": 4148,
+          "sha256": "78208dbe133e390b61b02db5ba58e326484186c2ad53ebd98eab6a4b63427772"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "3bffdde30055d23bdfede5f90f72dc49c1d44e178f2e0801834f58659dad0b15"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 398629,
+          "sha256": "5ca4958d6c0db7d29206d3c5515873915e0846ed9169af3227b04202da0ae63d"
+        }
+      },
+      "step": 50002,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_low_lr_v1/step_0070707_bb32ccc878d8",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "f94ae83f52379ce7f013ae36da2a85cbe1273df9037cf23cb55b3b437932f5c3"
+        },
+        "model.safetensors.json": {
+          "bytes": 6106,
+          "sha256": "2db6d5eac62aaf7293ecdc9209f08e33460c47fb2fc20b5724b0b12096177921"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "5f5cee8af79f7924dc14100b861594b800a78e120cc4ac6e2d19091f9e7cbc63"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 392263,
+          "sha256": "ad570950bf957e8f4db29c7ddd8e1d40fb96dbe874ea54aa97a8358e4beab897"
+        }
+      },
+      "step": 70707,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_low_lr_v1/step_0070710_d986de9ec6e7",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "b5c50a5ef9ae3643ccbf3f1f4f4b66e9735739cb5b8c4f96358fc564792838e2"
+        },
+        "model.safetensors.json": {
+          "bytes": 6107,
+          "sha256": "7de185facdb0c1d192bcedac0ce536edf75f231742b81aa0d99bb8fc45dcb290"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "464ad6c9a4c9b8fe1b33e8aea059500e60bfbfb93952199205714b8402a0dcf0"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 391026,
+          "sha256": "84e45d4eaf83d5b1f480b1c9f518abb69397e1796737d9118d4d68f37caead01"
+        }
+      },
+      "step": 70710,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_low_lr_v1/jobs/20260923_080559_855ebdc6/input/checkpoint",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "fdb1cac18014ea515bcbc45b2bbbc26fe7a395e57db0c3b93fd6111c2ac213cc"
+        },
+        "model.safetensors.json": {
+          "bytes": 4978,
+          "sha256": "0af444d922ad4e9e4a585447950ebade6a93ad1184f58333e5cefc6fb58ab19a"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "d92b45d4ccc20b039b1c2e856c010f4dc46b09673076f65870e2dd32698128ca"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 399037,
+          "sha256": "d12fa41c7ec58097058175a50c67b35060ad0a36be2d73fb0c22c71bee0498e1"
+        }
+      },
+      "step": 60263,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    },
+    {
+      "local_bundle": "runs/full_15b_five_mac_low_lr_v1/step_0067139_17f4c5a74012",
+      "files": {
+        "model.safetensors": {
+          "bytes": 300894200,
+          "sha256": "4d9e6e669bfe6a8d9254ec7dab14e2b856c5a0ae08152997a4b825b182e72e90"
+        },
+        "model.safetensors.json": {
+          "bytes": 6105,
+          "sha256": "28759de3818f84b211d96d3bfc58a204a3d6a73bc795a15b2f78ae6e9db65ba8"
+        },
+        "model.safetensors.optimizer.safetensors": {
+          "bytes": 1805319730,
+          "sha256": "880c132548dabfd319e85e89b85f8618c531c291b44db6c0b6fd809f4f30dcb9"
+        },
+        "model.safetensors.rank0.data_state.json.gz": {
+          "bytes": 390019,
+          "sha256": "26c8cf839cf126d77c5e12817424dc44e5ffbedbb03f9ae7ab7094b24d3e4e56"
+        }
+      },
+      "step": 67139,
+      "backup_status": "Selected step-768 model weights are hosted; other tensors require separate backup."
+    }
+  ]
+}

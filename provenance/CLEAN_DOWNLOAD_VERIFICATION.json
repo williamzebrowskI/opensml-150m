@@ -1,0 +1,26 @@
+{
+  "repository": "wzebrowski/OpenSML-150M",
+  "revision": "27ba9cd101492c0dbfeb6cea0147e429a86d8648",
+  "download": "Fresh force-download of 17 release files with no authentication",
+  "hashes": "All SHA256SUMS entries verified",
+  "working_directory": "/private/tmp (outside original project)",
+  "environment": "Separate temporary virtual environment; published requirements installed from PyPI",
+  "mlx": "0.32.2",
+  "mlx-metal": "0.32.2",
+  "tokenizers": "0.22.2",
+  "generation": {
+    "text": " I am a student.",
+    "token_ids": [
+      345,
+      768,
+      261,
+      2560,
+      17,
+      1
+    ],
+    "stop_reason": "eos",
+    "prompt_tokens": 13,
+    "generated_tokens": 6
+  },
+  "scope": "Strict loading and short inference test; no benchmark rerun or broad quality claim."
+}

@@ -8,7 +8,7 @@
 
 OpenSML-150M explores small-language-model training on Apple Silicon with a custom byte-level BPE tokenizer, **7.800B pretraining tokens**, three supervised fine-tuning stages, and evaluations of both completion likelihood and instruction following.
 
-The selected **research checkpoint is OpenSML-150M, SFT step 768**. This repository contains its code, recipes, tokenizer, recorded results, and documentation. Selected weights and a native inference bundle are hosted on Hugging Face; the model repository currently requires authorized access.
+The selected **research checkpoint is OpenSML-150M, SFT step 768**. This repository contains its code, recipes, tokenizer, recorded results, and documentation. Selected weights and a native inference bundle are hosted on Hugging Face; the model repository is public.
 
 ## At a glance
 
@@ -76,7 +76,7 @@ Generation is zero-shot and greedy, using plain `User: {prompt}\nAssistant:` for
 
 ## Run the model
 
-Native inference uses MLX on Apple Silicon. Download the complete bundle from [Hugging Face](https://huggingface.co/wzebrowski/OpenSML-150M); authenticate first if the model repository is private.
+Native inference uses MLX on Apple Silicon. Download the complete bundle from [Hugging Face](https://huggingface.co/wzebrowski/OpenSML-150M); the model repository is public.
 
 ```bash
 hf download wzebrowski/OpenSML-150M --local-dir ./OpenSML-150M
@@ -133,3 +133,5 @@ This dedicated repository names its pipeline V1. Frozen tokenizer/checkpoint con
 Author-controlled contributions use [Apache-2.0](LICENSE). Third-party code and training materials retain their own terms; see the [source notice](SOURCE_NOTICE.md). SFT includes SQuAD v2 and SciQ with differing upstream terms. Repository metadata does not grant blanket commercial rights to all training materials; weight-release licensing review remains pending.
 
 Citation metadata is available in [CITATION.cff](CITATION.cff). See [third-party notices](THIRD_PARTY_NOTICES.md) for component attribution.
+
+Backup coverage, clean-download checks, and local cleanup rules are documented in [BACKUP_AND_CLEANUP.md](BACKUP_AND_CLEANUP.md).

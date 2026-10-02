@@ -124,3 +124,5 @@ python -m unittest discover -s sml-mlx-v1/tests -p test_pipeline.py -v
 [Verification receipts](provenance/VERIFICATION.json) record the performed checks. The [snapshot manifest](provenance/SNAPSHOT_MANIFEST.json) records packaged-file hashes and original source provenance. The verifier detects file changes; it does not train or benchmark a model.
 
 Different data, ordering, tokenizer, schedules, runtime, or post-training boundaries produce a new experiment rather than the documented selected model. Follow [third-party notices](THIRD_PARTY_NOTICES.md) for component attribution and source terms; use [CITATION.cff](CITATION.cff) to cite this project.
+
+A fresh public download has now been tested in a separate PyPI environment with the pinned inference requirements; see [clean-download verification](provenance/CLEAN_DOWNLOAD_VERIFICATION.json). This improves the inference validation status, not exact historical training replay.
