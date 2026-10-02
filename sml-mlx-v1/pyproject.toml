@@ -1,0 +1,21 @@
+[project]
+name = "sml-mlx-v1"
+version = "0.1.0"
+description = "Independent 150M MLX pretraining and corpus-matched tokenizer"
+requires-python = ">=3.11"
+# Stable baseline. The four-Mac native-gather runtime override is documented in
+# docs/MLX_NATIVE_BUILD.md; reinstalling these pins removes that custom build.
+dependencies = [
+  "mlx==0.32.2", "mlx-metal==0.32.2", "numpy==2.4.2",
+  "datasets==4.5.0", "huggingface-hub==1.4.0", "tokenizers==0.22.2"
+]
+
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sml_v1*"]
+namespaces = false

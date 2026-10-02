@@ -1,0 +1,45 @@
+{
+  "format": "opensml-clean-reply-ab-v1",
+  "source_bundle": "runs/sft_base_curriculum_v1/step_0000512_fd767fb7545a",
+  "source_model_sha256": "b54676d218eb44bcefdffdda59144373db5e1596b9a0282ca75a91e14c8d35b5",
+  "source_step": 512,
+  "seed": 927512,
+  "epochs": 4,
+  "batch": 12,
+  "updates": 128,
+  "context": 1024,
+  "peak_lr": 3e-06,
+  "final_lr": 1e-06,
+  "warmup_updates": 8,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "weight_decay": 0.0,
+  "clip_norm": 1.0,
+  "evaluation_updates": [
+    0,
+    32,
+    64,
+    96,
+    128
+  ],
+  "checkpoint_every": 32,
+  "max_new_tokens": 160,
+  "arms": {
+    "low": {
+      "peak_lr": 3e-06,
+      "final_lr": 1e-06
+    },
+    "high": {
+      "peak_lr": 1e-05,
+      "final_lr": 1e-06
+    }
+  },
+  "replay_counts": {
+    "reading": 32,
+    "uncertainty": 32,
+    "commonsense": 32,
+    "instruction": 32
+  }
+}

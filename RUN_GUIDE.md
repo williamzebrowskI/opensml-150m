@@ -8,11 +8,11 @@ configuration JSONs, and source code are included; weights and data caches are n
 ## Pretraining and tokenizer
 
 ```bash
-cd sml-mlx-v2
-python -m sml_v2.train_tokenizer --help
-python -m sml_v2.launch --help
-python -m sml_v2.continuation --help
-python -m sml_v2.data_review --help
+cd sml-mlx-v1
+python -m sml_v1.train_tokenizer --help
+python -m sml_v1.launch --help
+python -m sml_v1.continuation --help
+python -m sml_v1.data_review --help
 python stage_b/launch.py --help
 python scripts/launch_five_mac.py --help
 ```
@@ -26,7 +26,7 @@ operational guides describe the source hardware and are historical.
 ## Selected SFT lineage
 
 ```bash
-python experiments/unified_text_v2_sft_v1/scripts/launch.py --help
+python experiments/unified_text_v1_sft_v1/scripts/launch.py --help
 python experiments/public_repair_384_v1/scripts/launch.py --help
 python experiments/repair512_search_v1/scripts/experiment.py --help
 ```
@@ -38,8 +38,8 @@ experiments/repair512_search_v1/candidates/028-broad-public-long-stable.
 
 Required asset families:
 
-- V2 Stage B base, Unified384 and Repair512 checkpoint bundles with hashes in provenance/checkpoints.
-- Frozen prepared source pools under sft/conversation_foundation_v1, text_followup_512_v1, grounded_rank_384 and preference_long_640.
+- V1 Stage B base, Unified384 and Repair512 checkpoint bundles with hashes in provenance/checkpoints.
+- Frozen prepared source pools under sft/conversation_foundation_original, text_followup_512_v1, grounded_rank_384 and preference_long_640.
 - Unified and repair data/prepared.json, final-candidate data.json and pinned raw source inputs.
 - Legacy evaluation/control checkpoint bundles protected by the original launchers.
 - Benchmark exclusion inputs and native tokenizer contract.
@@ -65,7 +65,7 @@ runner is not packaged and its local results are not used.
 
 ## Documentation
 
-Current technical report: sml-mlx-v2/docs/TECHNICAL_REPORT.md.
+Current technical report: sml-mlx-v1/docs/TECHNICAL_REPORT.md.
 Original September 18 material is a historical appendix. Other dated operational
 documents are historical guides and may describe earlier branches or absent assets.
 The snapshot verifier checks packaged file integrity without training or model inference.

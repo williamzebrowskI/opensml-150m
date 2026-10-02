@@ -31,7 +31,7 @@ tags:
 
 **Author:** William Zebrowski · **Checkpoint:** SFT step 768 · **Status:** research preview
 
-[Technical report](../sml-mlx-v2/docs/TECHNICAL_REPORT.md) · [Results and provenance](../results/OPENSMl_150M_RESULTS.json) · [Tokenizer](../sml-mlx-v2/tokenizer/bytebpe32k_v1/tokenizer.json)
+[Technical report](../sml-mlx-v1/docs/TECHNICAL_REPORT.md) · [Results and provenance](../results/OPENSMl_150M_RESULTS.json) · [Tokenizer](../sml-mlx-v1/tokenizer/bytebpe32k_v1/tokenizer.json)
 
 An English-first language model trained from scratch with Apple's MLX framework.
 Pretraining processed **7.800B tokens** across Stage A and Stage B on a four-Mac
@@ -62,7 +62,7 @@ uses native MLX on Apple hardware; other loading and export formats remain unver
 
 The independently fitted tokenizer is a 32,000-token byte-level BPE. Its recorded
 held-out audit had zero round-trip failures. Full configuration, parameter
-accounting, and tokenizer checks are in the [technical report](../sml-mlx-v2/docs/TECHNICAL_REPORT.md).
+accounting, and tokenizer checks are in the [technical report](../sml-mlx-v1/docs/TECHNICAL_REPORT.md).
 
 ## Training and Model Lineage
 
@@ -81,7 +81,7 @@ FineWeb-Edu and Cosmopedia v2 come from two subsets of the same SmolLM Corpus
 repository. Pretraining used no dedicated code or math dataset.
 
 ```text
-V2 pretrained base → Unified384 → Repair512 → OpenSML-150M (SFT step 768)
+V1 pretrained base → Unified384 → Repair512 → OpenSML-150M (SFT step 768)
                       +384         +128       +256 updates
 ```
 

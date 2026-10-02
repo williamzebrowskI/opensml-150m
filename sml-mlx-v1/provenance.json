@@ -1,0 +1,19 @@
+{
+  "description": "Snapshots of this project's existing MLX components, copied without changes; v1 data, tokenizer, orchestration and training loop are separate.",
+  "captured_date": "2026-09-17",
+  "files": {
+    "sml_v1/model.py": {"source": "../train/model.py", "sha256": "1eee6f8afe78767ff6b9c604ccf2328c98b24bc94dbad6291a0ad699dd7345fe"},
+    "sml_v1/precision.py": {"source": "../train/precision.py", "sha256": "b9f535fca724153703ed57a300eceb5b34a8f8381fc65bf5c4c5a0f7e066303c"},
+    "sml_v1/fast_loss.py": {"source": "../train/fast_loss.py", "sha256": "f99edeedb6cb328ef728d05643f65ea20371437f7e5806009ae3ad0885bafbf1"},
+    "sml_v1/fast_swiglu.py": {"source": "../train/fast_swiglu.py", "sha256": "59d1adb31400e3c288914b4c0cc8a21681a73ca3dfa7c722ea4e13d21dc38528"},
+    "sml_v1/jaccl_control.py": {"source": "../train/jaccl_control.py", "sha256": "6d9372eff0f5fbc4ab1437ba6637dce9cc1bbc9dc762c1c464bec3bb21a78e97"},
+    "sml_v1/checkpoint_bundle.py": {"source": "../train/checkpoint_bundle.py", "sha256": "73cbf0c17cf74a44bb7c74a8f9e5bb63671057a1f664a6a4af0e0777b2c8f1a4"}
+  },
+  "external_runtime_dependencies": [
+    "../.venv: pinned versions recorded in pyproject.toml and verified on workers at launch",
+    "../cluster/jaccl: existing pinned ring SSH configuration and production SSH wrapper",
+    "../scripts/check_ring_thunderbolt.py and imported network helpers: read-only preflight and wired transport",
+    "../train/jaccl_ring_transport.py: job-scoped wired coordinator tunnels"
+  ],
+  "validation_scope": "Offline generated-data tests and CPU miniature training/resume only. No live 150M training or distributed benchmark was performed."
+}

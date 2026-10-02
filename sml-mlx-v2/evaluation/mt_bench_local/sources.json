@@ -1,6 +1,0 @@
-{
-  "fastchat_revision": "587d5cfa1609a43d192cedb8441cac3c17db105d",
-  "prometheus_revision": "dcfb44272d5d0414832f5dbb8c2a05ebc2614234",
-  "judge_repo": "mlx-community/prometheus-7b-v2.0-8bit",
-  "judge_revision": "b92ca38184118ec29626b902fad7664a0f127c26"
-}

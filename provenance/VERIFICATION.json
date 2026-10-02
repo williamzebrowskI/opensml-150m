@@ -22,5 +22,12 @@
     "inference_argmax": "passed",
     "playground_import": "passed",
     "launch_help_checks": 4
+  },
+  "v1_release_rename": {
+    "pipeline_tests": 27,
+    "launch_help_checks": 8,
+    "wheel_build": "passed",
+    "frozen_tokenizer": "passed",
+    "network_helper_imports": "passed"
   }
 }

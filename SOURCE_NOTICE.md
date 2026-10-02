@@ -1,13 +1,13 @@
 # Source and data notice
 
 This repository is extracted from the owner's sml-mlx workspace. It preserves
-V2 source and supporting imported helper modules, not a fresh training run.
-Selected checkpoint lineage: V2 Stage B → Unified384 → Repair512 → selected step 768.
+V1 source and supporting imported helper modules, not a fresh training run.
+Selected checkpoint lineage: V1 Stage B → Unified384 → Repair512 → selected step 768.
 Other helper recipe names identify code dependencies, not additional ancestors.
 
 Author-controlled contributions use the included Apache-2.0 license.
 The vendored IFEval implementation retains its harness license and notice under
-sml-mlx-v2/evaluation/full_benchmarks/vendor/. MT-Bench source attribution is
+sml-mlx-v1/evaluation/full_benchmarks/vendor/. MT-Bench source attribution is
 preserved in evaluation/mt_bench_local/sources.json and upstream files.
 
 Pretraining dataset repositories: HuggingFaceTB/smollm-corpus (FineWeb-Edu and
