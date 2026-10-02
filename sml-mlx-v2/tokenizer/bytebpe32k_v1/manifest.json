@@ -1,0 +1,31 @@
+{
+  "boundary_policy": "raw-text-then-one-document-EOS-v1",
+  "corpus_fingerprint": "a89f69d6f63cfa4385da233693a445404234a18194170fe1d2b4a74bf501f5d6",
+  "format": "sml-v2-tokenizer-v1",
+  "recipe": {
+    "corpus": "a89f69d6f63cfa4385da233693a445404234a18194170fe1d2b4a74bf501f5d6",
+    "min_frequency": 2,
+    "sample_manifest": "30ead6f502f11e99b479e3711a81ce7198787408d0700153615fc3255b244f46",
+    "specials": [
+      "<|pad|>",
+      "<|doc_end|>",
+      "<|turn_start|>",
+      "<|turn_end|>"
+    ],
+    "tokenizers": "0.22.2",
+    "version": 1,
+    "vocab_size": 32000
+  },
+  "sha256": {
+    "corpus.json": "e4c47b7b6aba08f948de7c2c7cb94c58dbd09dde2ded6ac185c60856ee686d27",
+    "tokenizer.json": "e095f0413a11fa91fbb58f37d00e4c6bcda59beb89b28f6f680db1436a7e8891",
+    "tokenizer_config.json": "619f500553367eb76f5be00a98625130ec857b9c367561334984096c029ba2a9"
+  },
+  "special_ids": {
+    "eos": 1,
+    "pad": 0,
+    "turn_end": 3,
+    "turn_start": 2
+  },
+  "vocab_size": 32000
+}

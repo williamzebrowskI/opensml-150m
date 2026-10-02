@@ -1,0 +1,72 @@
+{
+  "format": "opensml-preference-long-640-v1",
+  "source_bundle": "runs/sft_grounded_rank_384_v1/step_0000640_7b477e0e5eea",
+  "source_model_sha256": "cfc53b48c0a0810cbe7e41e0457414096a498538bdd0962f6f46d13b5164fe69",
+  "source_step": 640,
+  "updates": 2048,
+  "preference_train_pairs": 4096,
+  "preference_epochs": 2,
+  "preference_dev_pairs": 96,
+  "preference_test_pairs": 96,
+  "context": 1024,
+  "anchor_context": 256,
+  "per_update": {
+    "preference": 4,
+    "instruction": 1,
+    "replay": 1,
+    "ranking": 4
+  },
+  "loss_weights": {
+    "preference": 0.15,
+    "chosen_ce": 0.45,
+    "instruction": 0.1,
+    "replay": 0.1,
+    "ranking": 0.2
+  },
+  "dpo_beta": 0.5,
+  "prose_kl_weight": 0.1,
+  "ranking_temperature": 0.25,
+  "peak_lr": 1e-06,
+  "final_lr": 1e-07,
+  "warmup_updates": 128,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "weight_decay": 0.0,
+  "clip_norm": 1.0,
+  "checkpoint_every": 128,
+  "evaluation_updates": [
+    0,
+    32,
+    64,
+    128,
+    256,
+    384,
+    512,
+    640,
+    768,
+    896,
+    1024,
+    1152,
+    1280,
+    1408,
+    1536,
+    1664,
+    1792,
+    1920,
+    2048
+  ],
+  "max_new_tokens": 384,
+  "seed": 9286402048,
+  "retention": {
+    "prose_nll_increase": 0.08,
+    "source_accuracy_drop": 0.0625,
+    "instruction_drop": 0.08333333333333333,
+    "stop_drop": 0.05,
+    "repeat_increase": 0.05,
+    "consecutive_failures": 2,
+    "reading_drop": 0.125
+  },
+  "chat_kl_weight": 0.1
+}

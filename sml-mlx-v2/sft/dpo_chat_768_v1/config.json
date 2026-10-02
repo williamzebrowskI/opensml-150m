@@ -1,0 +1,60 @@
+{
+  "name": "dpo-chat-768-v1",
+  "source_bundle": "runs/sft_text_followup_512_v1/step_0000768_10f5ea2a3354",
+  "source_step": 768,
+  "source_model_sha256": "309ad719dc8569e482444b47b05f3fd24e02e7b7470dad2af132a976bf11ca02",
+  "seed": 9282026768,
+  "context": 2048,
+  "max_assistant_tokens": 384,
+  "updates": 1024,
+  "preference_train_pairs": 1024,
+  "preference_epochs": 2,
+  "preference_holdout_pairs": 64,
+  "per_update": {
+    "preference": 2,
+    "replay": 4
+  },
+  "loss_weights": {
+    "dpo": 0.25,
+    "chosen_ce": 0.1,
+    "replay_ce": 0.65,
+    "chat_kl": 0.1
+  },
+  "dpo_beta": 0.1,
+  "peak_lr": 3e-07,
+  "final_lr": 3e-08,
+  "warmup_updates": 64,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "weight_decay": 0.0,
+  "clip_norm": 1.0,
+  "evaluation_updates": [
+    0,
+    64,
+    128,
+    256,
+    384,
+    512,
+    640,
+    768,
+    896,
+    1024
+  ],
+  "validation_conversations": 128,
+  "generation_conversations": 48,
+  "training_counts": {
+    "conversation": 2048,
+    "constraints": 1024,
+    "reading": 320,
+    "science": 320,
+    "writing": 384
+  },
+  "constraint_eval_conversations": 32,
+  "max_new_tokens": 384,
+  "minimum_free_gib": 30,
+  "automatic_quality_stop": false,
+  "automatic_pruning": false,
+  "max_preference_tokens": 512
+}

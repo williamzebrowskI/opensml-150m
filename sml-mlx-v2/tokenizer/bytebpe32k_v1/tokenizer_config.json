@@ -1,0 +1,8 @@
+{
+  "add_bos_token": false,
+  "add_eos_token": false,
+  "clean_up_tokenization_spaces": false,
+  "eos_token": "<|doc_end|>",
+  "pad_token": "<|pad|>",
+  "tokenizer_class": "PreTrainedTokenizerFast"
+}

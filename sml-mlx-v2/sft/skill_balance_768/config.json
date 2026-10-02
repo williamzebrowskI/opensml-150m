@@ -1,0 +1,50 @@
+{
+  "format": "opensml-skill-balance-768-v1",
+  "source_bundle": "runs/sft_two_turn_640_v1/step_0000768_49364940d7ce",
+  "source_step": 768,
+  "source_model_sha256": "db6b16b45153f814de3c0799c49e6460e6b638982168ffcb7bfc2b6b1878bce1",
+  "updates": 512,
+  "context": 1024,
+  "anchor_context": 256,
+  "per_update": {
+    "commonsense": 6,
+    "instruction": 3,
+    "reading": 3
+  },
+  "loss_weights": {
+    "commonsense": 0.4,
+    "instruction": 0.2,
+    "reading": 0.25,
+    "ranking": 0.15
+  },
+  "kl_weight": 0.1,
+  "ranking_temperature": 1.0,
+  "peak_lr": 3e-06,
+  "final_lr": 1e-06,
+  "warmup_updates": 32,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "weight_decay": 0.0,
+  "clip_norm": 1.0,
+  "checkpoint_every": 128,
+  "evaluation_updates": [
+    0,
+    128,
+    256,
+    384,
+    512
+  ],
+  "max_new_tokens": 128,
+  "seed": 92676831,
+  "dev_per_source": 32,
+  "test_per_source": 32,
+  "candidate_prose_increase_limit": 0.08,
+  "candidate_reading_drop_limit": 0.03,
+  "candidate_mc_drop_limit": 0.02,
+  "candidate_stop_drop_limit": 0.03,
+  "candidate_min_score_gain": 0.02,
+  "candidate_instruction_drop_limit": 0.03,
+  "candidate_followup_drop_limit": 0.04
+}

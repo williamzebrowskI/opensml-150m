@@ -1,0 +1,19 @@
+{
+  "format": "opensml-response-expansion-v1",
+  "source_bundle": "runs/sft_transfer_second_pass_v1/step_0000256_3b8ada884a9b",
+  "source_step": 256,
+  "source_model_sha256": "7357ddbbcd48e731ba09d16feac61ce214b2c043089e92243b4a3628cab2ed2f",
+  "source_optimizer_sha256": "9a03504bcfddca677058e9772fe6371f04ba264db11ec7e703d9a0cedb75cee9",
+  "source_metadata_sha256": "d44708a1565786320e2c82c3d75faed284f6634ae746e957d73d6f7fe26b062c",
+  "additional_updates": 128,
+  "learning_rate": 0.000003,
+  "batch": 8,
+  "microbatch": 2,
+  "weight_decay": 0.01,
+  "betas": [0.9, 0.95],
+  "clip_norm": 1.0,
+  "evaluation_updates": [0, 32, 64, 128],
+  "checkpoint_every": 16,
+  "max_new_tokens": 64,
+  "legacy_max_new_tokens": 48
+}

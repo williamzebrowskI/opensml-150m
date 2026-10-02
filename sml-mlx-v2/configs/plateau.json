@@ -1,0 +1,9 @@
+{
+  "format": "sml-v2-plateau-v1",
+  "initial_lr": 0.0002,
+  "factor": 0.5,
+  "patience": 8,
+  "cooldown": 2,
+  "min_delta": 0.002,
+  "min_lr": 0.00003
+}

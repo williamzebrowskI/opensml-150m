@@ -1,0 +1,55 @@
+{
+  "automatic_pruning": false,
+  "automatic_quality_stop": false,
+  "batch_conversations": 16,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "candidate_groups": {
+    "dev": 128,
+    "test": 128,
+    "train": 3072
+  },
+  "clip_norm": 1.0,
+  "comparison_updates": 64,
+  "context": 2048,
+  "epochs": 2,
+  "evaluation_updates": [
+    0,
+    64,
+    128,
+    256,
+    384,
+    512
+  ],
+  "max_assistant_tokens": 512,
+  "max_new_tokens": 384,
+  "minimum_free_gib": 30,
+  "name": "teacher-chat-768-v1",
+  "rates": {
+    "conservative": 3e-07,
+    "faster": 3e-06,
+    "moderate": 1e-06
+  },
+  "replay_records": 2048,
+  "seed": 9292026768,
+  "source_bundle": "runs/sft_text_followup_512_v1/step_0000768_10f5ea2a3354",
+  "source_model_sha256": "309ad719dc8569e482444b47b05f3fd24e02e7b7470dad2af132a976bf11ca02",
+  "source_step": 768,
+  "teacher_chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "teacher_directory": "teachers/qwen3.8-27b-4bit",
+  "teacher_groups": {
+    "dev": 32,
+    "test": 32,
+    "train": 1024
+  },
+  "teacher_repo": "mlx-community/Qwen3.8-27B-4bit",
+  "teacher_require_chat_template": true,
+  "teacher_revision": "10c35caafbb80f7dc6a7a432cdd11af10a6d4818",
+  "updates": 512,
+  "warmup_updates": 32,
+  "weight_decay": 0.01
+}

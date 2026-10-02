@@ -1,0 +1,42 @@
+{
+  "format": "opensml-balanced-transfer-1472-v1",
+  "source_bundle": "runs/sft_explanation_transfer_1024_v1/step_0001472_901be558458f",
+  "source_model_sha256": "eeee6e64dba50d73d026f6affafd01798592cabc450fb6883243e68ab73249ea",
+  "source_step": 1472,
+  "updates": 512,
+  "context": 1024,
+  "anchor_context": 256,
+  "per_update": {
+    "new_answer": 2,
+    "new_choice": 2,
+    "old_choice": 2,
+    "instruction": 2,
+    "reading": 3,
+    "explanation": 2
+  },
+  "loss_weights": {
+    "new_answer": 0.25,
+    "instruction": 0.20,
+    "reading": 0.20,
+    "explanation": 0.20,
+    "ranking": 0.15
+  },
+  "kl_weight": 0.10,
+  "ranking_temperature": 1.0,
+  "peak_lr": 3e-6,
+  "final_lr": 1e-6,
+  "warmup_updates": 32,
+  "betas": [0.9, 0.95],
+  "weight_decay": 0.0,
+  "clip_norm": 1.0,
+  "checkpoint_every": 64,
+  "evaluation_updates": [0, 64, 128, 192, 256, 320, 384, 448, 512],
+  "max_new_tokens": 128,
+  "seed": 927147277,
+  "candidate_prose_increase_limit": 0.05,
+  "candidate_reading_drop_limit": 0.04,
+  "candidate_mc_drop_limit": 0.04,
+  "candidate_stop_drop_limit": 0.03,
+  "candidate_instruction_drop_limit": 0.04,
+  "candidate_followup_drop_limit": 0.04
+}

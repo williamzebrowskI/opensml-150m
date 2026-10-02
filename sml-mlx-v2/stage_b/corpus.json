@@ -1,0 +1,121 @@
+{
+  "name": "sml-v2-stage-b-educational-prose-v1",
+  "seed": 7337,
+  "shuffle_buffer": 10000,
+  "min_chars": 200,
+  "max_bytes": 200000,
+  "max_rows_per_source": 50000000,
+  "split_buckets": 10000,
+  "sources": [
+    {
+      "label": "web",
+      "repo": "HuggingFaceTB/smollm-corpus",
+      "config": "fineweb-edu-dedup",
+      "revision": "3ba9d605774198c5868892d7a8deda78031a781f",
+      "split": "train",
+      "text_field": "text",
+      "weight": 55,
+      "license": "ODC-BY; preserve underlying source notices"
+    },
+    {
+      "label": "dclm",
+      "repo": "HuggingFaceTB/dclm-edu",
+      "revision": "dbad8ad71224482740cd9c9d353591adbf62fe04",
+      "split": "train",
+      "text_field": "text",
+      "weight": 20,
+      "min_score": {
+        "field": "edu_int_score",
+        "value": 3
+      },
+      "license": "CC-BY-4.0"
+    },
+    {
+      "label": "wiki",
+      "repo": "HuggingFaceFW/finewiki",
+      "config": "en",
+      "revision": "8bd13e72e6a002407649b3e898535f42ceb1aeb9",
+      "split": "train",
+      "text_field": "text",
+      "weight": 15,
+      "license": "CC-BY-SA-4.0 / GFDL"
+    },
+    {
+      "label": "cosmopedia",
+      "repo": "HuggingFaceTB/smollm-corpus",
+      "config": "cosmopedia-v2",
+      "revision": "3ba9d605774198c5868892d7a8deda78031a781f",
+      "split": "train",
+      "text_field": "text",
+      "weight": 10,
+      "format_contains": [
+        "textbook",
+        "tutorial",
+        "blog",
+        "educational"
+      ],
+      "license": "ODC-BY; synthetic content; preserve provenance"
+    }
+  ],
+  "reference_corpus": {
+    "name": "sml-v2-educational-prose-v1",
+    "seed": 7337,
+    "shuffle_buffer": 10000,
+    "min_chars": 200,
+    "max_bytes": 200000,
+    "max_rows_per_source": 5000000,
+    "split_buckets": 10000,
+    "sources": [
+      {
+        "label": "web",
+        "repo": "HuggingFaceTB/smollm-corpus",
+        "config": "fineweb-edu-dedup",
+        "revision": "3ba9d605774198c5868892d7a8deda78031a781f",
+        "split": "train",
+        "text_field": "text",
+        "weight": 55,
+        "license": "ODC-BY; preserve underlying source notices"
+      },
+      {
+        "label": "dclm",
+        "repo": "HuggingFaceTB/dclm-edu",
+        "revision": "dbad8ad71224482740cd9c9d353591adbf62fe04",
+        "split": "train",
+        "text_field": "text",
+        "weight": 25,
+        "min_score": {
+          "field": "edu_int_score",
+          "value": 3
+        },
+        "license": "CC-BY-4.0"
+      },
+      {
+        "label": "wiki",
+        "repo": "HuggingFaceFW/finewiki",
+        "config": "en",
+        "revision": "8bd13e72e6a002407649b3e898535f42ceb1aeb9",
+        "split": "train",
+        "text_field": "text",
+        "weight": 10,
+        "license": "CC-BY-SA-4.0 / GFDL"
+      },
+      {
+        "label": "cosmopedia",
+        "repo": "HuggingFaceTB/smollm-corpus",
+        "config": "cosmopedia-v2",
+        "revision": "3ba9d605774198c5868892d7a8deda78031a781f",
+        "split": "train",
+        "text_field": "text",
+        "weight": 10,
+        "format_contains": [
+          "textbook",
+          "tutorial",
+          "blog",
+          "educational"
+        ],
+        "license": "ODC-BY; synthetic content; preserve provenance"
+      }
+    ]
+  },
+  "stage_b_selection": "sml-v2-stage-b-prose-filter-v1"
+}

@@ -1,0 +1,29 @@
+{
+  "format": "opensml-report-evidence-v1",
+  "through_step": 9391,
+  "tokens_per_update": 106496,
+  "observations": 40,
+  "recipe": "runs/full_15b_v1/jobs/20260918_085811_b4e5c849/input/recipe.json",
+  "recipe_sha256": "7b856c1aa96662ce928f3bed75ed406d4271d6ceded8f593a7d7b3f4086dc49e",
+  "logs": [
+    {
+      "path": "runs/pilot_v1/train.log",
+      "snapshot_sha256": "1541bcb5eabd9210db217864a5a650fda6ecbad0e6133461c77f509c90469cef",
+      "snapshot_bytes": 83475,
+      "exported_observations": 20
+    },
+    {
+      "path": "runs/full_15b_v1/jobs/20260918_085811_b4e5c849/train.log",
+      "snapshot_sha256": "f8ab3281bb3a86bf605c4260e2368435feaea188857ca1cfba07283b661b52a6",
+      "snapshot_bytes": 84066,
+      "exported_observations": 20
+    }
+  ],
+  "table_sha256": "530b30dfb50aba19b95f72c3161c2f7d96e96352485b9d8010cfa1a22deb3f5c",
+  "notes": [
+    "Live log hashes describe the snapshot read and will change as training proceeds.",
+    "Loss and perplexity retain printed precision; per-source losses retain log precision.",
+    "Tokens are reconstructed from step and verified unchanged update geometry.",
+    "All matching observations are retained, including repeated evaluations."
+  ]
+}

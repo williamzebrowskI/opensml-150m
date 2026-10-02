@@ -1,0 +1,29 @@
+{
+  "constraints": {
+    "file": "data/smol-constraints/train-00000-of-00001.parquet",
+    "license": "Apache-2.0",
+    "local_file": "constraints.parquet",
+    "repo": "HuggingFaceTB/smoltalk",
+    "revision": "5feaf2fd3ffca7c237fc38d1861bc30365d48ffa",
+    "sha256": "3369eaff911d3511ee21561a3b8607e1acfd773a6ade80f4759490ffdcce7ba4",
+    "split": "train"
+  },
+  "squad": {
+    "file": "squad_v2/train-00000-of-00001.parquet",
+    "license": "CC-BY-SA-4.0",
+    "local_file": "squad.parquet",
+    "repo": "rajpurkar/squad_v2",
+    "revision": "3ffb306f725f7d2ce8394bc1873b24868140c412",
+    "sha256": "f6da32ffb482ff463ad056477740d1bb284b96a45db3a08bee6a225ca6abf291",
+    "split": "train"
+  },
+  "sciq": {
+    "repo": "allenai/sciq",
+    "revision": "2c94ad3e1aafab77146f384e23536f97a4849815",
+    "file": "data/train-00000-of-00001.parquet",
+    "local_file": "sciq.parquet",
+    "license": "CC-BY-NC-3.0",
+    "split": "train",
+    "sha256": "19644360954006d06e9ad3df07bddb34f8535c081b831d48f604603c713ac167"
+  }
+}

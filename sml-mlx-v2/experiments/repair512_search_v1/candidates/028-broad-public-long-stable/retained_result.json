@@ -1,0 +1,239 @@
+{
+  "retained_by_user": true,
+  "additional_updates": 256,
+  "total_step": 768,
+  "checkpoint": "<SOURCE_WORKSPACE>/sml-mlx-v2/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/runs/sft/step_0000768_4980617cb301",
+  "sha256": "cbd3e3fb4ada74d7264371b79cee7598f513b7b950f1f141ef9f1a43bd2e1b4e",
+  "authorization": "User requested removal of every checkpoint in trial28 except additional update256 and designated that checkpoint as the new baseline.",
+  "deletion_allowed": false,
+  "benchmarks": {
+    "multiple-choice": {
+      "completed": 15428,
+      "expected": 15428,
+      "status": "complete",
+      "tasks": {
+        "arc_challenge": {
+          "acc": 0.26023890784982934,
+          "acc_norm": 0.295221843003413,
+          "completed": 1172,
+          "expected": 1172
+        },
+        "arc_easy": {
+          "acc": 0.5664983164983165,
+          "acc_norm": 0.5542929292929293,
+          "completed": 2376,
+          "expected": 2376
+        },
+        "hellaswag": {
+          "acc": 0.30551682931686913,
+          "acc_norm": 0.33937462656841266,
+          "completed": 10042,
+          "expected": 10042
+        },
+        "piqa": {
+          "acc": 0.6452665941240479,
+          "acc_norm": 0.6409140369967355,
+          "completed": 1838,
+          "expected": 1838
+        }
+      },
+      "training": false
+    },
+    "ifeval": {
+      "completed": 541,
+      "expected": 541,
+      "loose": {
+        "instruction_accuracy": 0.2577937649880096,
+        "instruction_correct": 215,
+        "instruction_total": 834,
+        "prompt_accuracy": 0.15711645101663585,
+        "prompt_correct": 85,
+        "prompt_total": 541
+      },
+      "status": "complete",
+      "stop_counts": {
+        "context_limit": 0,
+        "eos": 508,
+        "length": 33
+      },
+      "strict": {
+        "instruction_accuracy": 0.2529976019184652,
+        "instruction_correct": 211,
+        "instruction_total": 834,
+        "prompt_accuracy": 0.15157116451016636,
+        "prompt_correct": 82,
+        "prompt_total": 541
+      },
+      "training": false
+    }
+  },
+  "development": {
+    "retention": {
+      "chat_repeated": {
+        "baseline": 0.16666666666666666,
+        "candidate": 0.2222222222222222,
+        "difference": 0.05555555555555555
+      },
+      "chat_stopped": {
+        "baseline": 1.0,
+        "candidate": 1.0,
+        "difference": 0.0
+      },
+      "chat_turns": {
+        "baseline": 18,
+        "candidate": 18,
+        "difference": 0
+      },
+      "empty": {
+        "baseline": 0.0,
+        "candidate": 0.0,
+        "difference": 0.0
+      },
+      "generated_turns": {
+        "baseline": 63,
+        "candidate": 63,
+        "difference": 0
+      },
+      "mean_generated_tokens": {
+        "baseline": 37.87301587301587,
+        "candidate": 36.6031746031746,
+        "difference": -1.2698412698412724
+      },
+      "repeated": {
+        "baseline": 0.06349206349206349,
+        "candidate": 0.06349206349206349,
+        "difference": 0.0
+      },
+      "stopped": {
+        "baseline": 0.9841269841269841,
+        "candidate": 1.0,
+        "difference": 0.015873015873015928
+      },
+      "text_followup_content_proxy": {
+        "baseline": 0.8125,
+        "candidate": 0.8125,
+        "difference": 0.0
+      },
+      "text_followup_conversations": {
+        "baseline": 32,
+        "candidate": 32,
+        "difference": 0
+      },
+      "text_followup_format": {
+        "baseline": 0.75,
+        "candidate": 0.78125,
+        "difference": 0.03125
+      },
+      "text_followup_joint_proxy": {
+        "baseline": 0.6875,
+        "candidate": 0.6875,
+        "difference": 0.0
+      },
+      "validation_conversation_nll": {
+        "baseline": 1.067583322330059,
+        "candidate": 1.0813024460808263,
+        "difference": 0.013719123750767226
+      },
+      "validation_conversations": {
+        "baseline": 128,
+        "candidate": 128,
+        "difference": 0
+      },
+      "validation_targets": {
+        "baseline": 24462,
+        "candidate": 24462,
+        "difference": 0
+      },
+      "validation_token_nll": {
+        "baseline": 1.640717657826696,
+        "candidate": 1.648699395243299,
+        "difference": 0.007981737416602908
+      }
+    },
+    "public_development": {
+      "empty": {
+        "baseline": 0.0,
+        "candidate": 0.0,
+        "difference": 0.0
+      },
+      "generated_turns": {
+        "baseline": 73,
+        "candidate": 73,
+        "difference": 0
+      },
+      "mean_generated_tokens": {
+        "baseline": 63.71232876712329,
+        "candidate": 57.54794520547945,
+        "difference": -6.164383561643838
+      },
+      "repeated": {
+        "baseline": 0.273972602739726,
+        "candidate": 0.2465753424657534,
+        "difference": -0.0273972602739726
+      },
+      "stopped": {
+        "baseline": 0.9178082191780822,
+        "candidate": 0.9726027397260274,
+        "difference": 0.0547945205479452
+      },
+      "validation_conversation_nll": {
+        "baseline": 2.1926170417664252,
+        "candidate": 2.182337300513003,
+        "difference": -0.010279741253422348
+      },
+      "validation_conversations": {
+        "baseline": 128,
+        "candidate": 128,
+        "difference": 0
+      },
+      "validation_targets": {
+        "baseline": 14444,
+        "candidate": 14444,
+        "difference": 0
+      },
+      "validation_token_nll": {
+        "baseline": 2.149754649394031,
+        "candidate": 2.148502016053552,
+        "difference": -0.0012526333404792034
+      },
+      "verified_named_constraint_passes": {
+        "baseline": 4,
+        "candidate": 5,
+        "difference": 1
+      },
+      "verified_named_constraint_total": {
+        "baseline": 32,
+        "candidate": 32,
+        "difference": 0
+      }
+    }
+  },
+  "automated_acceptance": false,
+  "development_gate": {
+    "public_repetition": true,
+    "legacy_repetition": true,
+    "followup_joint": true,
+    "public_constraints": true,
+    "public_stop": true,
+    "chat_repetition": false
+  },
+  "benchmark_gate": {
+    "strict_prompt": true,
+    "strict_instruction": true,
+    "loose_prompt": true,
+    "loose_instruction": true,
+    "mc_mean": true,
+    "mc_no_material_regression": true
+  },
+  "status": "retained_by_explicit_user_selection",
+  "original_repair512_preserved": true,
+  "served_model_changed": true,
+  "current_baseline": true,
+  "designation": "user-designated current baseline",
+  "playground": {
+    "url": "http://127.0.0.1:8767/",
+    "model_id": "repair512-plus256",
+    "default": true,
+    "generation_verified": true
+  }
+}

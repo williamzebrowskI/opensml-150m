@@ -1,0 +1,12 @@
+{
+  "additional_updates": 256,
+  "automatic_promotion": false,
+  "contract": "e7ad0c5c033aa86c115458bb4be6efe1d20e9d0c73aa8231480e16ff6f1f4fdd",
+  "experimental": true,
+  "source_bundle": "experiments/public_repair_384_v1/runs/sft/step_0000512_6972bbf9be08",
+  "source_model_sha256": "465ce42aad2e7c765f169aa75aa4124ec03fec17b46e6f5eabf75c2c4a8d4772",
+  "source_step": 512,
+  "step": 768,
+  "tokenizer": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb",
+  "training_format": "plain-user-assistant-eos-v1"
+}

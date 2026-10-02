@@ -1,0 +1,63 @@
+{
+  "format": "opensml-conversation-completion-2048-v1",
+  "source_bundle": "runs/sft_constraint_completion_1920_v1/step_0002048_1267d9f4cf7a",
+  "source_step": 2048,
+  "source_model_sha256": "e4e8a0de28e2141f6a580b49cc950aa64492c9f94d0d3aa98e6a26a2f439764b",
+  "updates": 256,
+  "seed": 92720489,
+  "context": 1024,
+  "anchor_context": 256,
+  "per_update": {
+    "complete": 8,
+    "commonsense": 2,
+    "instruction": 3,
+    "reading": 3
+  },
+  "new_counts": {
+    "human": 1536,
+    "constructed": 512
+  },
+  "loss_weights": {
+    "complete": 0.5,
+    "commonsense": 0.0,
+    "instruction": 0.15,
+    "reading": 0.2,
+    "ranking": 0.15
+  },
+  "kl_weight": 0.1,
+  "ranking_temperature": 1.0,
+  "peak_lr": 3e-06,
+  "final_lr": 1e-06,
+  "warmup_updates": 16,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "weight_decay": 0.0,
+  "clip_norm": 1.0,
+  "checkpoint_every": 32,
+  "evaluation_updates": [
+    0,
+    32,
+    64,
+    96,
+    128,
+    160,
+    192,
+    224,
+    256
+  ],
+  "max_new_tokens": 192,
+  "candidate_prose_increase_limit": 0.05,
+  "candidate_reading_drop_limit": 0.04,
+  "candidate_mc_drop_limit": 0.04,
+  "candidate_stop_drop_limit": 0.04,
+  "human_quotas": {
+    "Generation": 896,
+    "Brainstorm": 192,
+    "Rewrite": 128,
+    "Summarize": 192,
+    "Closed QA": 64,
+    "Extract": 64
+  }
+}

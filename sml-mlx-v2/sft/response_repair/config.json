@@ -1,0 +1,27 @@
+{
+  "format": "opensml-response-repair-v1",
+  "source_bundle": "runs/sft_response_expansion_v1/step_0000384_745d0582d31c",
+  "source_step": 384,
+  "source_model_sha256": "880b775939f66931503b65ae2e3bb03e9a8b911d14723bdf0466fb1860016817",
+  "source_optimizer_sha256": "5d378ed3516809096598a27d791c57386f693782b6025e84b09f6dd7c30f24db",
+  "source_metadata_sha256": "999308b09f05748807a96087dd3bb14a6608086e7e2b0dc6ed8edb8f1067ab2f",
+  "additional_updates": 128,
+  "learning_rate": 3e-06,
+  "batch": 8,
+  "microbatch": 2,
+  "weight_decay": 0.01,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "clip_norm": 1.0,
+  "evaluation_updates": [
+    0,
+    32,
+    64,
+    128
+  ],
+  "checkpoint_every": 16,
+  "max_new_tokens": 64,
+  "legacy_max_new_tokens": 48
+}

@@ -1,0 +1,14 @@
+{
+  "additional_updates": 384,
+  "automatic_promotion": false,
+  "contract": "3368c925f1161cd0e4e6c8a9415efed8ae09b53b4a17ce2a9a2a00f4b8108ce4",
+  "conversation_exposures": 6144,
+  "experimental": true,
+  "repetition_auto_stop": false,
+  "source_bundle": "runs/stage_b_prose_v1/step_0073243_7f3070237eea",
+  "source_model_sha256": "ca9bd5d82005f28e77f319d3a5a29f29fb4e4f86e7ceea049f01162fd8aae80f",
+  "source_step": 73243,
+  "step": 384,
+  "tokenizer": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb",
+  "training_format": "plain-user-assistant-eos-v1"
+}

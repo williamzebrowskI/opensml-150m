@@ -1,0 +1,13 @@
+{
+  "additional_updates": 128,
+  "automatic_promotion": false,
+  "contract": "49fdd3ab4edc382cf762853adbef3cac8c816dee33e1dd404c1cf81b69a56169",
+  "conversation_exposures": 2048,
+  "experimental": true,
+  "source_bundle": "experiments/unified_text_v2_sft_v1/runs/sft/step_0000384_807628c9dbdc",
+  "source_model_sha256": "fcc23cd8a204762f05ee43bd84c88846383dccfda40eec06cd390a59666656db",
+  "source_step": 384,
+  "step": 512,
+  "tokenizer": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb",
+  "training_format": "plain-user-assistant-eos-v1"
+}

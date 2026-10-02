@@ -1,0 +1,251 @@
+{
+  "best_val_loss": 2.7670075325644574,
+  "ema": 2.752751274683527,
+  "initialization": "normal-0.02-residual-scaled-v1",
+  "legacy_validation": {
+    "baseline_loss": 2.82728014215827,
+    "best_loss": 2.8185502409935,
+    "fingerprint": "99e7d4417061db5a70138701694ad5577d0f9ff0d0fc729ddc6beff06b3a7081",
+    "last_loss": 2.8185502409935,
+    "last_step": 73243,
+    "last_tokens": 7800086528
+  },
+  "lr_scheduler": {
+    "bad_evals": 0,
+    "best": 2.767685226688627,
+    "cap": 5e-06,
+    "config_fingerprint": "e15ebff0f44bd61b5806ac5da558a18fda43e5b59a627efe81f88adb32ba5f8a",
+    "cooldown_remaining": 0,
+    "evaluations": 150,
+    "format": "sml-v2-plateau-v1",
+    "last_loss": 2.7670075325644574,
+    "last_step": 73243,
+    "last_tokens": 7800086528,
+    "reductions": 6
+  },
+  "recipe": {
+    "batches": [
+      4,
+      3,
+      2,
+      2,
+      2
+    ],
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "continuation": {
+      "format": "sml-v2-continuation-v1",
+      "parent_contract": {
+        "code": "3af3f1a2405b7c447ee79cd1e9504ea9558d0f6636d7f9379f15cd216a7e4d58",
+        "data": "d9bfbfd69b065eafe0254fc36f96354461704f9bde0cbd6c0fd9f60383083614",
+        "recipe": "3c548ac699a0c6dc54c51536465cafd74487c2300fefc3da1fefae402204dc78",
+        "tokenizer": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb"
+      },
+      "parent_replica_hash": "5a3deeeede337b604e755127198f1e174b663e3e534f9cc332550c2806747730",
+      "parent_step": 4696,
+      "rewarm_tokens": 50000000,
+      "start_lr": 2.9999999999999997e-05,
+      "start_tokens": 500105216
+    },
+    "data_mode": "hf_stream",
+    "data_review_transition": {
+      "format": "sml-v2-data-review-v1",
+      "legacy_best_val_loss": 2.8257566578686237,
+      "legacy_eval_batches": 16,
+      "legacy_validation_fingerprint": "99e7d4417061db5a70138701694ad5577d0f9ff0d0fc729ddc6beff06b3a7081",
+      "parent_contract": {
+        "code": "510c74f556a9a9505581d6ec800abb9f96ef8747c9fb3aae0a9194b2d4a28dcf",
+        "data": "d9bfbfd69b065eafe0254fc36f96354461704f9bde0cbd6c0fd9f60383083614",
+        "recipe": "0016c64d777d47592985962a179179799ce43de05698507078efeb526c2c8785",
+        "tokenizer": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb"
+      },
+      "parent_replica_hash": "ed3124018a9c52bff051cf7a1fe6e09f53bd38094954c61be7b2ec60415c2965",
+      "parent_scheduler": {
+        "bad_evals": 0,
+        "best": 2.8264396235346796,
+        "cap": 5e-06,
+        "config_fingerprint": "e15ebff0f44bd61b5806ac5da558a18fda43e5b59a627efe81f88adb32ba5f8a",
+        "cooldown_remaining": 0,
+        "evaluations": 139,
+        "format": "sml-v2-plateau-v1",
+        "last_loss": 2.8265111945569514,
+        "last_step": 70660,
+        "last_tokens": 7525007360,
+        "reductions": 6
+      },
+      "parent_step": 70710,
+      "parent_stream": {
+        "dedup_window": 10000,
+        "prefetch_batches": 4,
+        "read_attempts": 5
+      },
+      "start_tokens": 7530332160
+    },
+    "decay_start_fraction": 0.8,
+    "eps": 1e-08,
+    "eval_batch_size": 2,
+    "eval_batches_per_source": 256,
+    "eval_every_tokens": 25000000,
+    "grad_accum": 4,
+    "grad_clip": 1.0,
+    "keep_checkpoints": 2,
+    "log_every": 10,
+    "lr_floor_transition": {
+      "format": "sml-v2-lr-floor-transition-v1",
+      "parent_contract": {
+        "code": "407fbbde739e255344b5f622933189ac3c4ad6488f780cd0c8bba5d0baba9d5b",
+        "data": "d9bfbfd69b065eafe0254fc36f96354461704f9bde0cbd6c0fd9f60383083614",
+        "recipe": "4465a613c444ab981d61e2bfd1adbe88e52ab8d1700f2e6ae79ab8589ed90016",
+        "tokenizer": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb"
+      },
+      "parent_replica_hash": "1398f9d1040dd5d555cc20c8f6b7108e90aa6c06ed32c15b592731bfae6480b7",
+      "parent_scheduler": {
+        "bad_evals": 0,
+        "best": 2.836175622791052,
+        "cap": 3e-05,
+        "config_fingerprint": "1c0a806b851bd9daba376e14335d684a6c46f38f78ed59b36fd6eb061106915f",
+        "cooldown_remaining": 0,
+        "evaluations": 94,
+        "format": "sml-v2-plateau-v1",
+        "last_loss": 2.8375913076102735,
+        "last_step": 60097,
+        "last_tokens": 6400090112,
+        "reductions": 3
+      },
+      "parent_step": 60263,
+      "previous_min_lr": 3e-05,
+      "resume_cap": 1.5e-05,
+      "start_tokens": 6417768448
+    },
+    "min_lr_ratio": 0.1,
+    "model": {
+      "attention_impl": "fast",
+      "bias": false,
+      "ce_impl": "metal",
+      "d_model": 768,
+      "ffn_impl": "packed-metal",
+      "loss_dtype": "float32",
+      "max_seq_len": 2048,
+      "mlp_multiple_of": 256,
+      "mlp_ratio": 4.0,
+      "n_heads": 12,
+      "n_kv_heads": 4,
+      "n_layers": 20,
+      "qk_norm": true,
+      "vocab_size": 32000
+    },
+    "name": "sml-v2-150m-pilot-v1-continued-to-15000000000",
+    "peak_lr": 0.0003,
+    "plateau_scheduler": {
+      "cooldown": 2,
+      "factor": 0.5,
+      "format": "sml-v2-plateau-v1",
+      "initial_lr": 0.0002,
+      "min_delta": 0.002,
+      "min_lr": 5e-06,
+      "patience": 8
+    },
+    "prompts": [
+      "The library was closed for repairs, so Maya decided to",
+      "Plants need sunlight because",
+      "A useful way to remember a new word is to",
+      "The train arrived late because of heavy snow. When the passengers stepped outside,",
+      "Clean drinking water is important because"
+    ],
+    "reserve_gib": 8,
+    "sample_every_tokens": 50000000,
+    "save_every_tokens": 10000000,
+    "scheduler_transition": {
+      "baseline_best": 3.030610705167055,
+      "format": "sml-v2-scheduler-transition-v1",
+      "parent_contract": {
+        "code": "b1c40eb3a2639560d9ccec963d5295914bdbff5c0e0b8275ad6fd57b5482862f",
+        "data": "d9bfbfd69b065eafe0254fc36f96354461704f9bde0cbd6c0fd9f60383083614",
+        "recipe": "63e71785eadf1964db0f3397d577084d1e426fc571307fbb73a6bd2feeccbccf",
+        "tokenizer": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb"
+      },
+      "parent_replica_hash": "2c23e819f82965021390f889262c51673687ec22aaa8a28c34251fbeeaba369c",
+      "parent_step": 38056,
+      "start_tokens": 4052811776
+    },
+    "seed": 7337,
+    "stage_b_transition": {
+      "baseline_loss": 2.767114285717253,
+      "format": "sml-v2-stage-b-v1",
+      "learning_rate": 5e-06,
+      "manifest": "bd5717c93bb0beb01ffdc83bf87c60887c8913e03fe265b09b7f1f7d0f6405c8",
+      "parent_contract": {
+        "code": "c20eebd79580c0d2c5b93b035750830422955d7c7022480ea67b83b616e40a54",
+        "data": "9d8872374d5126e552d96c202919f8d5bd2d3378d36c2c85b1e5f0e5a7918595",
+        "recipe": "0c8f2df3de34c763808b1d23d47d2e8b26631b6cc57d58012e9af749b2967583",
+        "tokenizer": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb"
+      },
+      "parent_replica_hash": "1988e5d651d7650ed2d4d01c9d1074ff0933a10216f47e2403cd700dd946aec2",
+      "parent_scheduler": {
+        "bad_evals": 0,
+        "best": 2.767685226688627,
+        "cap": 5e-06,
+        "config_fingerprint": "e15ebff0f44bd61b5806ac5da558a18fda43e5b59a627efe81f88adb32ba5f8a",
+        "cooldown_remaining": 0,
+        "evaluations": 149,
+        "format": "sml-v2-plateau-v1",
+        "last_loss": 2.767114285717253,
+        "last_step": 73008,
+        "last_tokens": 7775059968,
+        "reductions": 6
+      },
+      "parent_step": 73008,
+      "start_tokens": 7775059968,
+      "token_budget": 250000000,
+      "trial_steps": 2348,
+      "validation_fingerprint": "740011448903ec5996b939ae24a3c6dc1b7e05772b0a6195d262304a681ad751"
+    },
+    "stream": {
+      "dedup_window": 10000,
+      "prefetch_batches": 4,
+      "read_attempts": 5,
+      "shuffle_buffer": 256
+    },
+    "target_tokens": 15000000000,
+    "topology_transition": {
+      "format": "sml-v2-five-rank-transition-v1",
+      "parent_batches": [
+        4,
+        3,
+        3,
+        3
+      ],
+      "parent_contract": {
+        "code": "7ba6f57878f6ea5866c0193c1e90e24aa08218d8ee93effcd350f7fcd805ab9f",
+        "data": "d9bfbfd69b065eafe0254fc36f96354461704f9bde0cbd6c0fd9f60383083614",
+        "recipe": "7c16b36bb341754b1d696114ee325b1b6c19973e03dcf1cd3d70e9baee1d37ef",
+        "tokenizer": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb"
+      },
+      "parent_replica_hash": "dafde97810a4075ebf30b9b74b93631abb521da702bdd8df06887d508eb810a9",
+      "parent_step": 50096,
+      "physical_order": [
+        0,
+        1,
+        2,
+        4,
+        3
+      ],
+      "start_tokens": 5335023616,
+      "tokens_per_update": 106496
+    },
+    "warmup_fraction": 0.01,
+    "weight_decay": 0.1
+  },
+  "replica_hash": "7be466fbbc9d045e164745932fbcd21352f60ef8a9ccd6aa1f59cc428acc3fca",
+  "step": 73243,
+  "tokens": 7800086528,
+  "v2_contract": {
+    "code": "7b73fd7c6204333320b051d721e1208291b6b1fecc8f16f4fab00b55460c5f94",
+    "data": "bd5717c93bb0beb01ffdc83bf87c60887c8913e03fe265b09b7f1f7d0f6405c8",
+    "recipe": "90a49e23b80b4cb4e737afb865693713782da6715e6e99170ea5e4c22370fcbb",
+    "tokenizer": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb"
+  },
+  "validation_fingerprint": "740011448903ec5996b939ae24a3c6dc1b7e05772b0a6195d262304a681ad751"
+}

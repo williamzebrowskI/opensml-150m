@@ -1,0 +1,23 @@
+{
+  "created_ns": 1790218841978546000,
+  "files": {
+    "model.safetensors": {
+      "bytes": 300894200,
+      "sha256": "ca9bd5d82005f28e77f319d3a5a29f29fb4e4f86e7ceea049f01162fd8aae80f"
+    },
+    "model.safetensors.json": {
+      "bytes": 9156,
+      "sha256": "602e96af792ed3255694e86701c00d953490bd0738d32c10860bc9a766fc249d"
+    },
+    "model.safetensors.optimizer.safetensors": {
+      "bytes": 1805319730,
+      "sha256": "c53c9ceadba4dfd5cbda7533430c9620309c8b764bf98149fb9127f669f93b47"
+    },
+    "model.safetensors.rank0.data_state.json.gz": {
+      "bytes": 5597408,
+      "sha256": "9f5d66165d76bee06dd6d5b782234e4ff88f5a565268dfc173d39e6dfe38893a"
+    }
+  },
+  "format": "sml-pretrain-bundle-v1",
+  "step": 73243
+}

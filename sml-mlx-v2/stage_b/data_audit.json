@@ -1,0 +1,53 @@
+{
+  "candidate_corpus": "diagnostics/stage_b_20260923/audited_candidate_corpus.json",
+  "corpus_sha256": "0374ac752e85e439dd5a0bc3789321237c4f973d1534c814ac86e8dbf44da959",
+  "format": "sml-v2-stage-b-data-audit-v1",
+  "limitations": [
+    "300 consecutive raw rows per retained source at the saved parent position, not a corpus-wide or randomly sharded audit.",
+    "Deterministic lexical math/code filters can miss implicit topics and reject useful prose.",
+    "Web prose and existing Cosmopedia also contain factual and extraction noise; existing synthetic share stays at 10%. No per-document factual verifier is claimed.",
+    "Exact text, IDs and URLs exclude overlaps with rebuilt reference documents; semantic near-duplicates and complete historical training duplicates are not guaranteed absent."
+  ],
+  "rejected_sources": {
+    "faq": "FinePhrase samples included unsupported factual claims and malformed question/answer labeling.",
+    "tutorial": "FinePhrase samples included incorrect English morphology, conflicting scientific claims, and malformed lists."
+  },
+  "review_status": "passed",
+  "reweighting": "Raw receipts used the preserved six-source candidate corpus. Each retained source and every selection setting is unchanged. Only token weights and source removal differ; mixture behavior is separately fixture-tested.",
+  "scope": "Eligible for a bounded data-mixture pilot; stream, schema, topic-screen and spot review, not a factual-accuracy certification.",
+  "selection_sha256": "c065be118b0c6b8948a15d4b81e7fd7371f4e699ea3c49d34fa0abde258e0505",
+  "sources": {
+    "cosmopedia": {
+      "accepted": 136,
+      "hf_cursor_restart": true,
+      "receipt": "diagnostics/stage_b_20260923/cosmopedia.json",
+      "receipt_sha256": "ca5d1a3deeec0f30c06201b51879f90f87ba643eb893c8f95258e48abc234197",
+      "scanned": 300,
+      "spot_check_samples": 8
+    },
+    "dclm": {
+      "accepted": 51,
+      "hf_cursor_restart": true,
+      "receipt": "diagnostics/stage_b_20260923/dclm.json",
+      "receipt_sha256": "af397aa649758f366e20341449213a942d8bc44d6668fffb2d32372c2dd2a408",
+      "scanned": 300,
+      "spot_check_samples": 8
+    },
+    "web": {
+      "accepted": 189,
+      "hf_cursor_restart": true,
+      "receipt": "diagnostics/stage_b_20260923/web.json",
+      "receipt_sha256": "9587b32c06c5623c7b2195828da6af0434b91fa69bebff661c58f83e6ad793ea",
+      "scanned": 300,
+      "spot_check_samples": 8
+    },
+    "wiki": {
+      "accepted": 210,
+      "hf_cursor_restart": true,
+      "receipt": "diagnostics/stage_b_20260923/wiki.json",
+      "receipt_sha256": "e8e614b609f7878b4acd2cbfd379b2d703f6a7b8a39b6ff833fc76b9d194ac9a",
+      "scanned": 300,
+      "spot_check_samples": 8
+    }
+  }
+}

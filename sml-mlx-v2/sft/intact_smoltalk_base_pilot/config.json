@@ -1,0 +1,58 @@
+{
+  "format": "opensml-intact-smoltalk-base-pilot-v1",
+  "source_bundle": "runs/stage_b_prose_v1/step_0073243_7f3070237eea",
+  "source_step": 73243,
+  "source_model_sha256": "ca9bd5d82005f28e77f319d3a5a29f29fb4e4f86e7ceea049f01162fd8aae80f",
+  "seed": 927204812,
+  "context": 2048,
+  "epochs": 2,
+  "batch_conversations": 32,
+  "updates": 128,
+  "peak_lr": 1e-05,
+  "final_lr": 1e-06,
+  "warmup_updates": 38,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "weight_decay": 0.1,
+  "clip_norm": 1.0,
+  "evaluation_updates": [
+    0,
+    16,
+    32,
+    64,
+    128
+  ],
+  "checkpoint_every": 16,
+  "max_new_tokens": 384,
+  "review_conversations": 30,
+  "candidate_prose_increase_limit": 0.05,
+  "candidate_reading_drop_limit": 0.04,
+  "candidate_format_drop_limit": 0.04,
+  "candidate_stop_drop_limit": 0.04,
+  "training_counts": {
+    "smol-magpie-ultra-short": 7400,
+    "everyday-conversations": 1000,
+    "smollm-rewrite-30k": 1800,
+    "smol-summarize-20k": 600,
+    "smol-contraints": 1200
+  },
+  "validation_counts": {
+    "smol-magpie-ultra-short": 275,
+    "everyday-conversations": 50,
+    "smollm-rewrite-30k": 100,
+    "smol-summarize-20k": 25,
+    "smol-contraints": 50
+  },
+  "reserved_counts": {
+    "smol-magpie-ultra-short": 275,
+    "everyday-conversations": 50,
+    "smollm-rewrite-30k": 100,
+    "smol-summarize-20k": 25,
+    "smol-contraints": 50
+  },
+  "checkpoint_start_step": 0,
+  "lr_schedule_updates": 750,
+  "stop_on_retention_failure": true
+}

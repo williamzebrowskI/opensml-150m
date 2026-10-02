@@ -1,0 +1,44 @@
+{
+  "name": "conversation-foundation-v1",
+  "source_bundle": "runs/stage_b_prose_v1/step_0073243_7f3070237eea",
+  "source_step": 73243,
+  "source_model_sha256": "ca9bd5d82005f28e77f319d3a5a29f29fb4e4f86e7ceea049f01162fd8aae80f",
+  "seed": 928202637,
+  "context": 2048,
+  "max_assistant_tokens": 768,
+  "batch_conversations": 16,
+  "epochs": 1,
+  "updates": 2000,
+  "peak_lr": 2e-05,
+  "final_lr": 2e-06,
+  "warmup_updates": 100,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "weight_decay": 0.01,
+  "clip_norm": 1.0,
+  "evaluation_updates": [
+    0,
+    64,
+    128,
+    256,
+    512,
+    1000,
+    1500,
+    2000
+  ],
+  "validation_conversations": 128,
+  "generation_conversations": 24,
+  "max_new_tokens": 384,
+  "minimum_free_gib": 35,
+  "training_counts": {
+    "smol-magpie-ultra-short": 19600,
+    "everyday-conversations": 400,
+    "smollm-rewrite-30k": 2000,
+    "smol-summarize-20k": 1000,
+    "self-oss-instruct": 1000,
+    "ultrachat": 8000
+  },
+  "holdout_per_source": 64
+}

@@ -1,0 +1,38 @@
+{
+  "fixtures_passed": 9,
+  "sources": {
+    "cosmopedia": {
+      "bytes": 402259,
+      "bytes_per_token": 5.061007523716062,
+      "documents": 103,
+      "roundtrip_failures": 0,
+      "seconds": 0.09366637503262609,
+      "tokens": 79482
+    },
+    "dclm": {
+      "bytes": 1001509,
+      "bytes_per_token": 4.453209483494593,
+      "documents": 165,
+      "roundtrip_failures": 0,
+      "seconds": 0.26016941701527685,
+      "tokens": 224896
+    },
+    "web": {
+      "bytes": 2205062,
+      "bytes_per_token": 4.625467253451697,
+      "documents": 559,
+      "roundtrip_failures": 0,
+      "seconds": 0.5487007499905303,
+      "tokens": 476722
+    },
+    "wiki": {
+      "bytes": 401775,
+      "bytes_per_token": 4.059276397546905,
+      "documents": 143,
+      "roundtrip_failures": 0,
+      "seconds": 0.10723229206632823,
+      "tokens": 98977
+    }
+  },
+  "vocab_size": 32000
+}

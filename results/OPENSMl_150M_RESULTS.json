@@ -1,0 +1,262 @@
+{
+  "checkpoint": "OpenSML-150M",
+  "bundle": "step_0000768_4980617cb301",
+  "weight_sha256": "cbd3e3fb4ada74d7264371b79cee7598f513b7b950f1f141ef9f1a43bd2e1b4e",
+  "parent_weight_sha256": "465ce42aad2e7c765f169aa75aa4124ec03fec17b46e6f5eabf75c2c4a8d4772",
+  "base_weight_sha256": "ca9bd5d82005f28e77f319d3a5a29f29fb4e4f86e7ceea049f01162fd8aae80f",
+  "lineage": [
+    "Pretrained Stage B step 73243",
+    "Unified384",
+    "Repair512",
+    "Trial28 +256"
+  ],
+  "total_sft_step": 768,
+  "trial_additional_updates": 256,
+  "trial_planned_updates": 512,
+  "trial_consumed_records": 4096,
+  "selection": "Owner-selected current baseline; exploratory selection after repeated benchmark inspection; chat-repetition development gate failed",
+  "trial_config": {
+    "anchor_replay_only": true,
+    "automatic_selection": false,
+    "balanced_instructions": false,
+    "batch_conversations": 16,
+    "batch_counts": {
+      "chat": 4,
+      "grounded": 4,
+      "human": 4,
+      "instructions": 4
+    },
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "ce_weight": 1.0,
+    "checkpoint_keep": 4,
+    "clip_norm": 1.0,
+    "context": 2048,
+    "data_focused": false,
+    "dataset_plan": "breadth-stable",
+    "dpo_beta": 0.1,
+    "dpo_weight": 0.0,
+    "epochs": 1,
+    "evaluation_updates": [
+      0,
+      128,
+      256,
+      384,
+      512
+    ],
+    "final_lr": 2e-07,
+    "format_preference_beta": 5.0,
+    "format_preference_weight": 0.0,
+    "freeze_embeddings": false,
+    "fresh_per_batch": 4,
+    "generated_history": false,
+    "generation_conversations": 56,
+    "generation_per_source": {
+      "chat": 8,
+      "grounded": 8,
+      "human": 8,
+      "instructions": 32
+    },
+    "holdout_per_source": 32,
+    "instruction_edge_weight": 1.0,
+    "instruction_weight": 1.0,
+    "kl_weight": 2.0,
+    "max_assistant_tokens": 192,
+    "max_new_tokens": 384,
+    "maximum_instruction_word_count": 120,
+    "method": "Broader verified public instruction/annotated QA mixture; two fresh passes plus repair512 replay; assistant-only CE + EOS; repetition penalty .3 and replay KL anchor 2",
+    "minimum_free_gib": 12,
+    "name": "public-repair-384-v1",
+    "negative_replay_only": true,
+    "on_policy": true,
+    "peak_lr": 2e-06,
+    "policy_kl_weight": 0.0,
+    "ranking_weight": 0.0,
+    "reference_aware": true,
+    "repetition_allowance": 2,
+    "repetition_ngram": 4,
+    "replay_only": false,
+    "seed": 202610011,
+    "source_caps": {
+      "chat": 192,
+      "grounded": 160,
+      "human": 160,
+      "instructions": 192
+    },
+    "source_model_sha256": "465ce42aad2e7c765f169aa75aa4124ec03fec17b46e6f5eabf75c2c4a8d4772",
+    "source_step": 512,
+    "train_all_norms": false,
+    "train_final_norm": false,
+    "train_last_blocks": 0,
+    "training_counts": {
+      "chat": 512,
+      "grounded": 2560,
+      "human": 1536,
+      "instructions": 3584
+    },
+    "ul_weight": 0.3,
+    "updates": 512,
+    "validation_conversations": 128,
+    "warmup_updates": 16,
+    "weight_decay": 0.0,
+    "weighting": "conversation"
+  },
+  "source_pins": {
+    "constraints": {
+      "file": "data/smol-constraints/train-00000-of-00001.parquet",
+      "license": "Apache-2.0",
+      "local_file": "constraints.parquet",
+      "repo": "HuggingFaceTB/smoltalk",
+      "revision": "5feaf2fd3ffca7c237fc38d1861bc30365d48ffa",
+      "sha256": "3369eaff911d3511ee21561a3b8607e1acfd773a6ade80f4759490ffdcce7ba4",
+      "split": "train"
+    },
+    "squad": {
+      "file": "squad_v2/train-00000-of-00001.parquet",
+      "license": "CC-BY-SA-4.0",
+      "local_file": "squad.parquet",
+      "repo": "rajpurkar/squad_v2",
+      "revision": "3ffb306f725f7d2ce8394bc1873b24868140c412",
+      "sha256": "f6da32ffb482ff463ad056477740d1bb284b96a45db3a08bee6a225ca6abf291",
+      "split": "train"
+    },
+    "sciq": {
+      "repo": "allenai/sciq",
+      "revision": "2c94ad3e1aafab77146f384e23536f97a4849815",
+      "file": "data/train-00000-of-00001.parquet",
+      "local_file": "sciq.parquet",
+      "license": "CC-BY-NC-3.0",
+      "split": "train",
+      "sha256": "19644360954006d06e9ad3df07bddb34f8535c081b831d48f604603c713ac167"
+    }
+  },
+  "benchmarks": {
+    "multiple-choice": {
+      "summary": {
+        "completed": 15428,
+        "expected": 15428,
+        "status": "complete",
+        "tasks": {
+          "arc_challenge": {
+            "acc": 0.26023890784982934,
+            "acc_norm": 0.295221843003413,
+            "completed": 1172,
+            "expected": 1172
+          },
+          "arc_easy": {
+            "acc": 0.5664983164983165,
+            "acc_norm": 0.5542929292929293,
+            "completed": 2376,
+            "expected": 2376
+          },
+          "hellaswag": {
+            "acc": 0.30551682931686913,
+            "acc_norm": 0.33937462656841266,
+            "completed": 10042,
+            "expected": 10042
+          },
+          "piqa": {
+            "acc": 0.6452665941240479,
+            "acc_norm": 0.6409140369967355,
+            "completed": 1838,
+            "expected": 1838
+          }
+        },
+        "training": false
+      },
+      "integrity": {
+        "completed": 15428,
+        "inputs_unchanged": true,
+        "manifest_sha256": "ef7197ac9430d226269d45fc0b7d3422c3f0a20ac2817870b13e31249d2e7bca",
+        "training": false
+      },
+      "protocol": {
+        "decode_mode": "cached",
+        "eos": 1,
+        "extra_stop_strings": [],
+        "greedy": true,
+        "harness": "b954108c9baaaa934b4ad842033b31a97ee30816",
+        "ifeval_template": "User: {unchanged prompt}\nAssistant:",
+        "max_new_tokens": 1280,
+        "mc_metrics": [
+          "acc",
+          "acc_norm"
+        ],
+        "mc_template": "plain official question/continuation; no chat/BOS/EOS",
+        "repetition_penalty": 1,
+        "seed": 24092026
+      },
+      "fp32": true,
+      "attention": "MLX explicit vanilla attention; PyTorch equivalence not claimed",
+      "batch_size": 1,
+      "context": 2048,
+      "prepared_sha256": "88b30e3a273f6817e9af1e360dbeb44714c58f2b345ca875a0ad83a0e8c05da5"
+    },
+    "ifeval": {
+      "summary": {
+        "completed": 541,
+        "expected": 541,
+        "loose": {
+          "instruction_accuracy": 0.2577937649880096,
+          "instruction_correct": 215,
+          "instruction_total": 834,
+          "prompt_accuracy": 0.15711645101663585,
+          "prompt_correct": 85,
+          "prompt_total": 541
+        },
+        "status": "complete",
+        "stop_counts": {
+          "context_limit": 0,
+          "eos": 508,
+          "length": 33
+        },
+        "strict": {
+          "instruction_accuracy": 0.2529976019184652,
+          "instruction_correct": 211,
+          "instruction_total": 834,
+          "prompt_accuracy": 0.15157116451016636,
+          "prompt_correct": 82,
+          "prompt_total": 541
+        },
+        "training": false
+      },
+      "integrity": {
+        "completed": 541,
+        "inputs_unchanged": true,
+        "manifest_sha256": "af4b836f50fe1ae10a19eb4634d191c5b8b1ba9e1c3d6ae1d31bec95cdb8010c",
+        "training": false
+      },
+      "protocol": {
+        "decode_mode": "cached",
+        "eos": 1,
+        "extra_stop_strings": [],
+        "greedy": true,
+        "harness": "b954108c9baaaa934b4ad842033b31a97ee30816",
+        "ifeval_template": "User: {unchanged prompt}\nAssistant:",
+        "max_new_tokens": 1280,
+        "mc_metrics": [
+          "acc",
+          "acc_norm"
+        ],
+        "mc_template": "plain official question/continuation; no chat/BOS/EOS",
+        "repetition_penalty": 1,
+        "seed": 24092026
+      },
+      "fp32": true,
+      "attention": "MLX explicit vanilla attention; PyTorch equivalence not claimed",
+      "batch_size": 1,
+      "context": 2048,
+      "prepared_sha256": "88b30e3a273f6817e9af1e360dbeb44714c58f2b345ca875a0ad83a0e8c05da5"
+    }
+  },
+  "source_record_sha256": {
+    "config.json": "d06d3552b264aab676d966a74598078955d2ea43683fc038a5401a7e42ffbe0c",
+    "selection.json": "50fca08ffe0fc3d0cd759ef4ec09509bb836ff92ea09932111db43edf78e7d9d",
+    "source_pins.json": "11baf5a81fd28f9e2e114cc7e1c050172175745e168154d2004590925c4577e4",
+    "retained_result.json": "20a585841d228c28310a4f26024debb6ef2f2d25ae044b95530d55353c795297"
+  },
+  "internal_experiment": "Trial 28 \u2014 Repair512 +256",
+  "public_model_name": "OpenSML-150M"
+}

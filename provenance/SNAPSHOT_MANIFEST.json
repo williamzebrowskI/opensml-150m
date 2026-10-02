@@ -1,0 +1,2576 @@
+{
+  "source_repository": "https://github.com/williamzebrowski/sml-mlx",
+  "source_head": "91eb73b742b088b495a94e14437e538dbdb32ca4",
+  "source_working_tree": "Includes uncommitted V2 work; source hashes identify copied inputs individually.",
+  "copied_source_files": [
+    {
+      "path": "sml-mlx-v2/sml_v2/lr_scheduler.py",
+      "source_sha256": "e141132efbd5f1beab4b187d4eab15efd46fcf9710d6a2ba7c882f62362a77cf"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/pretrain.py",
+      "source_sha256": "e38e3424541558bf31e4a5152d3afe83fc56c57cf6a47d84394fd6e43c1ca4bd"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/checkpoint_bundle.py",
+      "source_sha256": "73cbf0c17cf74a44bb7c74a8f9e5bb63671057a1f664a6a4af0e0777b2c8f1a4"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/stage_b_eval.py",
+      "source_sha256": "943fd969994e896faff14481b94eb121d23b6fef00244874d5d5361df6bd8cce"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/stage_b_data.py",
+      "source_sha256": "c065be118b0c6b8948a15d4b81e7fd7371f4e699ea3c49d34fa0abde258e0505"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/prepare_data.py",
+      "source_sha256": "3d78ed45dbab52a671d889fe937a210a832e55426bbdc4f905ddbd202ccf2336"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/lr_trial.py",
+      "source_sha256": "2f643abaa6ac3f86e47b37632df4d25fa34d0b25e77b59ffecc0290b2385e7dc"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/__init__.py",
+      "source_sha256": "673b3311a6dbd4af12001b1626a382bd773c5917243fb656fafa09c15176b92c"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/tokenization.py",
+      "source_sha256": "7f9a93d4e0e60e1fb0630a603709450cee023373ef8dd09bb7f1b97499aa7ff0"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/stream.py",
+      "source_sha256": "9bb1a365e7e3da375e23187baefe5c36c5c2c1a8a94a0eb65004627eafcae602"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/continuation.py",
+      "source_sha256": "bef52d90c280cfe82e082c997f419cd2d9839c29f065468bf8c74ebc5ce78229"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/model.py",
+      "source_sha256": "1eee6f8afe78767ff6b9c604ccf2328c98b24bc94dbad6291a0ad699dd7345fe"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/fast_swiglu.py",
+      "source_sha256": "59d1adb31400e3c288914b4c0cc8a21681a73ca3dfa7c722ea4e13d21dc38528"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/data_review.py",
+      "source_sha256": "a71eabcc526344b6502cae999020da63c950b2d80c13077629bb86c8757a18ed"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/precision.py",
+      "source_sha256": "b9f535fca724153703ed57a300eceb5b34a8f8381fc65bf5c4c5a0f7e066303c"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/launch.py",
+      "source_sha256": "ff78c92eda5ac69e7f91109cb72fd267c729774097226d9146c6dd4d8d95175d"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/common.py",
+      "source_sha256": "ec4dda551cbe45cbd30d64c7c82379a8849ce02a3ad1a597a293844b5dc86351"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/train_tokenizer.py",
+      "source_sha256": "90c58a30a50cb625e36222825768a134aba5c81df87de8655ab95de2bd47402c"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/fast_loss.py",
+      "source_sha256": "f99edeedb6cb328ef728d05643f65ea20371437f7e5806009ae3ad0885bafbf1"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/topology_transition.py",
+      "source_sha256": "adc3a0a6f19e7cfb3073f4c1e0432f664e5fb709141ceb4148aca7cda08ddaab"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/stage_b.py",
+      "source_sha256": "f80f065f6892eea951e94a7ff6925d5a1bff9419a7384e0756cf2faeb92e4775"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/recipe.py",
+      "source_sha256": "c274a426944fbdfb75d1f8edfa5fb37d1b095bf59e1f8be0a7653fadb1b618b2"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/jaccl_control.py",
+      "source_sha256": "a3dfbd61de43fda14daf4bbd921ccb382ea8af2c8342457fe16d1ad0908e88fe"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/checkpoint_metadata.py",
+      "source_sha256": "0aaa7019ab53fd8b5e6b0e397f970026b4e8d38e12bf5d5f0fcb7f686de9b82c"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/data.py",
+      "source_sha256": "411284cda81b07f10bc624ebd8f7fe9debd2911e950971f96b204dfd1cee6a6d"
+    },
+    {
+      "path": "sml-mlx-v2/sml_v2/corpus.py",
+      "source_sha256": "be77769180342f6a8b1d5619e5b3b64f20ca40d3424219168cccf4789bb02038"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_full_launcher.py",
+      "source_sha256": "c37e7fd36a92bdc5e2870603b87fe83bf8d205570f6780579016638f3195bb0d"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_five_mac_ssh.py",
+      "source_sha256": "8808ba26b27fc9f6ebddb604dba0f0630a6e8ef0032935f110578baf9d389e2a"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_five_mac_topology.py",
+      "source_sha256": "ff1a97d0c5523f2950f7ac615082fb714332f9b0427fb685ca2ea1f95daf918c"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_lr_trial.py",
+      "source_sha256": "8cb2bb3dc73bec5845b4af0697bb915212bd09439950420938185ad4d64549bb"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_five_mac_transport.py",
+      "source_sha256": "8647e609cc24a698c2182de4ed0d6b6b1b9d3b98171a18707ffcaf0121831f58"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_adaptive_launcher.py",
+      "source_sha256": "55cb450fc2f63feb7f248907b097ce54e6c5acc30995c31c917279f9fb0f92b9"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_five_mac_training.py",
+      "source_sha256": "220864fe71f09f974c8c2336389798e488ab296400feb7aedc6ff123a246333f"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_lr_floor_transition.py",
+      "source_sha256": "b346a1ec8245d8b23cc3f1388698262f81de47fc9cb632732a13168999ed6453"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_launch_cli.py",
+      "source_sha256": "a00dc53e2196150eaf5822eb7674f74cabe8840a29456762a1062b6629e1941a"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_stage_b.py",
+      "source_sha256": "d4f7f7dabcff5747a9a6a765f1dac2ad45ee40bbc5f78095bc9f38a6fa13fbba"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_five_mac_network.py",
+      "source_sha256": "bda87281efb691cd77168db1f68cad14907e400f2f905d90e54f770ae4d99ac5"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_continuation.py",
+      "source_sha256": "f0ce640eed9701fb3235e442bfe66f3e27dca1e6573adfb8844eb0a401784969"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_five_mac_names.py",
+      "source_sha256": "08d9c7a3fd7b14b5ca0e2c544570d77418093a20c270888a38511fce246cfe8f"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_data_review.py",
+      "source_sha256": "1960080cc79186a2e14a6776d33c31361190eb154b84bc45fc07dbbad493f7a4"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_lr_scheduler.py",
+      "source_sha256": "5ef243fb906974098f27cb0589e2f711589588763191142fdd5f97ba36dcb1fd"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_pipeline.py",
+      "source_sha256": "8085df4382eb2408382be13ab06cd8970c54f4a24c5fda3b1469ce6ee6b86a8d"
+    },
+    {
+      "path": "sml-mlx-v2/tests/test_ring_control.py",
+      "source_sha256": "58e30af94468886fe6760c831b6c07871d136ff33a225be644fd34e62d9bec4c"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/launch_pretrain.py",
+      "source_sha256": "da8878b1e7c9b31682b20e1439e384e00f47d190ce2762ae3d11eec4cd477662"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/launch_full.py",
+      "source_sha256": "6e0d7f0233d5701d2840e98d3babb7f57d67bdba4f591c370e7cd6c5498486f4"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/setup_five_mac_ssh.py",
+      "source_sha256": "6e300d0f2996ee2bf4bafae8ce7992ac63f787a6974c72c3ea4b33d33b281f5a"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/prepare_data.py",
+      "source_sha256": "e4345615aa2dc4c12dd6fd215b2d4304166034a94e9e3210a7c10348cd9b9954"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/plot_validation_loss.py",
+      "source_sha256": "ad19f3e828232abb6a0c89359117b2adef332f9b088558acee564e71895c6ea5"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/check_five_mac.py",
+      "source_sha256": "81b0acd8f1870d1c0d933b858e9fba3da585480e323de96e5cff2b425344f534"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/five_mac_network.py",
+      "source_sha256": "01ce3f64885cff2ebe092d8aea8776ea72a63a0b3d270e5493033a6a9c26637b"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/probe_five_mac.py",
+      "source_sha256": "32041eb714343b11544a3bd5c29ed7f5ebc7b0d5d26cf5ab771cc3b178b5a4b8"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/five_mac_cluster.py",
+      "source_sha256": "43dd4df68184cc89f25fc55800cd831db77ff5fc146ef296b3ac1e40a577284a"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/launch_adaptive.py",
+      "source_sha256": "b1b9a1faae4717940741997a817b0465181e9e5844a3aa9d95a0c1fb6cf57e05"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/inspect_five_mac_ssh.py",
+      "source_sha256": "af574deb1f73d0aad1a9669e93afda8a20a7046b0384cf2e5d79f555ad3e35b4"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/rename_five_macs.py",
+      "source_sha256": "9f93b764f49870928ce26a91f6c2ec1c86a3a29eb55100ebfb35e391bab6e0fa"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/five_mac_transport.py",
+      "source_sha256": "b60d3c46a0c63030936f7016620c2d124366ce183a56da99e51240c329c1564d"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/export_report_evidence.py",
+      "source_sha256": "e17ce5a1048141202a6aa393e72c1105c470c7c0b010c83ccbb699f733564692"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/train_tokenizer.py",
+      "source_sha256": "9957b33b8f961335f0b5e7293ab8bcab846b1e4aa877d968ae936c8378ee320b"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/five_mac_topology.py",
+      "source_sha256": "3cacd5789b0b308ecc9b93102af94fab96d9f7438fda2af1184cdd06534f6f79"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/launch_five_mac.py",
+      "source_sha256": "5efb1cfe11fad58b16810361d66403bfbb80e267b507b098d4647bc33eeb8536"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/inspect_mac_network.py",
+      "source_sha256": "ea498b56cb0c4774712cc20e66608c58ead923605a39fe94785d1606b547dc85"
+    },
+    {
+      "path": "sml-mlx-v2/scripts/configure_five_mac_network.py",
+      "source_sha256": "de085193db27c2994dc63a71d5f49b26107dc5dcbdd73685be3ae5663539647a"
+    },
+    {
+      "path": "sml-mlx-v2/configs/corpus.json",
+      "source_sha256": "daf0a26b570d94d0e14f813457114cb112751391619d0e08e7a77ee5992970af"
+    },
+    {
+      "path": "sml-mlx-v2/configs/plateau.json",
+      "source_sha256": "cf2b0dde1e4cbacd47a73c9d253a5c3f082cb6b60d5fffe92bb553fade1220e7"
+    },
+    {
+      "path": "sml-mlx-v2/configs/pilot.json",
+      "source_sha256": "38aebcec3d86d0b016c543efac937d4c54e056dac4a89d00bed6c94e2ca44cec"
+    },
+    {
+      "path": "sml-mlx-v2/stage_b/corpus.json",
+      "source_sha256": "0374ac752e85e439dd5a0bc3789321237c4f973d1534c814ac86e8dbf44da959"
+    },
+    {
+      "path": "sml-mlx-v2/stage_b/data_audit.json",
+      "source_sha256": "a1ec975d55b8f0fe6012303a76da2208d02ceec2b1ea539d3a7f4c2d38d5d808"
+    },
+    {
+      "path": "sml-mlx-v2/stage_b/README.md",
+      "source_sha256": "45594aee5c350860332890ec1525588ff272ef5c7c50c493472d51d6e0c1ad3d"
+    },
+    {
+      "path": "sml-mlx-v2/stage_b/audit_data.py",
+      "source_sha256": "1591e1fa6ddff19244fc8a0e5d31d3b900d89456f6d7202892fe739896603546"
+    },
+    {
+      "path": "sml-mlx-v2/stage_b/launch.py",
+      "source_sha256": "776b41757a5deb79119892752d03f9d7f1b24ffa155a5f75e25caab619b89834"
+    },
+    {
+      "path": "sml-mlx-v2/docs/DATA_REVIEW_CONTINUATION.md",
+      "source_sha256": "0005bb487c73487bc7c78d2f874d75387a9e1a9df7d8980784c70c738779495d"
+    },
+    {
+      "path": "sml-mlx-v2/docs/FIVE_MAC_HANDOFF.md",
+      "source_sha256": "67249942732e20f7d0fafa3f979d3f9f39d958da8ba8a0536e83ad98073ca17b"
+    },
+    {
+      "path": "sml-mlx-v2/docs/EVIDENCE.md",
+      "source_sha256": "0df42fa21d7751a9cbb9a6909ec276eee1ef19bfdcba9ba08a4c04dedb8b1787"
+    },
+    {
+      "path": "sml-mlx-v2/docs/FIVE_MAC_TRAINING.md",
+      "source_sha256": "2e8aac6568322b9174d0baf7444d2f1c3ba97f89346384f80c0bcfd8c821e598"
+    },
+    {
+      "path": "sml-mlx-v2/docs/TECHNICAL_REPORT.md",
+      "source_sha256": "a6dc4abe6462acd89d0e11f9a94cfb02f33fab3c516a4fc398c8caa95cfb376c"
+    },
+    {
+      "path": "sml-mlx-v2/docs/MIGRATION.md",
+      "source_sha256": "d9b660196d687b05a6886a4c7d653a2fe4ca19e897d179af3a4bce00d9661863"
+    },
+    {
+      "path": "sml-mlx-v2/docs/FIVE_MAC_PROGRESS.md",
+      "source_sha256": "c6f7624ac53ec8a94e5a330ac09e119200a244eeb645ea111d8ed6ff33d4e4c4"
+    },
+    {
+      "path": "sml-mlx-v2/docs/DATA_AND_TOKENIZER.md",
+      "source_sha256": "d5511bf2254e4ad876077bc6edd8caf68920862d3e0bab3012c72eb93e1c38e8"
+    },
+    {
+      "path": "sml-mlx-v2/docs/RESULTS.md",
+      "source_sha256": "79be451dda361a4a53c516d8ece2eec1a06a7796e694ae59c772d210f5be0b23"
+    },
+    {
+      "path": "sml-mlx-v2/docs/MLX_NATIVE_BUILD.md",
+      "source_sha256": "0e22bb2e601c8505403527236789f52e9332c882b5a828f8d316efc17cc8a055"
+    },
+    {
+      "path": "sml-mlx-v2/docs/ADAPTIVE_LR.md",
+      "source_sha256": "194227193452760b0cced42b60b72adc19ec287a4f0f3a82498ea0d9edc9b4b1"
+    },
+    {
+      "path": "sml-mlx-v2/docs/LR_TRIAL.md",
+      "source_sha256": "76fa0cc02b1abcb6f648930e0501715603ee0606b69347718e1f291c8f54daa7"
+    },
+    {
+      "path": "sml-mlx-v2/docs/tables/validation_through_0009391.csv",
+      "source_sha256": "530b30dfb50aba19b95f72c3161c2f7d96e96352485b9d8010cfa1a22deb3f5c"
+    },
+    {
+      "path": "sml-mlx-v2/docs/tables/validation_through_0009391.json",
+      "source_sha256": "24f0db5512674ac86eaaef118b425f2d0528d740bb8ac3a7c09eec65b6875677"
+    },
+    {
+      "path": "sml-mlx-v2/sft/answer_completion/check.py",
+      "source_sha256": "24807359a2e2f24cc8a7cfc8413a4a62c204259f1515266f5156f6b2cf0f4d5a"
+    },
+    {
+      "path": "sml-mlx-v2/sft/answer_completion/config.json",
+      "source_sha256": "8b05cd578de31092b1019f49d472674694f9afbdf92c34ae63060b03f279eb75"
+    },
+    {
+      "path": "sml-mlx-v2/sft/answer_completion/protocol.py",
+      "source_sha256": "6c98b9f94832905bf1f89110691078bc7796f70a2f9a1f2f9d6a88cca3fad5c1"
+    },
+    {
+      "path": "sml-mlx-v2/sft/answer_completion/README.md",
+      "source_sha256": "a85d861e201e3cec06a5d784fcdc9d30da5fec4e433ffd52ae370837aeb5ea61"
+    },
+    {
+      "path": "sml-mlx-v2/sft/answer_completion/engine.py",
+      "source_sha256": "de34b3f0b1509400a4f4cd04cd7749d77f66d9f92a2d44fca90278e706847696"
+    },
+    {
+      "path": "sml-mlx-v2/sft/answer_completion/launch.py",
+      "source_sha256": "5c7a5726ce38c8b319c224330d71c75403a2c66f5ce1ab8b370a175afeb492f7"
+    },
+    {
+      "path": "sml-mlx-v2/sft/answer_completion/evaluate.py",
+      "source_sha256": "bf7fb7c4c44fabd2cc32c3db4d1a78cdc69a93fbd3a819094993a72f82407835"
+    },
+    {
+      "path": "sml-mlx-v2/sft/answer_completion/candidate.py",
+      "source_sha256": "a88f7074bad1b2bce7908be4575594ccab6c36c372508d9bdfecdf4be319c6f0"
+    },
+    {
+      "path": "sml-mlx-v2/sft/answer_completion/data.py",
+      "source_sha256": "d4cb8cbedcf85449ad5c6cfa4db0e9b2e9b004edc0a656e3714d6d5d684e4fcc"
+    },
+    {
+      "path": "sml-mlx-v2/sft/base_curriculum_v2/check.py",
+      "source_sha256": "7ffbc22c27424fdf610690065558e959bc200a01dfa913a912d9fd6af9e6bce7"
+    },
+    {
+      "path": "sml-mlx-v2/sft/base_curriculum_v2/config.json",
+      "source_sha256": "e5fe514cc58a1c16d2f700c81de8a660212500e1825321b7c32f015de4f0586b"
+    },
+    {
+      "path": "sml-mlx-v2/sft/base_curriculum_v2/protocol.py",
+      "source_sha256": "37777a8dfbd9976fdeb8001b0ffa8365bf83b4bfb78aa89c1008c6c5bb65e7d7"
+    },
+    {
+      "path": "sml-mlx-v2/sft/base_curriculum_v2/README.md",
+      "source_sha256": "3e8aa25b96318d564d46324a02ae6e7a7e6ef8b4d2ac75c1c4b2c310d8c1cc55"
+    },
+    {
+      "path": "sml-mlx-v2/sft/base_curriculum_v2/engine.py",
+      "source_sha256": "de34b3f0b1509400a4f4cd04cd7749d77f66d9f92a2d44fca90278e706847696"
+    },
+    {
+      "path": "sml-mlx-v2/sft/base_curriculum_v2/launch.py",
+      "source_sha256": "e6631901d4bbe390db43f2d0f246850ca9ee481128ce89322028ba9f73d03cec"
+    },
+    {
+      "path": "sml-mlx-v2/sft/base_curriculum_v2/evaluate.py",
+      "source_sha256": "bf7fb7c4c44fabd2cc32c3db4d1a78cdc69a93fbd3a819094993a72f82407835"
+    },
+    {
+      "path": "sml-mlx-v2/sft/base_curriculum_v2/data.py",
+      "source_sha256": "7fd79265a1bf53765b865ee090f2635d57fdbeb77e9e3a79bd3a300d31e28a37"
+    },
+    {
+      "path": "sml-mlx-v2/sft/clean_reply_ab/check.py",
+      "source_sha256": "199fbbf8ddf51a5c196fe9faec1c4fc14e27491576e1c9cad5f54f7788afac21"
+    },
+    {
+      "path": "sml-mlx-v2/sft/clean_reply_ab/config.json",
+      "source_sha256": "3a2b8301e3dac9d2313a0b073ce4f78c053c94eae659ff0ea0de7ce6e0c6fb01"
+    },
+    {
+      "path": "sml-mlx-v2/sft/clean_reply_ab/protocol.py",
+      "source_sha256": "b0fea3299a7d5c002b3779564c891382d92374fee6bbdfcd5df3fb5ed1894395"
+    },
+    {
+      "path": "sml-mlx-v2/sft/clean_reply_ab/README.md",
+      "source_sha256": "fd8e84347e69e4a34642934b7098707def4e58e1a6c17541d59a987737daecd3"
+    },
+    {
+      "path": "sml-mlx-v2/sft/clean_reply_ab/engine.py",
+      "source_sha256": "a4fe412ec0731f659c0b482c3ac452e1dd5bc4d316ac04e18eb8b41f2e14e84c"
+    },
+    {
+      "path": "sml-mlx-v2/sft/clean_reply_ab/launch.py",
+      "source_sha256": "b57818f4d2a31412090e2369226c52e571a576696507dda23593460df148c914"
+    },
+    {
+      "path": "sml-mlx-v2/sft/clean_reply_ab/evaluate.py",
+      "source_sha256": "f236de08fa395531242530f2f0f5603dda13c880970f40200c9db455cadebcf1"
+    },
+    {
+      "path": "sml-mlx-v2/sft/clean_reply_ab/data.py",
+      "source_sha256": "8cbb3b768a84ad16c2b90603aa3bfdda8946da5d1691e08f834ba912c2eabf73"
+    },
+    {
+      "path": "sml-mlx-v2/sft/complete_transfer_1024/runner.py",
+      "source_sha256": "f8daff17f83ad6ddee4fe0f563d398018aa6d9e6add44dfdd874baa58be0d6e5"
+    },
+    {
+      "path": "sml-mlx-v2/sft/complete_transfer_1024/benchmark.py",
+      "source_sha256": "73e7b7ea6404c94f4ae9bf3d3abe7eae0324608640752e45d9b9a5d9dd8dadab"
+    },
+    {
+      "path": "sml-mlx-v2/sft/complete_transfer_1024/check.py",
+      "source_sha256": "d72fc5476c703ff2666beac20034dd9545b69eb086e048445e0771da38479e4a"
+    },
+    {
+      "path": "sml-mlx-v2/sft/complete_transfer_1024/config.json",
+      "source_sha256": "c97df9850cd9acc125acd6d9b49e6b5b10d1c9842cf822565ebc2269fee1653c"
+    },
+    {
+      "path": "sml-mlx-v2/sft/complete_transfer_1024/protocol.py",
+      "source_sha256": "d4b3d2fd491c74cabb890550e3e9dbef3e25b42742a9b697ad5aca2d57642bb8"
+    },
+    {
+      "path": "sml-mlx-v2/sft/complete_transfer_1024/finalize.py",
+      "source_sha256": "90689049e3c8fb4c725ee0317a14a32aba77e17bcf839e2ba9625f1634fc8731"
+    },
+    {
+      "path": "sml-mlx-v2/sft/complete_transfer_1024/README.md",
+      "source_sha256": "e1fbc1cd546ac0f20304d61c84ce79943fde1a42147d277f8c27820c206654aa"
+    },
+    {
+      "path": "sml-mlx-v2/sft/complete_transfer_1024/engine.py",
+      "source_sha256": "36807d8b5e99a2f2676acafd02709fd17e9836ac9c1245d6c83ec9cb947bc86e"
+    },
+    {
+      "path": "sml-mlx-v2/sft/complete_transfer_1024/launch.py",
+      "source_sha256": "7840703b3bc9578c739c67d1f3bd1218ed2091e844835b1f8f3acb87921564ca"
+    },
+    {
+      "path": "sml-mlx-v2/sft/complete_transfer_1024/evaluate.py",
+      "source_sha256": "4f29067f83d82a6e6d58ef02533250282c02caea5ac37c0a6ffb9f69cc0ca3a0"
+    },
+    {
+      "path": "sml-mlx-v2/sft/complete_transfer_1024/test_completion.py",
+      "source_sha256": "460aa6231f1ae0ad571ec5f98fd9393a5350e651a8a37d6a1400d781748a92bd"
+    },
+    {
+      "path": "sml-mlx-v2/sft/complete_transfer_1024/data.py",
+      "source_sha256": "14cc5aaef5162015827b9ace2bc17e257f4d27d13581ae7733138b843ff0c8d3"
+    },
+    {
+      "path": "sml-mlx-v2/sft/constraint_completion_1920/benchmark.py",
+      "source_sha256": "f436affaec9487f627cccb23d41eae44d4bb3d57becfcc03c2b8c530d66e90ca"
+    },
+    {
+      "path": "sml-mlx-v2/sft/constraint_completion_1920/check.py",
+      "source_sha256": "042e945f641574345c35db0b78413c9d66820a527f8f6e49a162816cfe774d34"
+    },
+    {
+      "path": "sml-mlx-v2/sft/constraint_completion_1920/config.json",
+      "source_sha256": "12e70633a46cd505cbe84522512b9165b69748e976ffcee99828dc359690ac70"
+    },
+    {
+      "path": "sml-mlx-v2/sft/constraint_completion_1920/protocol.py",
+      "source_sha256": "feae9e5caa9de82b017e6471576b891feb644e7adfb649111879d695e7b2ca58"
+    },
+    {
+      "path": "sml-mlx-v2/sft/constraint_completion_1920/finalize.py",
+      "source_sha256": "9e964bd9c5cc442be398ede217ca1edaa1e9e0518f7ef90068844d7e5dbb3496"
+    },
+    {
+      "path": "sml-mlx-v2/sft/constraint_completion_1920/README.md",
+      "source_sha256": "c99eea440f65324befc5ee36ceff6a91ea4ec7b61fc431a6c6c9a41e2f9abb09"
+    },
+    {
+      "path": "sml-mlx-v2/sft/constraint_completion_1920/engine.py",
+      "source_sha256": "3a52f0595cd7402659f0af4e2edab9a6eb77b623012b4a52d60df1f0c2b3c5ac"
+    },
+    {
+      "path": "sml-mlx-v2/sft/constraint_completion_1920/launch.py",
+      "source_sha256": "4c2c7ae0967b46c3cd4635cd23260b881005e57a444877e7ccc33b5a00173190"
+    },
+    {
+      "path": "sml-mlx-v2/sft/constraint_completion_1920/evaluate.py",
+      "source_sha256": "846b41491f3cf25e344415cc116fb6068dddc1816bd065818c7aa11f898fb66d"
+    },
+    {
+      "path": "sml-mlx-v2/sft/constraint_completion_1920/constraints.py",
+      "source_sha256": "15262eee48114b88d73ca66bf81ed03e10a586381114a156ba3e5c2c31a87e31"
+    },
+    {
+      "path": "sml-mlx-v2/sft/constraint_completion_1920/data.py",
+      "source_sha256": "4dee1b53a67c247385c476852ce2846b149a97c206e5e42eca66575ba3edd80f"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_ab/check.py",
+      "source_sha256": "7b59120225b6f366cb21dfb474d275e19588952b1d64dcff061214537b862941"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_ab/config.json",
+      "source_sha256": "53069a468c1c344f24fc7bb19db8d0d7ceedabe9482eee1591d1a80043271f16"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_ab/protocol.py",
+      "source_sha256": "17d60e860b279ce40c5237fd368fbb8ebcd75b7f66dda6e0141f64772343aa51"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_ab/README.md",
+      "source_sha256": "29ab85b7ee509065d7e09eaa2ffcfed835c53f6273bd796945df6b17f2ff336a"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_ab/engine.py",
+      "source_sha256": "c2d170933a1158ad2bb503cbf5038e8e3d7b578afcae171d9c52e25cfbdb3e60"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_ab/launch.py",
+      "source_sha256": "6f576e32a765e06bf9c169730eb56299df226e66b939d5c10590b3abc08dd4aa"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_ab/evaluate.py",
+      "source_sha256": "eac6b2364ff8db5d104d0834449428e8bfac75899da53649668985d93ed2699c"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_ab/data.py",
+      "source_sha256": "6337eab601c82fb05fe7dcec5f98dd77d02c1dcbfd82bb555baaac3b212aa40e"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_b/check.py",
+      "source_sha256": "c63ea05cb7e3b3d4d3b993bc84b1d05c3e3de8fd613b1a38b5dcd2357f90ffb6"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_b/config.json",
+      "source_sha256": "2e1b5a042a68fc01090a07525be4c226c94b31cd6ee47e2576f5bc636029b5d2"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_b/protocol.py",
+      "source_sha256": "f8afebfbe4488b01c7288a7f7b024041d9c11297a78285d208f4fb573d8565fc"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_b/README.md",
+      "source_sha256": "4c6f9a9b634100c36e5fa07ffe15940f36faad98e01c08e8fb0cd58c4b9e8fe9"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_b/engine.py",
+      "source_sha256": "7f5542afe740c50f2ddd4a771e9394c4d0282d4d60aa149b9ffd78426adad873"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_b/launch.py",
+      "source_sha256": "4afbdedc0c15eee9b49ba7b09f41c6c8bd97d9303161779d2ce77170d401c03c"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_b/test_unlikelihood.py",
+      "source_sha256": "3e22af1966c358f122927e2f1e8fd2149bf8ee23d03fb56c40435e6305dd6a8f"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_completion_2048/benchmark.py",
+      "source_sha256": "994303a50c7df3beb56902f47b3258c8567795263f3fe259e77eea7e0cf01c7e"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_completion_2048/config.json",
+      "source_sha256": "63b59dc22ebe99c72c8bfe90574a0e82460dfd786ed7507fc408554b3cc93ec4"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_completion_2048/__init__.py",
+      "source_sha256": "1270b76f94bd9a0551bc397e735b374e20d6ce9275e76ac75781e47f2bc0937e"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_completion_2048/finalize.py",
+      "source_sha256": "959acf300e1857b8a19a58447d01684fce59b086f785f9d2d72746c09ca21963"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_completion_2048/README.md",
+      "source_sha256": "4682a173c3dc0b127e90022787374da3496bcd8fc1a00ec09646e4da5c3bed88"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_completion_2048/launch.py",
+      "source_sha256": "90d8e00b4506db3af11591437b6294f5c4309797a384f2dfb5801f65d6b1f5d7"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_completion_2048/evaluate.py",
+      "source_sha256": "2974e4aac9096f48f557cd0e7f8128f83258a876adfaf4fef8a6b9a776df66d8"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_completion_2048/data.py",
+      "source_sha256": "3b437ea213c03cb6e496aa42c99fdb1fd89a13223fe92542e6f0fa9596893b8a"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_completion_2048/dialogues.py",
+      "source_sha256": "293d6cf9781dd72e84e6adad6b21bb39dfb10323883f0dc0f2b4e4e8a8e4b643"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v1/benchmark.py",
+      "source_sha256": "0eaf7feae8917384339b423c4e5422de1b19e92710e7e0fe05225bb3e6a3823a"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v1/config.json",
+      "source_sha256": "7e9b931bebd548908a72983a40d5222e286f17a075596a2dbd9e080058425258"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v1/__init__.py",
+      "source_sha256": "be7acee8c713f0dbbfe64899ecce4e08f03d678f63b22f68759452f3d18d390d"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v1/README.md",
+      "source_sha256": "3339416d0ebd24484a9e766fc60e07ce243c4acc056bbb3b1f9b24c8b5a61397"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v1/engine.py",
+      "source_sha256": "bfa25f966ab963183104cce634b848449da7d081178cdfa450c798aeb4ecd6e4"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v1/launch.py",
+      "source_sha256": "5ffc3bc973b1c2b983492aaf2e1a69294b3643a15a8fc0e101c5be90f9c19286"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v1/test_data.py",
+      "source_sha256": "7cd7875348c7145b975b8c70bab50afc6157979d399e05ff8b730b85f54b624d"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v1/data.py",
+      "source_sha256": "14c3d2b8f0b4ad0420b3af3b2e6b2167c0e3a76da281671be8fbb25c85c10c79"
+    },
+    {
+      "path": "sml-mlx-v2/sft/corrective_640/config.json",
+      "source_sha256": "97cb6129733fb69c638e897c155d470ae68b83d7974123ce72f8aca7a58c3cc0"
+    },
+    {
+      "path": "sml-mlx-v2/sft/corrective_640/protocol.py",
+      "source_sha256": "8a469e53981201b21c88b59f6d8d5c49a35d14cd00df79ccf764013ce04e42ac"
+    },
+    {
+      "path": "sml-mlx-v2/sft/corrective_640/__init__.py",
+      "source_sha256": "056079004e463f9253aa934afb927ef5b1b3621b7e964a9af10883a917e9edbb"
+    },
+    {
+      "path": "sml-mlx-v2/sft/corrective_640/README.md",
+      "source_sha256": "a257ebf041b70e1f5f27a0756ed457a791d818a7396516f6745e8e2266131970"
+    },
+    {
+      "path": "sml-mlx-v2/sft/corrective_640/engine.py",
+      "source_sha256": "013392ed1b9ba5b9de1f1c1bb0ac661c1fd9b215586ad5777037c7122c62b430"
+    },
+    {
+      "path": "sml-mlx-v2/sft/corrective_640/launch.py",
+      "source_sha256": "be63e2fb76b526e66e734ae243b61b9bd5ba9259c374519eb50c4f1f7d33d95e"
+    },
+    {
+      "path": "sml-mlx-v2/sft/corrective_640/evaluate.py",
+      "source_sha256": "e67824b63476b6f6375639f172e3fa09f19417532c8330cc48dd11845653c338"
+    },
+    {
+      "path": "sml-mlx-v2/sft/corrective_640/test_data.py",
+      "source_sha256": "3d2d139534ef69d040b517b0daae6fe68ab11f34b99538ca4c342d346ba401b1"
+    },
+    {
+      "path": "sml-mlx-v2/sft/corrective_640/data.py",
+      "source_sha256": "c225f342ef232f362bd830deaddf3c3a5c917d219f7423eba149bfbdb5dde773"
+    },
+    {
+      "path": "sml-mlx-v2/sft/dpo_chat_768_v1/config.json",
+      "source_sha256": "26ec0e6c41d1d77a1614699b51e5e9251fe8d727573cefc55a63c1ec917da5f9"
+    },
+    {
+      "path": "sml-mlx-v2/sft/dpo_chat_768_v1/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sml-mlx-v2/sft/dpo_chat_768_v1/README.md",
+      "source_sha256": "1d64772e92ef8698bed929223387c172c4a8c94b4d6f75d7fd946054f406a8fb"
+    },
+    {
+      "path": "sml-mlx-v2/sft/dpo_chat_768_v1/prepare_models.py",
+      "source_sha256": "000cef79c4cab09a03f78db7a40256d47ec7e25939f863443884e34e05cb131f"
+    },
+    {
+      "path": "sml-mlx-v2/sft/dpo_chat_768_v1/engine.py",
+      "source_sha256": "88bc5877758732bbdd2043f021cdd32a515dd0943d896a662436605237a9bdd1"
+    },
+    {
+      "path": "sml-mlx-v2/sft/dpo_chat_768_v1/launch.py",
+      "source_sha256": "e52edb6b68b105062920467213333a58b56a6869cbc84cec68bd1fbc7a5ca915"
+    },
+    {
+      "path": "sml-mlx-v2/sft/dpo_chat_768_v1/data.py",
+      "source_sha256": "168de4e185c0e4fcee5342e90f57ca372ff11d18799eafe169bd7ffa9a4baa49"
+    },
+    {
+      "path": "sml-mlx-v2/sft/grounded_rank_384/config.json",
+      "source_sha256": "4f3d91316c0e485b56bb4498dc8693860b52f8a19a90be3d8077e2384aba2885"
+    },
+    {
+      "path": "sml-mlx-v2/sft/grounded_rank_384/protocol.py",
+      "source_sha256": "a54dfd911691337cd94bed7f14ff5efe67b345e74efb098932e65199a4b22b58"
+    },
+    {
+      "path": "sml-mlx-v2/sft/grounded_rank_384/__init__.py",
+      "source_sha256": "056079004e463f9253aa934afb927ef5b1b3621b7e964a9af10883a917e9edbb"
+    },
+    {
+      "path": "sml-mlx-v2/sft/grounded_rank_384/README.md",
+      "source_sha256": "a8bdb2ecea0abc69d6956e6b843895099b1f68c6d9bf09f5c966eb635119f077"
+    },
+    {
+      "path": "sml-mlx-v2/sft/grounded_rank_384/engine.py",
+      "source_sha256": "ced910ca0ca249d89d4ffbf0644b99f1a77a9b976a7b156b5416e3049aab656a"
+    },
+    {
+      "path": "sml-mlx-v2/sft/grounded_rank_384/launch.py",
+      "source_sha256": "702ae01c492b232f351cb8b5459925dea1bcc34e356d7bbf9e982c14d35abc0e"
+    },
+    {
+      "path": "sml-mlx-v2/sft/grounded_rank_384/evaluate.py",
+      "source_sha256": "ee4e6a18c0c39bdd769e6757c1d0f570ef081c1aa36579ccb8bc6b2b1f0915e3"
+    },
+    {
+      "path": "sml-mlx-v2/sft/grounded_rank_384/test_data.py",
+      "source_sha256": "fb6e35d9232aa0c563d9d41c9bfa8b337f615abee4d44abb8ed03407e87e0c12"
+    },
+    {
+      "path": "sml-mlx-v2/sft/grounded_rank_384/data.py",
+      "source_sha256": "8dc6556b4ac273d57d70bd6bc0a7890f28ad527e7eff2681fb8318c9bbd63c2d"
+    },
+    {
+      "path": "sml-mlx-v2/sft/intact_smoltalk_base_pilot/data_review.md",
+      "source_sha256": "277eda27781fee969428b962e41c8313dba43c3ae2cc2447e0db6758c441e424"
+    },
+    {
+      "path": "sml-mlx-v2/sft/intact_smoltalk_base_pilot/benchmark.py",
+      "source_sha256": "b8cacaa26de60fa09eb90f6d53b69ea5eff46036f0f41ff0c286fa287359c347"
+    },
+    {
+      "path": "sml-mlx-v2/sft/intact_smoltalk_base_pilot/config.json",
+      "source_sha256": "7c31967bcf4497a618e380530cf2ef6fb84dbd2d95fd67c75dec8a339562f817"
+    },
+    {
+      "path": "sml-mlx-v2/sft/intact_smoltalk_base_pilot/__init__.py",
+      "source_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "sml-mlx-v2/sft/intact_smoltalk_base_pilot/finalize.py",
+      "source_sha256": "d9839e07a0ed3c7da546ac9201581a763e54b19113425dbe507dc217cce0db76"
+    },
+    {
+      "path": "sml-mlx-v2/sft/intact_smoltalk_base_pilot/README.md",
+      "source_sha256": "b35b65d61fae87de97449cd3a5df8e6763af22ac03315a8ded51f7a2136381c1"
+    },
+    {
+      "path": "sml-mlx-v2/sft/intact_smoltalk_base_pilot/engine.py",
+      "source_sha256": "b6d497b37618de51c0fcb2a894d80312c293ea4bfb03ec73cd64e0e98f2a689c"
+    },
+    {
+      "path": "sml-mlx-v2/sft/intact_smoltalk_base_pilot/launch.py",
+      "source_sha256": "6544e5e8e2b42b10ee2f45826c52b73a4dcb4141763ced50d95547a46e942c77"
+    },
+    {
+      "path": "sml-mlx-v2/sft/intact_smoltalk_base_pilot/evaluate.py",
+      "source_sha256": "7ff5bee0671495e3f914e950030edc6904d5709064c77b186b48f3e2876c9d58"
+    },
+    {
+      "path": "sml-mlx-v2/sft/intact_smoltalk_base_pilot/data.py",
+      "source_sha256": "ed94e2130917493d0fe94c6412abdf01a62de0edfc81d7490119b57b70c8c419"
+    },
+    {
+      "path": "sml-mlx-v2/sft/natural_control/test_protocol.py",
+      "source_sha256": "aee576d99f918faa80f63370bac1237dde76f38558cf71dfaeef6a6d987aa967"
+    },
+    {
+      "path": "sml-mlx-v2/sft/natural_control/check.py",
+      "source_sha256": "e8a71c872a0e4dd930f0cf22059e61a90642f6c530872597eb2c254f58e7ef4d"
+    },
+    {
+      "path": "sml-mlx-v2/sft/natural_control/config.json",
+      "source_sha256": "00e992f9d3942503f8f4ea30786022619044241681c881baa64f297d99f3d751"
+    },
+    {
+      "path": "sml-mlx-v2/sft/natural_control/protocol.py",
+      "source_sha256": "a8ad3a29c1f0657c0bd35bdf8038e7f92434e599d7d1d945f171c3bc99eac482"
+    },
+    {
+      "path": "sml-mlx-v2/sft/natural_control/PREPARATION.md",
+      "source_sha256": "89cf61613ac211c54dc0a4677eb845a0040eadb95fdf7f574e5958e54088c15f"
+    },
+    {
+      "path": "sml-mlx-v2/sft/natural_control/finalize.py",
+      "source_sha256": "bb2c95085beb78ecf82b94a43561b21878967069deb8e964028313c5f87fc2f4"
+    },
+    {
+      "path": "sml-mlx-v2/sft/natural_control/README.md",
+      "source_sha256": "28c2f09ec059c4d1cd86463b4221e3b4b5e7e1d4d55b0d7af0b514101a7a1d7b"
+    },
+    {
+      "path": "sml-mlx-v2/sft/natural_control/engine.py",
+      "source_sha256": "c38f3b4c149079fda6ff1fc5ddd535026fdfde411e7c074f76f7ec3b65e16ce6"
+    },
+    {
+      "path": "sml-mlx-v2/sft/natural_control/launch.py",
+      "source_sha256": "64775a65e56848c3c9a6887394f5be2f0870abea385393589ac309612e003452"
+    },
+    {
+      "path": "sml-mlx-v2/sft/natural_control/evaluate.py",
+      "source_sha256": "23fd4dfad98c10fe3465f7566dfe3e0bce1f22c91cc8aa36c4923f1ea9183abb"
+    },
+    {
+      "path": "sml-mlx-v2/sft/natural_control/data.py",
+      "source_sha256": "2b53f6733a870807b579be247683de600c15f433c9146aeacbf084eeb5d29a29"
+    },
+    {
+      "path": "sml-mlx-v2/sft/preference_long_640/check.py",
+      "source_sha256": "1e7849dfbe80271dbbdb31dab9bd3c8fbb29d0fc80bb1d6f071ddbbeade9ee02"
+    },
+    {
+      "path": "sml-mlx-v2/sft/preference_long_640/diagnostics.py",
+      "source_sha256": "3d994693c927756f5413e410cd24d82b11b4d5d0d05f3fc8850c4df9f89b71d0"
+    },
+    {
+      "path": "sml-mlx-v2/sft/preference_long_640/config.json",
+      "source_sha256": "dbabf36435b00ac1f5a238bc7a03144fbe9913af5945edca7b08f8c1493cb672"
+    },
+    {
+      "path": "sml-mlx-v2/sft/preference_long_640/protocol.py",
+      "source_sha256": "12b1319fb87331ad49fa4f20357c564e4f13bb024afbd444b5af49c29dbe7e00"
+    },
+    {
+      "path": "sml-mlx-v2/sft/preference_long_640/__init__.py",
+      "source_sha256": "408d840d26f8c4538da086d5c6c430666d9a3ef0fcba558a34ed2f06d011ebc4"
+    },
+    {
+      "path": "sml-mlx-v2/sft/preference_long_640/README.md",
+      "source_sha256": "0d976abd3d1d7b1d4e9e150212daef651c75f12dd54bfb6ab1a4edfc66579b06"
+    },
+    {
+      "path": "sml-mlx-v2/sft/preference_long_640/engine.py",
+      "source_sha256": "f6071952f3f14a579eacdc7fe5216a874826ebb88973952a2d10ddd4330b2885"
+    },
+    {
+      "path": "sml-mlx-v2/sft/preference_long_640/launch.py",
+      "source_sha256": "dcfda656b99839917927fe26a1d2651f16b30a8d8e40a5e7796f1b07fecae7eb"
+    },
+    {
+      "path": "sml-mlx-v2/sft/preference_long_640/verified.py",
+      "source_sha256": "426266a13c1f4e2ed0eee590f41e470efab6740a2e064c599682ba1761e830a3"
+    },
+    {
+      "path": "sml-mlx-v2/sft/preference_long_640/evaluate.py",
+      "source_sha256": "2f3ddb808f2b27cb654011264abaf2f66e2f941815afd9043b48f3698c6223ab"
+    },
+    {
+      "path": "sml-mlx-v2/sft/preference_long_640/test_data.py",
+      "source_sha256": "13bb1ff8faddabd891e8e21caf920db51d78a7b6b9f67a3b0655b70b32d39836"
+    },
+    {
+      "path": "sml-mlx-v2/sft/preference_long_640/data.py",
+      "source_sha256": "945a19713518010079a0315b8106e1ca1659e46c4726b483334192986bb122bc"
+    },
+    {
+      "path": "sml-mlx-v2/sft/protected_update_1024/test_projection.py",
+      "source_sha256": "b8b79f1efc3f35f023612e35d74ec80afa1a5519d6fe39e14533c9004f35d417"
+    },
+    {
+      "path": "sml-mlx-v2/sft/protected_update_1024/runner.py",
+      "source_sha256": "573d17df5ba57510e5c7e992700106dd205a6c6ac74291a06de92a006bac599c"
+    },
+    {
+      "path": "sml-mlx-v2/sft/protected_update_1024/benchmark.py",
+      "source_sha256": "f395ec8281b8351e26f03c53a94d96f7015734dd9a19898ec4d38a0f73e6862d"
+    },
+    {
+      "path": "sml-mlx-v2/sft/protected_update_1024/check.py",
+      "source_sha256": "15784b7133bcf1a52cc21d4ae5539bb5f2ccfd2f02ae5076f7579bd0e8d9c94d"
+    },
+    {
+      "path": "sml-mlx-v2/sft/protected_update_1024/config.json",
+      "source_sha256": "c97c6b5781cfc83909b93ec5787ef735d01a6d25b853fdbec82286f6596bf060"
+    },
+    {
+      "path": "sml-mlx-v2/sft/protected_update_1024/protocol.py",
+      "source_sha256": "7eb17438169a31fc950c396e4ba2fad6d002512ede9555753b5ae4d2c8ca3266"
+    },
+    {
+      "path": "sml-mlx-v2/sft/protected_update_1024/finalize.py",
+      "source_sha256": "2059822c1d239c4bd380cf1156763a90e72083be0c2eaa67b2bb7457a3adb819"
+    },
+    {
+      "path": "sml-mlx-v2/sft/protected_update_1024/README.md",
+      "source_sha256": "326912ed353e5570d081eaafbef4a1e6844207a5641f49cc7e06b98c350d4d0a"
+    },
+    {
+      "path": "sml-mlx-v2/sft/protected_update_1024/engine.py",
+      "source_sha256": "6e6e044c79d1f619b30658574994d063ebecd746825756df8393a4cfadc3b262"
+    },
+    {
+      "path": "sml-mlx-v2/sft/protected_update_1024/launch.py",
+      "source_sha256": "bafc399fa495c27453d5414b92c5744403914687c5985a8755ccce77595975cd"
+    },
+    {
+      "path": "sml-mlx-v2/sft/protected_update_1024/evaluate.py",
+      "source_sha256": "b9d9d5d17130658dd9ecc6a41ced6cdb1a0640eb456800698abd91de81ef3242"
+    },
+    {
+      "path": "sml-mlx-v2/sft/protected_update_1024/data.py",
+      "source_sha256": "f0de771fb891d2b12cb8c965c0470806f25d24390bf64833708f70146649be15"
+    },
+    {
+      "path": "sml-mlx-v2/sft/reading_repair/generation.py",
+      "source_sha256": "4ae25c44d79a21138e88aa4cdc64458a6e8ba739492c0480fc7ede0d92b5df22"
+    },
+    {
+      "path": "sml-mlx-v2/sft/reading_repair/DATA_LICENSE.md",
+      "source_sha256": "c8080b742ea3fa1d232a16b4faf5d237c58896519ff9d3e50bff9d13a44f20b2"
+    },
+    {
+      "path": "sml-mlx-v2/sft/reading_repair/test_reading.py",
+      "source_sha256": "b0eb56e00af3c3b9b6e270f6ce3fb28677c0a6c0d805cc6446fbeb57dca0a0fa"
+    },
+    {
+      "path": "sml-mlx-v2/sft/reading_repair/config.json",
+      "source_sha256": "5b12bea5aa51dc086e8d4a073f28cacf4179c8e60a2cf940c003f53f00b400c2"
+    },
+    {
+      "path": "sml-mlx-v2/sft/reading_repair/cards.py",
+      "source_sha256": "90eced93c447e58337cb8e060918b152bb4a09c407dac4560bd8207ff3695920"
+    },
+    {
+      "path": "sml-mlx-v2/sft/reading_repair/__init__.py",
+      "source_sha256": "4139efb937ae63af67a01cd9be72c8bf36f2631310f2164822fc6b7d15d6cde2"
+    },
+    {
+      "path": "sml-mlx-v2/sft/reading_repair/README.md",
+      "source_sha256": "4f017cdfb7d7041078c673d8f9b0ab9d7953fdda9194761824bdf6855e8f61d0"
+    },
+    {
+      "path": "sml-mlx-v2/sft/reading_repair/launch.py",
+      "source_sha256": "19c48a00614f8181bbd1330857af3a3669c7fb0d5001cab9287f2407cb88f62c"
+    },
+    {
+      "path": "sml-mlx-v2/sft/reading_repair/evaluate.py",
+      "source_sha256": "44b9384d77f5a87c5626f66f1712932de9004e7e06722da7d2539a541ce445dd"
+    },
+    {
+      "path": "sml-mlx-v2/sft/reading_repair/source.py",
+      "source_sha256": "3c0367d631adf2f3690275fe8530dd5c4a75f4075abef17108146a8e448b7bc2"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_expansion/test_expansion.py",
+      "source_sha256": "3b6a91c879b993fc145b5c5e4880f2943bbba694b646aea59365cbf82be3676b"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_expansion/config.json",
+      "source_sha256": "4404b70c0749fb0b68e9e23ecddb14d167f557eb23acccc31bd3161c36ad90dd"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_expansion/cards.py",
+      "source_sha256": "5e1ae0cf807ed594c84839a71ac24b1882e78518312cb3800a10f69facc70f57"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_expansion/__init__.py",
+      "source_sha256": "a66fb5a256d87fdf60b81b909b1506e9e10ba3062bf7cc24f365ca29c22600bc"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_expansion/README.md",
+      "source_sha256": "5363ba526e070f503caa749898ce6a18f9db57ba7e04475c7f92db220fc53539"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_expansion/launch.py",
+      "source_sha256": "4ec948768754fc2a5c3b9662ebe6335ca73c1dfb4fd2c33ec7bc2d707df46e6f"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_expansion/rubrics.py",
+      "source_sha256": "208001ad886e8353418acab970f3d561372267cbe8e25adb2e7b41ad1dfd0b43"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_expansion/data.py",
+      "source_sha256": "a7e107d391db51845d0c8bbf9273297cef62e3365624a920baa6b80ea839154e"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_repair/config.json",
+      "source_sha256": "f52a46a567d79c9e524b3b1a53236117778add9dc2654220e9c284b7f613df6a"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_repair/cards.py",
+      "source_sha256": "ab35f4b7fb3da8c3262bc4f686563f6d41507f0cd6ca7fafedd38da8a5c15292"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_repair/__init__.py",
+      "source_sha256": "61321f3abf8a116b2b8f11712a3ddf4ac87102fc4942e898099ae5e5792ea987"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_repair/README.md",
+      "source_sha256": "e335151e1f4aa628b6d4f0c0662e80627fd929f580102a75bb38a3f026a76085"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_repair/test_repair.py",
+      "source_sha256": "a26ef0dad3e291d977d532ea1dd6f59bfb8d2046f61bf823dfcc60e57725a9f3"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_repair/launch.py",
+      "source_sha256": "433a881abd6fc41f81d1dd1fbe0de1abb37735cd3f37f2284024ad0d5aaaaf8a"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_repair/rubrics.py",
+      "source_sha256": "0f6b0928886c325137760d55ecf84152f67c5c6ea235dd4e207b8976b7b97cdd"
+    },
+    {
+      "path": "sml-mlx-v2/sft/response_repair/data.py",
+      "source_sha256": "7684f669ce22d93d688af340c9e58f5679454899f885fa1de1921f0b794a1f9f"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance/benchmark.py",
+      "source_sha256": "b863e0d49198fdfa54b45c4e3251f9a131e0963470ccd572edb34421811b86ad"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance/check.py",
+      "source_sha256": "55c4bd08024984e253af206d2cd1129b98f6438477dc52426a4c9ca180fcfaf8"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance/config.json",
+      "source_sha256": "8129ae914b250dbbbf0765f3d8a34cb08ff2a6b3e63e145c68d8a13822204de3"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance/protocol.py",
+      "source_sha256": "6d365c16d412ee718d51db040a4060148ade6f487e1ba7e9efc9b905e4251acc"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance/__init__.py",
+      "source_sha256": "a15186393603a183b9d1991843e1520125024c699c85d4495798490caa8dab4f"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance/finalize.py",
+      "source_sha256": "524c0bfef412a1c30e741962f8e5cb80170d5a32a5150644aa09c8899f14916b"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance/README.md",
+      "source_sha256": "8fc3ac53ca628faa8430ba95da475730876000c66ec5fbeaa7dd55358d21e46b"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance/engine.py",
+      "source_sha256": "e6defc8e20c5f5a262bd1ed6a9938c1b7d8946411c380b19e524b981605c5350"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance/launch.py",
+      "source_sha256": "ad836c94541b2a59098e48ead0c37db5c8344302b841c94d282739df203256d3"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance/test_skill_balance.py",
+      "source_sha256": "b1a55a120029b501afd3597dd4961d28e5599b58845cbe8736ea1f328d10e831"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance/evaluate.py",
+      "source_sha256": "e078ccf021ac7619289412efb26b6cb30934406b437691c06162c19f8b189819"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance/data.py",
+      "source_sha256": "71fc04090d6eeb92b15ccdb98b921bf4a3ff0dd3fddcd8bd73c54dc61264b434"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance_768/check.py",
+      "source_sha256": "d8bd85e3d656ec090037ddfd133e21f0594ea494cd3c60a8f4d0477e33f7bacf"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance_768/config.json",
+      "source_sha256": "8f3cc597c45e4d6318fd49d0db4293672a4141350df32ec72b026e981fa91ea6"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance_768/protocol.py",
+      "source_sha256": "61889c32920beaea1f3bfed313fd3890ec71498758ee1af84b31e0e2c3c3913b"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance_768/finalize.py",
+      "source_sha256": "846817648e121f0cac72f29a83f8c38001f22440369a757bb10cf6f33c40e3f3"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance_768/README.md",
+      "source_sha256": "171ff7fd049dff8e0b6e80a29d4c8980f966fdca225c0adb82f35c4bd33bc58f"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance_768/engine.py",
+      "source_sha256": "9e2dcaed616222019ea7b8040f3c18d1c52c58de65ef05f4fb3d48276309c0bf"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance_768/launch.py",
+      "source_sha256": "e54be34d0a231b422b22407509aa076a47f888059b30f484d0179a2691b61933"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance_768/test_skill_balance.py",
+      "source_sha256": "4a6e19cac97d41a002400e7d15e485b0f9871a41e4fd0ed33edd4785bda4f949"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance_768/evaluate.py",
+      "source_sha256": "309ae52b18fef5142fa172f39dbd5656b3bbbd76e8ab26ace593b2ff238dd9d4"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_balance_768/data.py",
+      "source_sha256": "f94bb4015571a4d294f1425dec5a4de5e42effe51dfc07bfd6ed5d13aa307e1c"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_recovery_768/check.py",
+      "source_sha256": "f7a0100d583154b68ce2061fce25d430ab1c8b32a3fee6bca89b2ae2936e1efb"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_recovery_768/config.json",
+      "source_sha256": "657c48546d5ef027613b13711a1eae0955b73b044502ca054057200cde3726ca"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_recovery_768/protocol.py",
+      "source_sha256": "656c21084e3819e0778738cb64d20a9cd4dabd1844108ea701a7a6929667a376"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_recovery_768/finalize.py",
+      "source_sha256": "636c1fe4bdefe3005caeec058462346426a9648bf6dc737ec9d147b34d0c16cf"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_recovery_768/README.md",
+      "source_sha256": "0ffbd4c8eb9a189319e8f66f72f44553740cffa0f8198f646f45a996b0c58c5b"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_recovery_768/engine.py",
+      "source_sha256": "f2298ac44a1a00ef1f97037e1ba9ac196b6f132f7b7b2fc35edad0cc9ad4bf8a"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_recovery_768/launch.py",
+      "source_sha256": "4a1482e4c9d0119635c7fc3c712eac0cfa27309dacbfa918f1f760d04a047bad"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_recovery_768/test_skill_balance.py",
+      "source_sha256": "1f6bc4beb34db4d5c90158a208711c46dec923574cae7dd533d4afe7f7e39595"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_recovery_768/evaluate.py",
+      "source_sha256": "df8292d72ebcc21ce81853eb92d2be738a983aa613219e21fe310fa0df553ccb"
+    },
+    {
+      "path": "sml-mlx-v2/sft/skill_recovery_768/data.py",
+      "source_sha256": "9a69cf238c89b46ea110cfa2b310c25cc0e0c12fdf5e4857b60e7435b4dad3ae"
+    },
+    {
+      "path": "sml-mlx-v2/sft/text_followup_512_v1/config.json",
+      "source_sha256": "2b2feeee37f49888883e018c85c3b648f58ade2d72cbbac61b5ca3e8ca26bf33"
+    },
+    {
+      "path": "sml-mlx-v2/sft/text_followup_512_v1/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sml-mlx-v2/sft/text_followup_512_v1/README.md",
+      "source_sha256": "e3ad34c778b786806b02e035c33d74ce507574784f4b62168e953518223714f9"
+    },
+    {
+      "path": "sml-mlx-v2/sft/text_followup_512_v1/engine.py",
+      "source_sha256": "cc627395cfae216173cbad047acb2cdd253c0cc18ba4343e03a86edc79772fc0"
+    },
+    {
+      "path": "sml-mlx-v2/sft/text_followup_512_v1/launch.py",
+      "source_sha256": "a2aee780e1538d1a0a5360b2e6a08076bfe1923bfdd7c27ddcd2dcfa51f180ac"
+    },
+    {
+      "path": "sml-mlx-v2/sft/text_followup_512_v1/test_data.py",
+      "source_sha256": "43d0b4abe09262aa0c69b96ca3254d39b47b8fa3ec1fa422dcb0f43b0f9d2a38"
+    },
+    {
+      "path": "sml-mlx-v2/sft/text_followup_512_v1/data.py",
+      "source_sha256": "2c7501a80fd7a671777886426170410a2d1f522b1711338780b7704945d978cc"
+    },
+    {
+      "path": "sml-mlx-v2/sft/transfer_control/config.json",
+      "source_sha256": "09da6ba0cd05b91c73d7fa49f7cb39bb6edff49d82241453a3db07f82afc0243"
+    },
+    {
+      "path": "sml-mlx-v2/sft/transfer_control/__init__.py",
+      "source_sha256": "4ea04042bb2bf91128d064eafc39b564d54d58901dc5130d7db151750a1a76fc"
+    },
+    {
+      "path": "sml-mlx-v2/sft/transfer_control/README.md",
+      "source_sha256": "80f9b222ec83189326d81ec7c76c3dd42e12fc307f1d4c820c880c3ae9180752"
+    },
+    {
+      "path": "sml-mlx-v2/sft/transfer_control/engine.py",
+      "source_sha256": "9a1a84b29a1cb2c46799154f2df971b5f15ebc7a65f2fb1e0183f9da445c5354"
+    },
+    {
+      "path": "sml-mlx-v2/sft/transfer_control/launch.py",
+      "source_sha256": "d7ea2bfaf2f2db0a3cd2ca5592b73d33eea890fa8f8982650453519ec1893747"
+    },
+    {
+      "path": "sml-mlx-v2/sft/transfer_control/test_transfer_control.py",
+      "source_sha256": "b6ddc848357acee2541cb1998c516fc6b8c8979200589a60cfc4fee3b8a6c687"
+    },
+    {
+      "path": "sml-mlx-v2/sft/transfer_control/data.py",
+      "source_sha256": "f313ca28ffc26fd6c312d34f6b223ffcf97a3f1b4d075e7daa99f298cff41f9a"
+    },
+    {
+      "path": "sml-mlx-v2/sft/two_turn_640/check.py",
+      "source_sha256": "fb74f7c34785ee9e3e54a4d8d0dbe6d8912d51316b621b210405c3e20912dd66"
+    },
+    {
+      "path": "sml-mlx-v2/sft/two_turn_640/config.json",
+      "source_sha256": "9031d2bac1210292990c63511be4d96e75e86f2727a2f4735481f64154613e67"
+    },
+    {
+      "path": "sml-mlx-v2/sft/two_turn_640/protocol.py",
+      "source_sha256": "b7b71dde5873ef5220ac92575b925d4a3e4f9afe6bef675468d2aa34138ba20f"
+    },
+    {
+      "path": "sml-mlx-v2/sft/two_turn_640/README.md",
+      "source_sha256": "c04e77da594a0bbbfbb26ec64edb95c5cd256ec4448c763e924ce875eb79f2c1"
+    },
+    {
+      "path": "sml-mlx-v2/sft/two_turn_640/engine.py",
+      "source_sha256": "e98944fb42ff28dfaee42ddc8d17ab704243956d0b8abffb57d1924ec2fa2206"
+    },
+    {
+      "path": "sml-mlx-v2/sft/two_turn_640/launch.py",
+      "source_sha256": "c7295e987aa7ca1067b5b55a557d728854ac7be5917a8e90b56ab878c3eeee3c"
+    },
+    {
+      "path": "sml-mlx-v2/sft/two_turn_640/evaluate.py",
+      "source_sha256": "b3a90a93a9204eb944ae9a48ae4b700a680f2804e297fad3d054c2679867297f"
+    },
+    {
+      "path": "sml-mlx-v2/sft/two_turn_640/data.py",
+      "source_sha256": "b519cbe8ec068fc9f20d379c34e33e60ad7c4d6cf5e3eb0092c21e3890a1e689"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/unified_text_v2_sft_v1/scripts/benchmark.py",
+      "source_sha256": "df13c3567c3723a99d2685347b0ebe9bb42c9fececaf0b7f212b84ecb6dc7e78"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/unified_text_v2_sft_v1/scripts/launch.py",
+      "source_sha256": "ecad7943c55810d9da4c4043e7eb0c2e1f6939d2b038f24250f85af89a1924e5"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/unified_text_v2_sft_v1/scripts/evaluate.py",
+      "source_sha256": "41e1ecf0ed1da7d5e6b9513c298e82636f3991bc5c4a00a3f6f172f68f161cdc"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/unified_text_v2_sft_v1/scripts/compare.py",
+      "source_sha256": "a58478ebd74e944450f8c9fbe567bc85f361c6b1528a103efb7326ae0bce0f6f"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/unified_text_v2_sft_v1/scripts/data.py",
+      "source_sha256": "f09cfdf9a1fc0fea8384f7ab6890026b0f653fac9f9506b455c65d6de09224a6"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/unified_text_v2_sft_v1/config.json",
+      "source_sha256": "a7086f6cf57bad7171c011ff2949580ffefc0e5cd23fe7f254f5328dbd642ede"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/unified_text_v2_sft_v1/README.md",
+      "source_sha256": "fa54b6faca34e079e2d98a5fa61c46bd4b365d346224d1ea65db76d56fe36e02"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/public_repair_384_v1/scripts/benchmark.py",
+      "source_sha256": "1d5bbae8c2d6262e4e8326b75af941c32a7d863b7e858a7bf17df749ccd77076"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/public_repair_384_v1/scripts/test_evaluation.py",
+      "source_sha256": "eacf876f9ba03412aba3cc28d0f8bdcac1097ec1a1a6e9768b1d099c40f0144d"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/public_repair_384_v1/scripts/launch.py",
+      "source_sha256": "348215af57ffeaf85ed68b1ce60413c9b43df6c8f643515bb4ee036920ae930d"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/public_repair_384_v1/scripts/test_data.py",
+      "source_sha256": "8d8bb35a656a989fc007df5602750b2f2a8baf6a86508aa7d82c76f75bdad275"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/public_repair_384_v1/scripts/data.py",
+      "source_sha256": "36793fec90c5cd7cb504edc38c57a698115fa8ad8c51a5d97d6826403e87df38"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/public_repair_384_v1/source_pins.json",
+      "source_sha256": "a18cd8ba1ec4a68fb22725db75f3ea8138db5f18e9b1bcf2311ef26b9efc99c9"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/public_repair_384_v1/config.json",
+      "source_sha256": "2fd560ee19aa6da5df60aab88d8fafab0114c598e46ea20a3760b31d83114922"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/public_repair_384_v1/README.txt",
+      "source_sha256": "3deb2a3f65b5c42a936a5cb9fd2e99914a1d09cdb9729d799750216e29edc6e1"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/data_focused.py",
+      "source_sha256": "8e333a7221d5652b817c8017fa190d3c7da8b9ad9b8cb9869920a5e19391900b"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/dataset_trials.py",
+      "source_sha256": "85ea9aac5879944740eb868ddd2943d6ac9c49e3c7f8e4dd1d2edfb8a6e6d4b6"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/format_preferences.py",
+      "source_sha256": "115b506778a1d8c30a9df4c9210c0451fc62cbe3445946fbd1dc4d081c8f464a"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/record_trial.py",
+      "source_sha256": "32bc04474e724b9ee2158724688c9890a528ffd3444fafcc9fa28c7a38c71223"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/breadth_stable.py",
+      "source_sha256": "d6284f1673e05a2e4629fee8a65eb9735b97df775fd7dc94213b68369bb17d66"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/reserved_test.py",
+      "source_sha256": "101511d16073c36b8043ee583c78a20a1c723efc4a5c59efd4fec3e55fefc516"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/human_dialogue.py",
+      "source_sha256": "f2db328e7389939553dcd5f9251dccf006253a939f3dad88f6b7ac4c4b10d804"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/science_dialogue.py",
+      "source_sha256": "75cfb93077d85b3710f02d57c1a7eb7c5c0bca15c084af0267b94931e0e90ccf"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/experiment.py",
+      "source_sha256": "c42837398f2e7b4e7c51108fb9cc8537512e1cc2f8002d44a6282b0b732101ea"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/mixed_public.py",
+      "source_sha256": "830e7138aad238a20095448f888443ea2c4d2c293e4090098dca5721cd3a4f23"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/familiar_dialogue.py",
+      "source_sha256": "a7c48cd944f807ecb47aed3384b1c83121da337ba9e7b872889ae28a028189ee"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/short_constraints.py",
+      "source_sha256": "019d97a24a12da1d510bbfad11776dcc6df80f561852973b9d569bad6e311976"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/instruction_changes.py",
+      "source_sha256": "7687529674e1c2d658cc732b76fbaa8088cb104ba7180e4a93b31a18a5183ca6"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/compare.py",
+      "source_sha256": "7c7d28da26ec6e26099b31333e2db0384e37da82c53db0b23351e90f381ee8b6"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/scripts/balanced_instructions.py",
+      "source_sha256": "8082549c8fb7a9dad069a010dec07a01b5c012bc9445d49e02da292145b8408a"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/current_baseline.json",
+      "source_sha256": "e0c8d61bd8d01150e46a5b4f8eadbdc73590f25ab185b20d5d3fd5a5f4393d55"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/README.txt",
+      "source_sha256": "7bcb487513ea253b0a5283c63900827d210ef41465a047803d9a5f8cab15d6ae"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/config.json",
+      "source_sha256": "d06d3552b264aab676d966a74598078955d2ea43683fc038a5401a7e42ffbe0c"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/selection.json",
+      "source_sha256": "50fca08ffe0fc3d0cd759ef4ec09509bb836ff92ea09932111db43edf78e7d9d"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/source_pins.json",
+      "source_sha256": "11baf5a81fd28f9e2e114cc7e1c050172175745e168154d2004590925c4577e4"
+    },
+    {
+      "path": "sml-mlx-v2/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/retained_result.json",
+      "source_sha256": "20a585841d228c28310a4f26024debb6ef2f2d25ae044b95530d55353c795297"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/core.py",
+      "source_sha256": "272970b7135835dd6f93445d4d0193e90eedf7b241a518415852876e2037ba89"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/spec.py",
+      "source_sha256": "9e60ff545d588048748dfaa086f1940f73f96497e2aa265eda7b27b665cdd534"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/test_evaluation.py",
+      "source_sha256": "9cb8c3eaa9ce418b5f05f299a6c0541a179bb722a376755590ae6fb0dfda55fa"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/launch.py",
+      "source_sha256": "a9b597e260b0e843b83cedf38421d457916458a6bde76bfe1d7580bc2448ea44"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/prepare.py",
+      "source_sha256": "11c88488bdad9a5fa8933c89aa44bec4de7c2c1af3b24016503e0e9b00e6abe9"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/tasks/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/instructions.py",
+      "source_sha256": "511cc41a53787d818c292d8335c8e98aa833296a0789ac470db56bcd6496345e"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/instructions_util.py",
+      "source_sha256": "e8c4d9187bac1482d93941fb46469609c3ae78d896195bfcb300a0707d492567"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/instructions_registry.py",
+      "source_sha256": "9db1c062cdb70a91420d3789a588235a1064c2b9a1a66e09e5fb9df9e7584a6c"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/utils.py",
+      "source_sha256": "1ab8f14808c826f93f2364883487ed63cf4267980bf4761fda8053899c013632"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/requirements-ifeval.txt",
+      "source_sha256": "a548e65d971e5a40ec9f6d9bd2e84d07622be50f54b2efea789131910a228d32"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/vendor_sources.json",
+      "source_sha256": "a0ee9b17a46b214fbdc4bc2500729fba2f67bed80cd0539265d420f7490bbaba"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/README.md",
+      "source_sha256": "01a19c08d782eae8c9f306ea870526c677f91ff5f4adcc66656a1cb3efb3f04c"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/_runtime/langdetect-1.0.9.dist-info/licenses/LICENSE",
+      "source_sha256": "9c539fdc47fa4e195b88efaa6495f11463de271f59c8de96feb8bc9c8abab1ab"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/_runtime/absl_py-2.3.1.dist-info/licenses/LICENSE",
+      "source_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/_runtime/packaging-25.0.dist-info/licenses/LICENSE",
+      "source_sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/_runtime/nltk-3.9.2.dist-info/licenses/README.md",
+      "source_sha256": "8035d39cb60810062ff378d3cf81a596dc571177154d49629b4465b75cc1ab16"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/_runtime/six-1.17.0.dist-info/LICENSE",
+      "source_sha256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/_runtime/immutabledict-4.2.2.dist-info/licenses/LICENSE",
+      "source_sha256": "347f918d37d4e0556a0695d34b9fb87fa9bbe808d54949851789c6c1fc91c61f"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/vendor/HARNESS_LICENSE.md",
+      "source_sha256": "a806e42547620dffbc2ec0333322c8b3523b4af11e059be14ef81aa5b1ae021f"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/full_benchmarks/vendor/NOTICE.md",
+      "source_sha256": "60c3c2846f265f88596e2ebc3a2297d1b5d51e408164e70c6428457f189b36d6"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/mt_bench_local/run_384.py",
+      "source_sha256": "b197ad1b6871d886636286cbbac8002778d1a823cc897d1f7fb6222fd0acc94c"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/mt_bench_local/run.py",
+      "source_sha256": "82f98beeda529bf84068210aa7e44ca357488248fc43040b680ed36172a9dce4"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/mt_bench_local/test_runner.py",
+      "source_sha256": "50897910c44b62567227a466d651b35e999ebce8e27eb987bfbfb902a3de162c"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/mt_bench_local/prepare.py",
+      "source_sha256": "6d2125b3f45be165e28aecb154a173b10f0efd1531060310ad7ea04792196273"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/mt_bench_local/sources.json",
+      "source_sha256": "93f0e33c6fb8b8bb2668dfe54d529c0b64d245e871865bc0f59de212dca5f9f6"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/mt_bench_local/README.md",
+      "source_sha256": "fd1c4e022400cb8f24385c2a301f3490bde6c310c33286b44f35dfbd6fc43f0e"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/mt_bench_local/judge_model/README.md",
+      "source_sha256": "726574a55cc45d084a60e9a5b33367dcbd7dbe85ef5d9d258d220830f647c2b2"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/mt_bench_local/upstream/reference.jsonl",
+      "source_sha256": "f957a5bc977badb66885ec970e6cd08527845780313f0995764260e5777b9b3f"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/mt_bench_local/upstream/question.jsonl",
+      "source_sha256": "119565adbab82227089cefdb44c8d7e2cf04dc0a0ec233634c82e7d4e2a944f7"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/clean_reply_benchmark.py",
+      "source_sha256": "40d0e835ec8788511f3682b7a06d98f79c2f4aa694a1a1cefd5d4683bae003a3"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/two_turn_1920_benchmark.py",
+      "source_sha256": "d2dad348195e8843fa3f5b7c503bb55197793256a19b313abe02b5eb458a3c9d"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/base_curriculum_v2_benchmark.py",
+      "source_sha256": "203927a381a4f232a28e422693bcab07278e50df8da4a44472b9a1d639aca8d3"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/skill_recovery_768_benchmark.py",
+      "source_sha256": "cd736ca0d6c9f8753961a64536b8577dc59c0a5d490761123b42779bc89c64f2"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/context_reasoning_1024_benchmark.py",
+      "source_sha256": "15ea855d804395b7f5daac2f9441ecc8a45330f69684a08a4baac1a212a3a3c0"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/benchmark_grounded_640.py",
+      "source_sha256": "a2a368aef260419aef26d9f92c549171a36837ad0bf3e72c7d283b98e21f6432"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/conversation_foundation_benchmark.py",
+      "source_sha256": "943b74eba90ebae53445f9d4906ad52ac10ba190e30dc0620f29ebf8b252339a"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/intact_base_384_review.py",
+      "source_sha256": "7d417ed8d23327bf7ded63465d48309eff08743ff697fca18e7cbd3d9cc8dd4e"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/content_preserving_1024_benchmark.py",
+      "source_sha256": "ffc886b437a463f21baea8bc2f4df136887c76b113cc0d7e8f68408780431f60"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/benchmark_preference_2688.py",
+      "source_sha256": "87239f334dc099bc3b8543f79de6fd653bb9125ef1cdf5929a56e95d07a6e9d7"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/benchmark_corrective_896.py",
+      "source_sha256": "fc2f6da23b1d2d02b3391aa34090b9566ad9b8785fcbdd0270849a0173f9b5aa"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/balanced_transfer_1472_benchmark.py",
+      "source_sha256": "42815c9d1977440ad7cf74bd26b01303fd6ef5ae4cb389684f94d50d281cdb47"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/intact_base_384_benchmark.py",
+      "source_sha256": "945af7e8eb3101691c8434ac214ee6832e0c2a5cf42de3f4fb197d71aa14a1b3"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/content_preserving_1280_benchmark.py",
+      "source_sha256": "8bccd49e9af94eeb086007af048bec2075ae3068222f5ef7ef7b890efef98518"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/intact_base_384_decode_audit.py",
+      "source_sha256": "8f905e20f5239f695238039cd9c827dbe04e84636418a8a0a808cf89515945b1"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/skill_balance_768_benchmark.py",
+      "source_sha256": "ab9cc272d860a5e0f3097f2f6d5dabb12134678e47f53b938c0a170e175bfc2f"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/repair_teacher_chat_data.py",
+      "source_sha256": "3e030354f4f8050f35de312d2ba842559bd3bb52a75104000f2f1de27403089c"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/teacher_chat_benchmark.py",
+      "source_sha256": "02a9f95ebc90a93ac8c8aace64ad7ec56d610684dc579887fb966b796a50c943"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/summarize_base_audit.py",
+      "source_sha256": "c4d39d9df8a2874844aeda5bf2b3a6b8d250170d1482aa47a814c77795086cf7"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/benchmark_384.py",
+      "source_sha256": "01ce4034e9f9d2919b8f6ee5b4b0ba9b0170dd7152813e33b4eb61ef5e6fd4c4"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/constraint_completion_1920_benchmark.py",
+      "source_sha256": "0d13380666e0d9b8f8ccd932ee6f04e01433ec65090dbf6676efc6763941ab09"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/constraint_completion_2048_audit.py",
+      "source_sha256": "d6824ce257f1ac73b4d3e123e51e98611ab21c8e335e295bce1513a70fee124e"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/two_turn_640_benchmark.py",
+      "source_sha256": "4ab8a103e2f46d9f38f7d1d6d6751ce29b40fe8c4aad5774487b0768ad92cbbd"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/audit_teacher_data.py",
+      "source_sha256": "750dd58b066af13fe3062f2007dbe5b5fb8778404396bed571d886d6b95c7559"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/text_followup_512_benchmark.py",
+      "source_sha256": "5548fedab5a535c6b27f093fb3d07dfd818192d97d8ea5ae5e280a5810760c84"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/teacher_chat_reserved.py",
+      "source_sha256": "6fe953dd1dd997c9d8d5d5e2247ee9d1ba7e63d42ba3e723025dee07c42d6dfd"
+    },
+    {
+      "path": "sml-mlx-v2/evaluation/intact_base_384_probes.py",
+      "source_sha256": "ad2627615fc64cc7ec36befe5cdd7f5c753bb4bab43d01a4ff067ba5649b2ee6"
+    },
+    {
+      "path": "sml-mlx-v2/tokenizer/bytebpe32k_v1/corpus.json",
+      "source_sha256": "e4c47b7b6aba08f948de7c2c7cb94c58dbd09dde2ded6ac185c60856ee686d27"
+    },
+    {
+      "path": "sml-mlx-v2/tokenizer/bytebpe32k_v1/report.json",
+      "source_sha256": "e871f690eabebf82da173f0e406f38b79a10cd7d2647bb3592c3fc35ae9a2f16"
+    },
+    {
+      "path": "sml-mlx-v2/tokenizer/bytebpe32k_v1/tokenizer_config.json",
+      "source_sha256": "619f500553367eb76f5be00a98625130ec857b9c367561334984096c029ba2a9"
+    },
+    {
+      "path": "sml-mlx-v2/tokenizer/bytebpe32k_v1/tokenizer.json",
+      "source_sha256": "e095f0413a11fa91fbb58f37d00e4c6bcda59beb89b28f6f680db1436a7e8891"
+    },
+    {
+      "path": "sml-mlx-v2/tokenizer/bytebpe32k_v1/manifest.json",
+      "source_sha256": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb"
+    },
+    {
+      "path": "docs/figures/pretraining-overview.svg",
+      "source_sha256": "f45c7df0c230d0b16709c571d91611446336a9214b8b76acd1da71bd59305639"
+    },
+    {
+      "path": "docs/figures/pretraining-phase-b.svg",
+      "source_sha256": "8a8e9e50b94008c0515922602d3aeb10fea8ba36d4ef3069b9dc060bed1f2f4c"
+    },
+    {
+      "path": "docs/figures/pretraining-sources.svg",
+      "source_sha256": "39bf1d0ba1045e5921db48f5fd7c9772165e37823ac938a94dac53ac512b0579"
+    },
+    {
+      "path": "results/OPENSMl_150M_RESULTS.json",
+      "source_sha256": "0c4b753ee40c662a2b6388725a422ae7fc6ae7451484d4e7618578607bcb0f46"
+    },
+    {
+      "path": "LICENSE",
+      "source_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "model-card/README.md",
+      "source_sha256": "6cfc4aa8fb8e34d6ead66e3ef6f1ef3666366120598a23a0b6a35c39a65d76ec"
+    },
+    {
+      "path": "sml-mlx-v2/pyproject.toml",
+      "source_sha256": "9874be5024a0a7f81034827c96b3e6572296fd58b42e729ff5e239b618783589"
+    },
+    {
+      "path": "sml-mlx-v2/provenance.json",
+      "source_sha256": "12a7b9941da9f76ed6b32fd975a71fe320194e01e45874bcdee999763f61fc50"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/jaccl_benchmark.py",
+      "source_sha256": "08eeff7c5891766fa91e75ed3b2a5db43e8d29e18fbad5b01d2ec9f7baabfe74"
+    },
+    {
+      "path": "sml-mlx-v1/train/jaccl_training_state.py",
+      "source_sha256": "b58b23ea32eb7653475b5ee35d645f43e6c2ce944e65c04214cafa35fee5bf24"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/configure_thunderbolt_control.py",
+      "source_sha256": "7017662dc0abc53c9d5075378caa4cfcbcbe2393604fd686adcfbb61c2aadfd3"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/configure_rdma_mesh.py",
+      "source_sha256": "186f779e0145d6e3214a48797a3eea09478a888b7186eb1356d2c2a8b573db9d"
+    },
+    {
+      "path": "sml-mlx-v1/train/jaccl_ring_transport.py",
+      "source_sha256": "da5d0b5d3d9762dd806ad0ed9da1e8f0edd3e69dc8d626f20d9e6af27673f375"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/check_jaccl.py",
+      "source_sha256": "75e9e7016debf02a9cfc4d207ef62bc4570b6b37b0ca3f503e05ddb25eb68164"
+    },
+    {
+      "path": "sml-mlx-v1/train/jaccl_common.py",
+      "source_sha256": "1b5107a5d2762f31f83db5a5fbc6ef5e986fc12dc4b74bd3e5176530769c5cb9"
+    },
+    {
+      "path": "sml-mlx-v1/train/__init__.py",
+      "source_sha256": "8f4f5243c26e18798d57bc7e0748943100cd5f0f1277f20cc3abb87cae2b35c9"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/benchmark_jaccl_ring.py",
+      "source_sha256": "21cbc21d54d65358dbf701c486b33de48cb3621ce77e4829a7eb2ffff878b6f9"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/repair_ring_network.py",
+      "source_sha256": "fa502e68bb7aad9633995124401716a661f3bbe82c3ecf68dfcca1291148c721"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/benchmark_gradient_groups.py",
+      "source_sha256": "ddbe5930cb7d6ba16ce94792ac54156a77a18e1c02abd3094dc77845336d69a2"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/check_ring_thunderbolt.py",
+      "source_sha256": "be64015fe3fb7b5eda15ac7d272a2b95579ffa125fd1ac97380f1b6420afda8b"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/completion_playground.py",
+      "source_sha256": "af31bafca8efe597900b306d4153ec4434e2dfc3ab84bd18735a9462d72b7783"
+    },
+    {
+      "path": "sml-mlx-v1/train/model.py",
+      "source_sha256": "1eee6f8afe78767ff6b9c604ccf2328c98b24bc94dbad6291a0ad699dd7345fe"
+    },
+    {
+      "path": "sml-mlx-v1/train/train.py",
+      "source_sha256": "b159a6ed1b04e895076fa9f8808576b4bf1db092749e5a77525a597fb08aadc6"
+    },
+    {
+      "path": "sml-mlx-v1/train/tokenization.py",
+      "source_sha256": "0598afe75750fb24a4f3fd7b666749fde8ad669ca8bedc6e7ae13b50f9ef258e"
+    },
+    {
+      "path": "scripts/benchmark_gradient_groups.py",
+      "source_sha256": "ddbe5930cb7d6ba16ce94792ac54156a77a18e1c02abd3094dc77845336d69a2"
+    },
+    {
+      "path": "scripts/benchmark_jaccl_ring.py",
+      "source_sha256": "21cbc21d54d65358dbf701c486b33de48cb3621ce77e4829a7eb2ffff878b6f9"
+    },
+    {
+      "path": "scripts/check_jaccl.py",
+      "source_sha256": "75e9e7016debf02a9cfc4d207ef62bc4570b6b37b0ca3f503e05ddb25eb68164"
+    },
+    {
+      "path": "scripts/check_ring_thunderbolt.py",
+      "source_sha256": "be64015fe3fb7b5eda15ac7d272a2b95579ffa125fd1ac97380f1b6420afda8b"
+    },
+    {
+      "path": "scripts/completion_playground.py",
+      "source_sha256": "af31bafca8efe597900b306d4153ec4434e2dfc3ab84bd18735a9462d72b7783"
+    },
+    {
+      "path": "scripts/configure_rdma_mesh.py",
+      "source_sha256": "186f779e0145d6e3214a48797a3eea09478a888b7186eb1356d2c2a8b573db9d"
+    },
+    {
+      "path": "scripts/configure_thunderbolt_control.py",
+      "source_sha256": "7017662dc0abc53c9d5075378caa4cfcbcbe2393604fd686adcfbb61c2aadfd3"
+    },
+    {
+      "path": "scripts/jaccl_benchmark.py",
+      "source_sha256": "08eeff7c5891766fa91e75ed3b2a5db43e8d29e18fbad5b01d2ec9f7baabfe74"
+    },
+    {
+      "path": "scripts/repair_ring_network.py",
+      "source_sha256": "fa502e68bb7aad9633995124401716a661f3bbe82c3ecf68dfcca1291148c721"
+    },
+    {
+      "path": "train/__init__.py",
+      "source_sha256": "8f4f5243c26e18798d57bc7e0748943100cd5f0f1277f20cc3abb87cae2b35c9"
+    },
+    {
+      "path": "train/jaccl_common.py",
+      "source_sha256": "1b5107a5d2762f31f83db5a5fbc6ef5e986fc12dc4b74bd3e5176530769c5cb9"
+    },
+    {
+      "path": "train/jaccl_ring_transport.py",
+      "source_sha256": "da5d0b5d3d9762dd806ad0ed9da1e8f0edd3e69dc8d626f20d9e6af27673f375"
+    },
+    {
+      "path": "train/jaccl_training_state.py",
+      "source_sha256": "b58b23ea32eb7653475b5ee35d645f43e6c2ce944e65c04214cafa35fee5bf24"
+    },
+    {
+      "path": "train/model.py",
+      "source_sha256": "1eee6f8afe78767ff6b9c604ccf2328c98b24bc94dbad6291a0ad699dd7345fe"
+    },
+    {
+      "path": "train/tokenization.py",
+      "source_sha256": "0598afe75750fb24a4f3fd7b666749fde8ad669ca8bedc6e7ae13b50f9ef258e"
+    },
+    {
+      "path": "train/train.py",
+      "source_sha256": "b159a6ed1b04e895076fa9f8808576b4bf1db092749e5a77525a597fb08aadc6"
+    },
+    {
+      "path": "provenance/checkpoints/v2-base/model.safetensors.json",
+      "source_sha256": "602e96af792ed3255694e86701c00d953490bd0738d32c10860bc9a766fc249d"
+    },
+    {
+      "path": "provenance/checkpoints/v2-base/manifest.json",
+      "source_sha256": "34cbe6682d6475218b811c43fbf307c10ce98bc2ce7d0f11328575952218cd00"
+    },
+    {
+      "path": "provenance/checkpoints/unified384/model.safetensors.json",
+      "source_sha256": "ca07ddc3db511d5458397e4d0651dc791f0e3ac6b0279a2f887dd4ef7df5bc6b"
+    },
+    {
+      "path": "provenance/checkpoints/unified384/manifest.json",
+      "source_sha256": "1010a05a709e3da8fffd73deb8ce649026e4ed212b01a762ad569c15edaee9a1"
+    },
+    {
+      "path": "provenance/checkpoints/repair512/model.safetensors.json",
+      "source_sha256": "418784fc8da5cea97100a704f00e646d0feac8613d49b62c0d1e6baea8574c0f"
+    },
+    {
+      "path": "provenance/checkpoints/repair512/manifest.json",
+      "source_sha256": "eb254f3d11b3e40af726a7ba07a8d123f77c4271f9709bb720560203d131244e"
+    },
+    {
+      "path": "provenance/checkpoints/selected768/model.safetensors.json",
+      "source_sha256": "7c0e307d7bc1973a1d5b8c683b2911c4dd2fead65d49226cdce53d6dfe098908"
+    },
+    {
+      "path": "provenance/checkpoints/selected768/manifest.json",
+      "source_sha256": "1bc8d8350f20ac9c5cd69ad79c55b1120c0830dea30000c7576e140b5d2d22a3"
+    },
+    {
+      "path": "sml-mlx-v2/sft/balanced_transfer_1472/config.json",
+      "source_sha256": "35978819efe1ba263a580b2acb8a61ab54d8e9f3faf9b45f32428fc8b75c417a"
+    },
+    {
+      "path": "sml-mlx-v2/sft/balanced_transfer_1472/protocol.py",
+      "source_sha256": "d8982f90ad59708c1fb6a46e341d7dba1f7f57c476f334104cd3f7c5961043cd"
+    },
+    {
+      "path": "sml-mlx-v2/sft/balanced_transfer_1472/__init__.py",
+      "source_sha256": "6cda6fd618ff182065a542194022772dc038e4ddcfab68c3730a8e7652fa567f"
+    },
+    {
+      "path": "sml-mlx-v2/sft/balanced_transfer_1472/README.md",
+      "source_sha256": "eed31f3f4941d8a495653f18602723b4cd702e9fc0daccd52d4453f8dd0b6527"
+    },
+    {
+      "path": "sml-mlx-v2/sft/balanced_transfer_1472/engine.py",
+      "source_sha256": "38e93fa7dc65f384fc4f0b90c93e476ba647092d2fbc08275a4dc43b1802a78f"
+    },
+    {
+      "path": "sml-mlx-v2/sft/balanced_transfer_1472/launch.py",
+      "source_sha256": "ab0cd60317118319305126959e9046f7140aa8c3f78bd6cdd0e4538d6812044d"
+    },
+    {
+      "path": "sml-mlx-v2/sft/balanced_transfer_1472/evaluate.py",
+      "source_sha256": "9d4a1ce231fa1317fa3632e1eb2a5ddbf6b727ddd61dbed47e65a2fc06910ef0"
+    },
+    {
+      "path": "sml-mlx-v2/sft/balanced_transfer_1472/data.py",
+      "source_sha256": "8677ad3e1d642d342f4167a0b6a97db57ce12a54efc46d1baf89040c3d5f19c3"
+    },
+    {
+      "path": "sml-mlx-v2/sft/teacher_chat_768_v1/teacher.py",
+      "source_sha256": "9c18c05d384b3cbfd281c9cb50ec42852391ede5986341e0ce64a8f401ba2ff7"
+    },
+    {
+      "path": "sml-mlx-v2/sft/teacher_chat_768_v1/check.py",
+      "source_sha256": "b764296abc1998aabc1a7d0f825d49dbb7b96c8b698f5a468ca5189ae37de88c"
+    },
+    {
+      "path": "sml-mlx-v2/sft/teacher_chat_768_v1/config.json",
+      "source_sha256": "7454e51aaf5e2f81cb03de0a8b45629b2f0a1c32beb931c4f8a742c933ecf862"
+    },
+    {
+      "path": "sml-mlx-v2/sft/teacher_chat_768_v1/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sml-mlx-v2/sft/teacher_chat_768_v1/README.md",
+      "source_sha256": "c4ca1f264bd818b24ace775c145e10e4078107557b32467d8d77ecf2cae8b3b2"
+    },
+    {
+      "path": "sml-mlx-v2/sft/teacher_chat_768_v1/engine.py",
+      "source_sha256": "bf0d25efa0e0ab85ca69b652690339509820a9cff1fb912dca6a30d83c4cacc8"
+    },
+    {
+      "path": "sml-mlx-v2/sft/teacher_chat_768_v1/launch.py",
+      "source_sha256": "5a1ddf05a3f3a4f124465e1e947e1be73efc5940258d086a764677a237b96bf0"
+    },
+    {
+      "path": "sml-mlx-v2/sft/teacher_chat_768_v1/test_pipeline.py",
+      "source_sha256": "e1ceec5ab2e33e367f95f85382a343b342cb846603eb094ebfd683bee066f266"
+    },
+    {
+      "path": "sml-mlx-v2/sft/teacher_chat_768_v1/data.py",
+      "source_sha256": "cb699006d1ebc73ec03868ee4242cb0f71c9e2db8d2458a13b0727f1680a075c"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v2/baselines.py",
+      "source_sha256": "c6eeb3433d33ba8930fc94ebcf496b8f5fc60fc0d55be97219e36f2d8a927d25"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v2/benchmark.py",
+      "source_sha256": "14dd8861b4179bc69429d536ee69ba21d7bb8e4e6ae8324882c98f0796010155"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v2/behavior.py",
+      "source_sha256": "e46b7e122c8c6e5d9a2b41fa6d375590258f0e01f7ed61f46e75ca3acdfa36ca"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v2/config.json",
+      "source_sha256": "7aa49be86e4842fd0e0a6d8195c60f04948ac5ade8024768134b6e05ca44ba79"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v2/__init__.py",
+      "source_sha256": "4d05adedb2467bb45391942c1e48922d9c0b6240edfae5c511ad8ecb779bdb4d"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v2/README.md",
+      "source_sha256": "4a3dfbb8483f0f1fa398a20936a885c59f06ffef526149ff0f5ec26cb4ad1dbe"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v2/full_benchmarks.py",
+      "source_sha256": "a0fa945f15f4683458c50de413246a8d7d03f1e402217a2baa085979381b8143"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v2/engine.py",
+      "source_sha256": "140b7c277939ce7a86a9f890d14657b850a08076a153ef3cb5de516537140509"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v2/launch.py",
+      "source_sha256": "e5238b819bde3e696905514b0f5837a48e1ece13828bd91b51b37537682fdcc7"
+    },
+    {
+      "path": "sml-mlx-v2/sft/conversation_foundation_v2/data.py",
+      "source_sha256": "a9c0ece58feeed857b45d106a5131ad2a212df78e862d9320cb78efe1badd36f"
+    },
+    {
+      "path": "sml-mlx-v2/sft/context_reasoning_1024/runner.py",
+      "source_sha256": "7b19efc05bf77f00f31c33fb04026a0991ce116d3a60f1ee5b419e56fd730040"
+    },
+    {
+      "path": "sml-mlx-v2/sft/context_reasoning_1024/check.py",
+      "source_sha256": "f810ae0570bc3e2791b86f6f31670ed9c25e1318bfa0b57bd6d8eb5a59a1cb3b"
+    },
+    {
+      "path": "sml-mlx-v2/sft/context_reasoning_1024/config.json",
+      "source_sha256": "2f9acdfb40517415ed1f59fe0c5f01d0e72d934a8bafde2876cfea064e957172"
+    },
+    {
+      "path": "sml-mlx-v2/sft/context_reasoning_1024/protocol.py",
+      "source_sha256": "cb31b7e1df9b6e3140323e0b30a391fa18ddfb4f8e583cca35165abf132e956e"
+    },
+    {
+      "path": "sml-mlx-v2/sft/context_reasoning_1024/finalize.py",
+      "source_sha256": "2464f6782327ebf888c33bc15b56cdaf53e4185cb39d89a84a831e15791d0304"
+    },
+    {
+      "path": "sml-mlx-v2/sft/context_reasoning_1024/README.md",
+      "source_sha256": "8dbc225c3b30d71215cbf80f6d9b0dd26a8b3431b5a13ab96a91ca271d06c831"
+    },
+    {
+      "path": "sml-mlx-v2/sft/context_reasoning_1024/engine.py",
+      "source_sha256": "001f7f867973015bf2e9bc34065cedf0ead6e7e76b6553262db4e64d88c5f992"
+    },
+    {
+      "path": "sml-mlx-v2/sft/context_reasoning_1024/launch.py",
+      "source_sha256": "d073d20bfb4468a5a7599caa5873177ccf698d5b4ffbf2001b66d41c3c7913e8"
+    },
+    {
+      "path": "sml-mlx-v2/sft/context_reasoning_1024/test_context.py",
+      "source_sha256": "fea5239886a8e70949400f8d176aab9403088260aa8186e242ba2de878f16f76"
+    },
+    {
+      "path": "sml-mlx-v2/sft/context_reasoning_1024/evaluate.py",
+      "source_sha256": "b17841ad6d85b2be846096378b1efff26160123fa5ea897d7bec85b6cd179c0b"
+    },
+    {
+      "path": "sml-mlx-v2/sft/context_reasoning_1024/data.py",
+      "source_sha256": "697b3e048168616d89e0c94c28efa92ae0d3f59da3f813f165ffc65b7b840e70"
+    },
+    {
+      "path": "sml-mlx-v2/sft/explanation_transfer_1024/benchmark.py",
+      "source_sha256": "94c359373d381812427c5717a2e3a1b3b929b6daa0e46474401dbe79a235b700"
+    },
+    {
+      "path": "sml-mlx-v2/sft/explanation_transfer_1024/check.py",
+      "source_sha256": "2fb6162b5502a8deeb472f8d13c3d46807efeca0c151998d6a851dca71d89632"
+    },
+    {
+      "path": "sml-mlx-v2/sft/explanation_transfer_1024/config.json",
+      "source_sha256": "b08c26c8a63b0193903d5d23495ff70f76ef7655d0eab9294c832964066dc519"
+    },
+    {
+      "path": "sml-mlx-v2/sft/explanation_transfer_1024/protocol.py",
+      "source_sha256": "48095b8bc56538872012a95e24c16ad884483b14b67c5202d8fc0347ade3ea4c"
+    },
+    {
+      "path": "sml-mlx-v2/sft/explanation_transfer_1024/ESNLI_LICENSE.txt",
+      "source_sha256": "1346b2949ed1927b55d5067206ffa7c62923e97cd1e0149914842c3a177c38f5"
+    },
+    {
+      "path": "sml-mlx-v2/sft/explanation_transfer_1024/finalize.py",
+      "source_sha256": "f0af0a883a420f0155cf88203a2902214c391c43b2416289513098513aef69d4"
+    },
+    {
+      "path": "sml-mlx-v2/sft/explanation_transfer_1024/README.md",
+      "source_sha256": "28a1dc1eaf3a8db43a4e40fe6862afafce664da79267dbe7d42ddc328bf601d2"
+    },
+    {
+      "path": "sml-mlx-v2/sft/explanation_transfer_1024/launch.py",
+      "source_sha256": "6359247cf5b0ef04271d4735a700164a29c7d9057e32b1e9d67c1417c9948f8c"
+    },
+    {
+      "path": "sml-mlx-v2/sft/explanation_transfer_1024/evaluate.py",
+      "source_sha256": "9b5935d07abdc2198a914d9c647a4cfbef8b230a0b4fb6a36cbebf5c5eefbaa4"
+    },
+    {
+      "path": "sml-mlx-v2/sft/explanation_transfer_1024/data.py",
+      "source_sha256": "b5c80f55ed48f89a1ba734c67417be238608141cfe736311282dda86662a4bb7"
+    }
+  ],
+  "changes": "Documentation organization and relocation placeholders only; original source hashes are retained. Site-specific cluster code requires configuration. Added explicit setuptools package discovery for editable installation.",
+  "excluded": [
+    "model and optimizer tensors",
+    "raw/prepared datasets",
+    "evaluation caches",
+    "credentials and machine-state files",
+    "unselected candidate artifacts",
+    "abandoned local external baseline evaluations"
+  ],
+  "packaged_files": {
+    ".gitignore": "62616103e3963e28a3df4a1d3675039bfc1e1f9b5cb9193f4b932fb602f43c04",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "README.md": "ac49164774e5a6fe457e444ac4a8523df639c13180cd318ff88b6725e1b3df77",
+    "RUN_GUIDE.md": "9ddb5c3e081180049e27caf3e4ef52fc93712299f1fbe9948112d5d14c67257f",
+    "SOURCE_NOTICE.md": "4f83081da8c38c62737f9a50f4eee3e145e08db5f7181f62eb3c07e2ba725844",
+    "docs/figures/pretraining-overview.svg": "f45c7df0c230d0b16709c571d91611446336a9214b8b76acd1da71bd59305639",
+    "docs/figures/pretraining-phase-b.svg": "8a8e9e50b94008c0515922602d3aeb10fea8ba36d4ef3069b9dc060bed1f2f4c",
+    "docs/figures/pretraining-sources.svg": "39bf1d0ba1045e5921db48f5fd7c9772165e37823ac938a94dac53ac512b0579",
+    "model-card/README.md": "f5adcbf9a095a82047b9ec0eeda3dc8c059059e7c2b4c6828f2ed3c09d882375",
+    "provenance/VERIFICATION.json": "0bbda0e877af28260e8babfd8f0158de9bee643e4f33ce095f696740d3435586",
+    "provenance/checkpoints/repair512/manifest.json": "eb254f3d11b3e40af726a7ba07a8d123f77c4271f9709bb720560203d131244e",
+    "provenance/checkpoints/repair512/model.safetensors.json": "418784fc8da5cea97100a704f00e646d0feac8613d49b62c0d1e6baea8574c0f",
+    "provenance/checkpoints/selected768/manifest.json": "1bc8d8350f20ac9c5cd69ad79c55b1120c0830dea30000c7576e140b5d2d22a3",
+    "provenance/checkpoints/selected768/model.safetensors.json": "7c0e307d7bc1973a1d5b8c683b2911c4dd2fead65d49226cdce53d6dfe098908",
+    "provenance/checkpoints/unified384/manifest.json": "1010a05a709e3da8fffd73deb8ce649026e4ed212b01a762ad569c15edaee9a1",
+    "provenance/checkpoints/unified384/model.safetensors.json": "ca07ddc3db511d5458397e4d0651dc791f0e3ac6b0279a2f887dd4ef7df5bc6b",
+    "provenance/checkpoints/v2-base/manifest.json": "34cbe6682d6475218b811c43fbf307c10ce98bc2ce7d0f11328575952218cd00",
+    "provenance/checkpoints/v2-base/model.safetensors.json": "602e96af792ed3255694e86701c00d953490bd0738d32c10860bc9a766fc249d",
+    "provenance/runtime.json": "c4297d35386e4cb8081cf98f52ebe58abd3e61a82e7e38a5412534c6af5dfe7a",
+    "requirements.txt": "8843627009bbb7868e6591ed6afea366759a271298b1cf7c1927c1896d15312c",
+    "results/OPENSMl_150M_RESULTS.json": "0c4b753ee40c662a2b6388725a422ae7fc6ae7451484d4e7618578607bcb0f46",
+    "scripts/benchmark_gradient_groups.py": "ddbe5930cb7d6ba16ce94792ac54156a77a18e1c02abd3094dc77845336d69a2",
+    "scripts/benchmark_jaccl_ring.py": "21cbc21d54d65358dbf701c486b33de48cb3621ce77e4829a7eb2ffff878b6f9",
+    "scripts/check_jaccl.py": "75e9e7016debf02a9cfc4d207ef62bc4570b6b37b0ca3f503e05ddb25eb68164",
+    "scripts/check_ring_thunderbolt.py": "be64015fe3fb7b5eda15ac7d272a2b95579ffa125fd1ac97380f1b6420afda8b",
+    "scripts/completion_playground.py": "af31bafca8efe597900b306d4153ec4434e2dfc3ab84bd18735a9462d72b7783",
+    "scripts/configure_rdma_mesh.py": "186f779e0145d6e3214a48797a3eea09478a888b7186eb1356d2c2a8b573db9d",
+    "scripts/configure_thunderbolt_control.py": "7017662dc0abc53c9d5075378caa4cfcbcbe2393604fd686adcfbb61c2aadfd3",
+    "scripts/jaccl_benchmark.py": "08eeff7c5891766fa91e75ed3b2a5db43e8d29e18fbad5b01d2ec9f7baabfe74",
+    "scripts/repair_ring_network.py": "fa502e68bb7aad9633995124401716a661f3bbe82c3ecf68dfcca1291148c721",
+    "scripts/verify_snapshot.py": "98d13b8f8d800e3d2ecdcac4c65ac9ac7c00e81b6b7fb269b947851be357a897",
+    "sml-mlx-v1/scripts/benchmark_gradient_groups.py": "ddbe5930cb7d6ba16ce94792ac54156a77a18e1c02abd3094dc77845336d69a2",
+    "sml-mlx-v1/scripts/benchmark_jaccl_ring.py": "21cbc21d54d65358dbf701c486b33de48cb3621ce77e4829a7eb2ffff878b6f9",
+    "sml-mlx-v1/scripts/check_jaccl.py": "75e9e7016debf02a9cfc4d207ef62bc4570b6b37b0ca3f503e05ddb25eb68164",
+    "sml-mlx-v1/scripts/check_ring_thunderbolt.py": "be64015fe3fb7b5eda15ac7d272a2b95579ffa125fd1ac97380f1b6420afda8b",
+    "sml-mlx-v1/scripts/completion_playground.py": "af31bafca8efe597900b306d4153ec4434e2dfc3ab84bd18735a9462d72b7783",
+    "sml-mlx-v1/scripts/configure_rdma_mesh.py": "186f779e0145d6e3214a48797a3eea09478a888b7186eb1356d2c2a8b573db9d",
+    "sml-mlx-v1/scripts/configure_thunderbolt_control.py": "7017662dc0abc53c9d5075378caa4cfcbcbe2393604fd686adcfbb61c2aadfd3",
+    "sml-mlx-v1/scripts/jaccl_benchmark.py": "08eeff7c5891766fa91e75ed3b2a5db43e8d29e18fbad5b01d2ec9f7baabfe74",
+    "sml-mlx-v1/scripts/repair_ring_network.py": "fa502e68bb7aad9633995124401716a661f3bbe82c3ecf68dfcca1291148c721",
+    "sml-mlx-v1/train/__init__.py": "8f4f5243c26e18798d57bc7e0748943100cd5f0f1277f20cc3abb87cae2b35c9",
+    "sml-mlx-v1/train/jaccl_common.py": "1b5107a5d2762f31f83db5a5fbc6ef5e986fc12dc4b74bd3e5176530769c5cb9",
+    "sml-mlx-v1/train/jaccl_ring_transport.py": "da5d0b5d3d9762dd806ad0ed9da1e8f0edd3e69dc8d626f20d9e6af27673f375",
+    "sml-mlx-v1/train/jaccl_training_state.py": "b58b23ea32eb7653475b5ee35d645f43e6c2ce944e65c04214cafa35fee5bf24",
+    "sml-mlx-v1/train/model.py": "1eee6f8afe78767ff6b9c604ccf2328c98b24bc94dbad6291a0ad699dd7345fe",
+    "sml-mlx-v1/train/tokenization.py": "0598afe75750fb24a4f3fd7b666749fde8ad669ca8bedc6e7ae13b50f9ef258e",
+    "sml-mlx-v1/train/train.py": "b159a6ed1b04e895076fa9f8808576b4bf1db092749e5a77525a597fb08aadc6",
+    "sml-mlx-v2/configs/corpus.json": "daf0a26b570d94d0e14f813457114cb112751391619d0e08e7a77ee5992970af",
+    "sml-mlx-v2/configs/pilot.json": "38aebcec3d86d0b016c543efac937d4c54e056dac4a89d00bed6c94e2ca44cec",
+    "sml-mlx-v2/configs/plateau.json": "cf2b0dde1e4cbacd47a73c9d253a5c3f082cb6b60d5fffe92bb553fade1220e7",
+    "sml-mlx-v2/docs/ADAPTIVE_LR.md": "09eddfa8ceec439ff6ba64bc7a8685cdb70a0ef1f5c1afcf4e473382a8e6cf9c",
+    "sml-mlx-v2/docs/DATA_AND_TOKENIZER.md": "d5511bf2254e4ad876077bc6edd8caf68920862d3e0bab3012c72eb93e1c38e8",
+    "sml-mlx-v2/docs/DATA_REVIEW_CONTINUATION.md": "1e26f3a192b212e2e48ca9068459b79aab47dc6df14142308ae36c48adfc59e2",
+    "sml-mlx-v2/docs/EVIDENCE.md": "0df42fa21d7751a9cbb9a6909ec276eee1ef19bfdcba9ba08a4c04dedb8b1787",
+    "sml-mlx-v2/docs/FIVE_MAC_HANDOFF.md": "11adaa3363bfe999d61396edb9fa5d452813e74727b979855c0e1d7a0b846985",
+    "sml-mlx-v2/docs/FIVE_MAC_PROGRESS.md": "c6f7624ac53ec8a94e5a330ac09e119200a244eeb645ea111d8ed6ff33d4e4c4",
+    "sml-mlx-v2/docs/FIVE_MAC_TRAINING.md": "89bc2b9ac7a985aa6e6180d5b93fab5ac3dca2d8a9651fbfd39acc277312dd12",
+    "sml-mlx-v2/docs/LR_TRIAL.md": "978aec77ca621a68afbe306f59aafa8dde1e3ef24a31b56ebed46b698cadcbe2",
+    "sml-mlx-v2/docs/MIGRATION.md": "d9b660196d687b05a6886a4c7d653a2fe4ca19e897d179af3a4bce00d9661863",
+    "sml-mlx-v2/docs/MLX_NATIVE_BUILD.md": "4fd12cc2dd5d57a18ceb9dd7659f0740e51f48b326d1e6c35cd1e88b6e86bba2",
+    "sml-mlx-v2/docs/RESULTS.md": "79be451dda361a4a53c516d8ece2eec1a06a7796e694ae59c772d210f5be0b23",
+    "sml-mlx-v2/docs/TECHNICAL_REPORT.md": "de0770b53ff783bb47f88b74c1c08f770e9afeb3633114dd180dd2daf1a9e10f",
+    "sml-mlx-v2/docs/tables/validation_through_0009391.csv": "530b30dfb50aba19b95f72c3161c2f7d96e96352485b9d8010cfa1a22deb3f5c",
+    "sml-mlx-v2/docs/tables/validation_through_0009391.json": "24f0db5512674ac86eaaef118b425f2d0528d740bb8ac3a7c09eec65b6875677",
+    "sml-mlx-v2/evaluation/audit_teacher_data.py": "750dd58b066af13fe3062f2007dbe5b5fb8778404396bed571d886d6b95c7559",
+    "sml-mlx-v2/evaluation/balanced_transfer_1472_benchmark.py": "42815c9d1977440ad7cf74bd26b01303fd6ef5ae4cb389684f94d50d281cdb47",
+    "sml-mlx-v2/evaluation/base_curriculum_v2_benchmark.py": "203927a381a4f232a28e422693bcab07278e50df8da4a44472b9a1d639aca8d3",
+    "sml-mlx-v2/evaluation/benchmark_384.py": "01ce4034e9f9d2919b8f6ee5b4b0ba9b0170dd7152813e33b4eb61ef5e6fd4c4",
+    "sml-mlx-v2/evaluation/benchmark_corrective_896.py": "fc2f6da23b1d2d02b3391aa34090b9566ad9b8785fcbdd0270849a0173f9b5aa",
+    "sml-mlx-v2/evaluation/benchmark_grounded_640.py": "a2a368aef260419aef26d9f92c549171a36837ad0bf3e72c7d283b98e21f6432",
+    "sml-mlx-v2/evaluation/benchmark_preference_2688.py": "87239f334dc099bc3b8543f79de6fd653bb9125ef1cdf5929a56e95d07a6e9d7",
+    "sml-mlx-v2/evaluation/clean_reply_benchmark.py": "40d0e835ec8788511f3682b7a06d98f79c2f4aa694a1a1cefd5d4683bae003a3",
+    "sml-mlx-v2/evaluation/constraint_completion_1920_benchmark.py": "0d13380666e0d9b8f8ccd932ee6f04e01433ec65090dbf6676efc6763941ab09",
+    "sml-mlx-v2/evaluation/constraint_completion_2048_audit.py": "d6824ce257f1ac73b4d3e123e51e98611ab21c8e335e295bce1513a70fee124e",
+    "sml-mlx-v2/evaluation/content_preserving_1024_benchmark.py": "ffc886b437a463f21baea8bc2f4df136887c76b113cc0d7e8f68408780431f60",
+    "sml-mlx-v2/evaluation/content_preserving_1280_benchmark.py": "8bccd49e9af94eeb086007af048bec2075ae3068222f5ef7ef7b890efef98518",
+    "sml-mlx-v2/evaluation/context_reasoning_1024_benchmark.py": "15ea855d804395b7f5daac2f9441ecc8a45330f69684a08a4baac1a212a3a3c0",
+    "sml-mlx-v2/evaluation/conversation_foundation_benchmark.py": "943b74eba90ebae53445f9d4906ad52ac10ba190e30dc0620f29ebf8b252339a",
+    "sml-mlx-v2/evaluation/full_benchmarks/README.md": "e69f81b86f9679860c4c44948f871fc374bdef81de4858dde3819b4ef3cad0fd",
+    "sml-mlx-v2/evaluation/full_benchmarks/_runtime/absl_py-2.3.1.dist-info/licenses/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "sml-mlx-v2/evaluation/full_benchmarks/_runtime/immutabledict-4.2.2.dist-info/licenses/LICENSE": "347f918d37d4e0556a0695d34b9fb87fa9bbe808d54949851789c6c1fc91c61f",
+    "sml-mlx-v2/evaluation/full_benchmarks/_runtime/langdetect-1.0.9.dist-info/licenses/LICENSE": "9c539fdc47fa4e195b88efaa6495f11463de271f59c8de96feb8bc9c8abab1ab",
+    "sml-mlx-v2/evaluation/full_benchmarks/_runtime/nltk-3.9.2.dist-info/licenses/README.md": "8035d39cb60810062ff378d3cf81a596dc571177154d49629b4465b75cc1ab16",
+    "sml-mlx-v2/evaluation/full_benchmarks/_runtime/packaging-25.0.dist-info/licenses/LICENSE": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+    "sml-mlx-v2/evaluation/full_benchmarks/_runtime/six-1.17.0.dist-info/LICENSE": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0",
+    "sml-mlx-v2/evaluation/full_benchmarks/core.py": "272970b7135835dd6f93445d4d0193e90eedf7b241a518415852876e2037ba89",
+    "sml-mlx-v2/evaluation/full_benchmarks/launch.py": "a9b597e260b0e843b83cedf38421d457916458a6bde76bfe1d7580bc2448ea44",
+    "sml-mlx-v2/evaluation/full_benchmarks/prepare.py": "11c88488bdad9a5fa8933c89aa44bec4de7c2c1af3b24016503e0e9b00e6abe9",
+    "sml-mlx-v2/evaluation/full_benchmarks/requirements-ifeval.txt": "a548e65d971e5a40ec9f6d9bd2e84d07622be50f54b2efea789131910a228d32",
+    "sml-mlx-v2/evaluation/full_benchmarks/spec.py": "9e60ff545d588048748dfaa086f1940f73f96497e2aa265eda7b27b665cdd534",
+    "sml-mlx-v2/evaluation/full_benchmarks/test_evaluation.py": "9cb8c3eaa9ce418b5f05f299a6c0541a179bb722a376755590ae6fb0dfda55fa",
+    "sml-mlx-v2/evaluation/full_benchmarks/vendor/HARNESS_LICENSE.md": "a806e42547620dffbc2ec0333322c8b3523b4af11e059be14ef81aa5b1ae021f",
+    "sml-mlx-v2/evaluation/full_benchmarks/vendor/NOTICE.md": "60c3c2846f265f88596e2ebc3a2297d1b5d51e408164e70c6428457f189b36d6",
+    "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/tasks/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/instructions.py": "511cc41a53787d818c292d8335c8e98aa833296a0789ac470db56bcd6496345e",
+    "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/instructions_registry.py": "9db1c062cdb70a91420d3789a588235a1064c2b9a1a66e09e5fb9df9e7584a6c",
+    "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/instructions_util.py": "e8c4d9187bac1482d93941fb46469609c3ae78d896195bfcb300a0707d492567",
+    "sml-mlx-v2/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/utils.py": "1ab8f14808c826f93f2364883487ed63cf4267980bf4761fda8053899c013632",
+    "sml-mlx-v2/evaluation/full_benchmarks/vendor_sources.json": "a0ee9b17a46b214fbdc4bc2500729fba2f67bed80cd0539265d420f7490bbaba",
+    "sml-mlx-v2/evaluation/intact_base_384_benchmark.py": "945af7e8eb3101691c8434ac214ee6832e0c2a5cf42de3f4fb197d71aa14a1b3",
+    "sml-mlx-v2/evaluation/intact_base_384_decode_audit.py": "8f905e20f5239f695238039cd9c827dbe04e84636418a8a0a808cf89515945b1",
+    "sml-mlx-v2/evaluation/intact_base_384_probes.py": "ad2627615fc64cc7ec36befe5cdd7f5c753bb4bab43d01a4ff067ba5649b2ee6",
+    "sml-mlx-v2/evaluation/intact_base_384_review.py": "7d417ed8d23327bf7ded63465d48309eff08743ff697fca18e7cbd3d9cc8dd4e",
+    "sml-mlx-v2/evaluation/mt_bench_local/README.md": "fd1c4e022400cb8f24385c2a301f3490bde6c310c33286b44f35dfbd6fc43f0e",
+    "sml-mlx-v2/evaluation/mt_bench_local/judge_model/README.md": "726574a55cc45d084a60e9a5b33367dcbd7dbe85ef5d9d258d220830f647c2b2",
+    "sml-mlx-v2/evaluation/mt_bench_local/prepare.py": "6d2125b3f45be165e28aecb154a173b10f0efd1531060310ad7ea04792196273",
+    "sml-mlx-v2/evaluation/mt_bench_local/run.py": "82f98beeda529bf84068210aa7e44ca357488248fc43040b680ed36172a9dce4",
+    "sml-mlx-v2/evaluation/mt_bench_local/run_384.py": "b197ad1b6871d886636286cbbac8002778d1a823cc897d1f7fb6222fd0acc94c",
+    "sml-mlx-v2/evaluation/mt_bench_local/sources.json": "93f0e33c6fb8b8bb2668dfe54d529c0b64d245e871865bc0f59de212dca5f9f6",
+    "sml-mlx-v2/evaluation/mt_bench_local/test_runner.py": "50897910c44b62567227a466d651b35e999ebce8e27eb987bfbfb902a3de162c",
+    "sml-mlx-v2/evaluation/mt_bench_local/upstream/question.jsonl": "119565adbab82227089cefdb44c8d7e2cf04dc0a0ec233634c82e7d4e2a944f7",
+    "sml-mlx-v2/evaluation/mt_bench_local/upstream/reference.jsonl": "f957a5bc977badb66885ec970e6cd08527845780313f0995764260e5777b9b3f",
+    "sml-mlx-v2/evaluation/repair_teacher_chat_data.py": "3e030354f4f8050f35de312d2ba842559bd3bb52a75104000f2f1de27403089c",
+    "sml-mlx-v2/evaluation/skill_balance_768_benchmark.py": "ab9cc272d860a5e0f3097f2f6d5dabb12134678e47f53b938c0a170e175bfc2f",
+    "sml-mlx-v2/evaluation/skill_recovery_768_benchmark.py": "cd736ca0d6c9f8753961a64536b8577dc59c0a5d490761123b42779bc89c64f2",
+    "sml-mlx-v2/evaluation/summarize_base_audit.py": "c4d39d9df8a2874844aeda5bf2b3a6b8d250170d1482aa47a814c77795086cf7",
+    "sml-mlx-v2/evaluation/teacher_chat_benchmark.py": "02a9f95ebc90a93ac8c8aace64ad7ec56d610684dc579887fb966b796a50c943",
+    "sml-mlx-v2/evaluation/teacher_chat_reserved.py": "6fe953dd1dd997c9d8d5d5e2247ee9d1ba7e63d42ba3e723025dee07c42d6dfd",
+    "sml-mlx-v2/evaluation/text_followup_512_benchmark.py": "5548fedab5a535c6b27f093fb3d07dfd818192d97d8ea5ae5e280a5810760c84",
+    "sml-mlx-v2/evaluation/two_turn_1920_benchmark.py": "d2dad348195e8843fa3f5b7c503bb55197793256a19b313abe02b5eb458a3c9d",
+    "sml-mlx-v2/evaluation/two_turn_640_benchmark.py": "4ab8a103e2f46d9f38f7d1d6d6751ce29b40fe8c4aad5774487b0768ad92cbbd",
+    "sml-mlx-v2/experiments/public_repair_384_v1/README.txt": "a357103f9ddc36962aafaa92113c087365dc2493966a22e9c438d3da8e4fc503",
+    "sml-mlx-v2/experiments/public_repair_384_v1/config.json": "2fd560ee19aa6da5df60aab88d8fafab0114c598e46ea20a3760b31d83114922",
+    "sml-mlx-v2/experiments/public_repair_384_v1/scripts/benchmark.py": "1d5bbae8c2d6262e4e8326b75af941c32a7d863b7e858a7bf17df749ccd77076",
+    "sml-mlx-v2/experiments/public_repair_384_v1/scripts/data.py": "36793fec90c5cd7cb504edc38c57a698115fa8ad8c51a5d97d6826403e87df38",
+    "sml-mlx-v2/experiments/public_repair_384_v1/scripts/launch.py": "348215af57ffeaf85ed68b1ce60413c9b43df6c8f643515bb4ee036920ae930d",
+    "sml-mlx-v2/experiments/public_repair_384_v1/scripts/test_data.py": "8d8bb35a656a989fc007df5602750b2f2a8baf6a86508aa7d82c76f75bdad275",
+    "sml-mlx-v2/experiments/public_repair_384_v1/scripts/test_evaluation.py": "eacf876f9ba03412aba3cc28d0f8bdcac1097ec1a1a6e9768b1d099c40f0144d",
+    "sml-mlx-v2/experiments/public_repair_384_v1/source_pins.json": "fabe030583f5b080773322ef62783224c815d03ec40550521998874229b0ddc7",
+    "sml-mlx-v2/experiments/repair512_search_v1/README.txt": "7d73d8109c2b5e266564310b02ba0a10545dee1ed3153c10567ad8ac364f88a1",
+    "sml-mlx-v2/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/config.json": "d06d3552b264aab676d966a74598078955d2ea43683fc038a5401a7e42ffbe0c",
+    "sml-mlx-v2/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/retained_result.json": "88201595b04cf1512fc64d758c3a7615989521a9b177dc9459046a89b08b098e",
+    "sml-mlx-v2/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/selection.json": "50fca08ffe0fc3d0cd759ef4ec09509bb836ff92ea09932111db43edf78e7d9d",
+    "sml-mlx-v2/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/source_pins.json": "11baf5a81fd28f9e2e114cc7e1c050172175745e168154d2004590925c4577e4",
+    "sml-mlx-v2/experiments/repair512_search_v1/current_baseline.json": "acb32b745221dc84aa5708260d816d856f6e768fa314660a8301f24708d04f15",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/balanced_instructions.py": "8082549c8fb7a9dad069a010dec07a01b5c012bc9445d49e02da292145b8408a",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/breadth_stable.py": "d6284f1673e05a2e4629fee8a65eb9735b97df775fd7dc94213b68369bb17d66",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/compare.py": "7c7d28da26ec6e26099b31333e2db0384e37da82c53db0b23351e90f381ee8b6",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/data_focused.py": "8e333a7221d5652b817c8017fa190d3c7da8b9ad9b8cb9869920a5e19391900b",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/dataset_trials.py": "85ea9aac5879944740eb868ddd2943d6ac9c49e3c7f8e4dd1d2edfb8a6e6d4b6",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/experiment.py": "c42837398f2e7b4e7c51108fb9cc8537512e1cc2f8002d44a6282b0b732101ea",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/familiar_dialogue.py": "a7c48cd944f807ecb47aed3384b1c83121da337ba9e7b872889ae28a028189ee",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/format_preferences.py": "115b506778a1d8c30a9df4c9210c0451fc62cbe3445946fbd1dc4d081c8f464a",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/human_dialogue.py": "f2db328e7389939553dcd5f9251dccf006253a939f3dad88f6b7ac4c4b10d804",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/instruction_changes.py": "7687529674e1c2d658cc732b76fbaa8088cb104ba7180e4a93b31a18a5183ca6",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/mixed_public.py": "830e7138aad238a20095448f888443ea2c4d2c293e4090098dca5721cd3a4f23",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/record_trial.py": "32bc04474e724b9ee2158724688c9890a528ffd3444fafcc9fa28c7a38c71223",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/reserved_test.py": "101511d16073c36b8043ee583c78a20a1c723efc4a5c59efd4fec3e55fefc516",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/science_dialogue.py": "75cfb93077d85b3710f02d57c1a7eb7c5c0bca15c084af0267b94931e0e90ccf",
+    "sml-mlx-v2/experiments/repair512_search_v1/scripts/short_constraints.py": "019d97a24a12da1d510bbfad11776dcc6df80f561852973b9d569bad6e311976",
+    "sml-mlx-v2/experiments/unified_text_v2_sft_v1/README.md": "0a0038a44c421ab2ac82a53dce7f5c2640cd8d214da198410b2515826b9bec39",
+    "sml-mlx-v2/experiments/unified_text_v2_sft_v1/config.json": "a7086f6cf57bad7171c011ff2949580ffefc0e5cd23fe7f254f5328dbd642ede",
+    "sml-mlx-v2/experiments/unified_text_v2_sft_v1/scripts/benchmark.py": "df13c3567c3723a99d2685347b0ebe9bb42c9fececaf0b7f212b84ecb6dc7e78",
+    "sml-mlx-v2/experiments/unified_text_v2_sft_v1/scripts/compare.py": "a58478ebd74e944450f8c9fbe567bc85f361c6b1528a103efb7326ae0bce0f6f",
+    "sml-mlx-v2/experiments/unified_text_v2_sft_v1/scripts/data.py": "f09cfdf9a1fc0fea8384f7ab6890026b0f653fac9f9506b455c65d6de09224a6",
+    "sml-mlx-v2/experiments/unified_text_v2_sft_v1/scripts/evaluate.py": "41e1ecf0ed1da7d5e6b9513c298e82636f3991bc5c4a00a3f6f172f68f161cdc",
+    "sml-mlx-v2/experiments/unified_text_v2_sft_v1/scripts/launch.py": "ecad7943c55810d9da4c4043e7eb0c2e1f6939d2b038f24250f85af89a1924e5",
+    "sml-mlx-v2/provenance.json": "12a7b9941da9f76ed6b32fd975a71fe320194e01e45874bcdee999763f61fc50",
+    "sml-mlx-v2/pyproject.toml": "a0a583c929294f08d4a150316f17638a41f1e41d833ee50df372a29e4ea45f23",
+    "sml-mlx-v2/scripts/check_five_mac.py": "81b0acd8f1870d1c0d933b858e9fba3da585480e323de96e5cff2b425344f534",
+    "sml-mlx-v2/scripts/configure_five_mac_network.py": "73d31c8c6a8fbc7b3f715576307f2ff8e9e72b97abfea3ccdd9e50c7a828fc31",
+    "sml-mlx-v2/scripts/export_report_evidence.py": "e17ce5a1048141202a6aa393e72c1105c470c7c0b010c83ccbb699f733564692",
+    "sml-mlx-v2/scripts/five_mac_cluster.py": "43dd4df68184cc89f25fc55800cd831db77ff5fc146ef296b3ac1e40a577284a",
+    "sml-mlx-v2/scripts/five_mac_network.py": "01ce3f64885cff2ebe092d8aea8776ea72a63a0b3d270e5493033a6a9c26637b",
+    "sml-mlx-v2/scripts/five_mac_topology.py": "3cacd5789b0b308ecc9b93102af94fab96d9f7438fda2af1184cdd06534f6f79",
+    "sml-mlx-v2/scripts/five_mac_transport.py": "b60d3c46a0c63030936f7016620c2d124366ce183a56da99e51240c329c1564d",
+    "sml-mlx-v2/scripts/inspect_five_mac_ssh.py": "a6812e8922ab8c11831645369dfd50b60f098adbadbcd58baffb667796fad0b2",
+    "sml-mlx-v2/scripts/inspect_mac_network.py": "ea498b56cb0c4774712cc20e66608c58ead923605a39fe94785d1606b547dc85",
+    "sml-mlx-v2/scripts/launch_adaptive.py": "b1b9a1faae4717940741997a817b0465181e9e5844a3aa9d95a0c1fb6cf57e05",
+    "sml-mlx-v2/scripts/launch_five_mac.py": "5efb1cfe11fad58b16810361d66403bfbb80e267b507b098d4647bc33eeb8536",
+    "sml-mlx-v2/scripts/launch_full.py": "6e0d7f0233d5701d2840e98d3babb7f57d67bdba4f591c370e7cd6c5498486f4",
+    "sml-mlx-v2/scripts/launch_pretrain.py": "da8878b1e7c9b31682b20e1439e384e00f47d190ce2762ae3d11eec4cd477662",
+    "sml-mlx-v2/scripts/plot_validation_loss.py": "ad19f3e828232abb6a0c89359117b2adef332f9b088558acee564e71895c6ea5",
+    "sml-mlx-v2/scripts/prepare_data.py": "e4345615aa2dc4c12dd6fd215b2d4304166034a94e9e3210a7c10348cd9b9954",
+    "sml-mlx-v2/scripts/probe_five_mac.py": "32041eb714343b11544a3bd5c29ed7f5ebc7b0d5d26cf5ab771cc3b178b5a4b8",
+    "sml-mlx-v2/scripts/rename_five_macs.py": "9f93b764f49870928ce26a91f6c2ec1c86a3a29eb55100ebfb35e391bab6e0fa",
+    "sml-mlx-v2/scripts/setup_five_mac_ssh.py": "1e0070efc07caa50a73f48fba1bc72970b268e1c58eb16a09fea455a54b52cca",
+    "sml-mlx-v2/scripts/train_tokenizer.py": "9957b33b8f961335f0b5e7293ab8bcab846b1e4aa877d968ae936c8378ee320b",
+    "sml-mlx-v2/sft/answer_completion/README.md": "11b19758b9217bfdd43cb836f1de851c1be333664ccbd31bcfd6f39517adad94",
+    "sml-mlx-v2/sft/answer_completion/candidate.py": "a88f7074bad1b2bce7908be4575594ccab6c36c372508d9bdfecdf4be319c6f0",
+    "sml-mlx-v2/sft/answer_completion/check.py": "24807359a2e2f24cc8a7cfc8413a4a62c204259f1515266f5156f6b2cf0f4d5a",
+    "sml-mlx-v2/sft/answer_completion/config.json": "8b05cd578de31092b1019f49d472674694f9afbdf92c34ae63060b03f279eb75",
+    "sml-mlx-v2/sft/answer_completion/data.py": "d4cb8cbedcf85449ad5c6cfa4db0e9b2e9b004edc0a656e3714d6d5d684e4fcc",
+    "sml-mlx-v2/sft/answer_completion/engine.py": "de34b3f0b1509400a4f4cd04cd7749d77f66d9f92a2d44fca90278e706847696",
+    "sml-mlx-v2/sft/answer_completion/evaluate.py": "bf7fb7c4c44fabd2cc32c3db4d1a78cdc69a93fbd3a819094993a72f82407835",
+    "sml-mlx-v2/sft/answer_completion/launch.py": "5c7a5726ce38c8b319c224330d71c75403a2c66f5ce1ab8b370a175afeb492f7",
+    "sml-mlx-v2/sft/answer_completion/protocol.py": "6c98b9f94832905bf1f89110691078bc7796f70a2f9a1f2f9d6a88cca3fad5c1",
+    "sml-mlx-v2/sft/balanced_transfer_1472/README.md": "eed31f3f4941d8a495653f18602723b4cd702e9fc0daccd52d4453f8dd0b6527",
+    "sml-mlx-v2/sft/balanced_transfer_1472/__init__.py": "6cda6fd618ff182065a542194022772dc038e4ddcfab68c3730a8e7652fa567f",
+    "sml-mlx-v2/sft/balanced_transfer_1472/config.json": "35978819efe1ba263a580b2acb8a61ab54d8e9f3faf9b45f32428fc8b75c417a",
+    "sml-mlx-v2/sft/balanced_transfer_1472/data.py": "8677ad3e1d642d342f4167a0b6a97db57ce12a54efc46d1baf89040c3d5f19c3",
+    "sml-mlx-v2/sft/balanced_transfer_1472/engine.py": "38e93fa7dc65f384fc4f0b90c93e476ba647092d2fbc08275a4dc43b1802a78f",
+    "sml-mlx-v2/sft/balanced_transfer_1472/evaluate.py": "9d4a1ce231fa1317fa3632e1eb2a5ddbf6b727ddd61dbed47e65a2fc06910ef0",
+    "sml-mlx-v2/sft/balanced_transfer_1472/launch.py": "ab0cd60317118319305126959e9046f7140aa8c3f78bd6cdd0e4538d6812044d",
+    "sml-mlx-v2/sft/balanced_transfer_1472/protocol.py": "d8982f90ad59708c1fb6a46e341d7dba1f7f57c476f334104cd3f7c5961043cd",
+    "sml-mlx-v2/sft/base_curriculum_v2/README.md": "f8eb0c5f431cb8d16290bbd201997a82d984691988b5eea60390f7bd60aa0807",
+    "sml-mlx-v2/sft/base_curriculum_v2/check.py": "7ffbc22c27424fdf610690065558e959bc200a01dfa913a912d9fd6af9e6bce7",
+    "sml-mlx-v2/sft/base_curriculum_v2/config.json": "e5fe514cc58a1c16d2f700c81de8a660212500e1825321b7c32f015de4f0586b",
+    "sml-mlx-v2/sft/base_curriculum_v2/data.py": "7fd79265a1bf53765b865ee090f2635d57fdbeb77e9e3a79bd3a300d31e28a37",
+    "sml-mlx-v2/sft/base_curriculum_v2/engine.py": "de34b3f0b1509400a4f4cd04cd7749d77f66d9f92a2d44fca90278e706847696",
+    "sml-mlx-v2/sft/base_curriculum_v2/evaluate.py": "bf7fb7c4c44fabd2cc32c3db4d1a78cdc69a93fbd3a819094993a72f82407835",
+    "sml-mlx-v2/sft/base_curriculum_v2/launch.py": "e6631901d4bbe390db43f2d0f246850ca9ee481128ce89322028ba9f73d03cec",
+    "sml-mlx-v2/sft/base_curriculum_v2/protocol.py": "37777a8dfbd9976fdeb8001b0ffa8365bf83b4bfb78aa89c1008c6c5bb65e7d7",
+    "sml-mlx-v2/sft/clean_reply_ab/README.md": "5f64aae44a9bf054e3c4618ad648c3965b3c17ece38f83910c3c11cc929176ae",
+    "sml-mlx-v2/sft/clean_reply_ab/check.py": "199fbbf8ddf51a5c196fe9faec1c4fc14e27491576e1c9cad5f54f7788afac21",
+    "sml-mlx-v2/sft/clean_reply_ab/config.json": "3a2b8301e3dac9d2313a0b073ce4f78c053c94eae659ff0ea0de7ce6e0c6fb01",
+    "sml-mlx-v2/sft/clean_reply_ab/data.py": "8cbb3b768a84ad16c2b90603aa3bfdda8946da5d1691e08f834ba912c2eabf73",
+    "sml-mlx-v2/sft/clean_reply_ab/engine.py": "a4fe412ec0731f659c0b482c3ac452e1dd5bc4d316ac04e18eb8b41f2e14e84c",
+    "sml-mlx-v2/sft/clean_reply_ab/evaluate.py": "f236de08fa395531242530f2f0f5603dda13c880970f40200c9db455cadebcf1",
+    "sml-mlx-v2/sft/clean_reply_ab/launch.py": "b57818f4d2a31412090e2369226c52e571a576696507dda23593460df148c914",
+    "sml-mlx-v2/sft/clean_reply_ab/protocol.py": "b0fea3299a7d5c002b3779564c891382d92374fee6bbdfcd5df3fb5ed1894395",
+    "sml-mlx-v2/sft/complete_transfer_1024/README.md": "4a20c849da507875c0e377779f96dbcecd5ae7824cec4520e93b98b0209a8bff",
+    "sml-mlx-v2/sft/complete_transfer_1024/benchmark.py": "73e7b7ea6404c94f4ae9bf3d3abe7eae0324608640752e45d9b9a5d9dd8dadab",
+    "sml-mlx-v2/sft/complete_transfer_1024/check.py": "d72fc5476c703ff2666beac20034dd9545b69eb086e048445e0771da38479e4a",
+    "sml-mlx-v2/sft/complete_transfer_1024/config.json": "c97df9850cd9acc125acd6d9b49e6b5b10d1c9842cf822565ebc2269fee1653c",
+    "sml-mlx-v2/sft/complete_transfer_1024/data.py": "14cc5aaef5162015827b9ace2bc17e257f4d27d13581ae7733138b843ff0c8d3",
+    "sml-mlx-v2/sft/complete_transfer_1024/engine.py": "36807d8b5e99a2f2676acafd02709fd17e9836ac9c1245d6c83ec9cb947bc86e",
+    "sml-mlx-v2/sft/complete_transfer_1024/evaluate.py": "4f29067f83d82a6e6d58ef02533250282c02caea5ac37c0a6ffb9f69cc0ca3a0",
+    "sml-mlx-v2/sft/complete_transfer_1024/finalize.py": "90689049e3c8fb4c725ee0317a14a32aba77e17bcf839e2ba9625f1634fc8731",
+    "sml-mlx-v2/sft/complete_transfer_1024/launch.py": "7840703b3bc9578c739c67d1f3bd1218ed2091e844835b1f8f3acb87921564ca",
+    "sml-mlx-v2/sft/complete_transfer_1024/protocol.py": "d4b3d2fd491c74cabb890550e3e9dbef3e25b42742a9b697ad5aca2d57642bb8",
+    "sml-mlx-v2/sft/complete_transfer_1024/runner.py": "f8daff17f83ad6ddee4fe0f563d398018aa6d9e6add44dfdd874baa58be0d6e5",
+    "sml-mlx-v2/sft/complete_transfer_1024/test_completion.py": "460aa6231f1ae0ad571ec5f98fd9393a5350e651a8a37d6a1400d781748a92bd",
+    "sml-mlx-v2/sft/constraint_completion_1920/README.md": "79d5db56dd6bbc449c5bedec6d0986ee99b1c0d597f03d328cd1c6305f894aee",
+    "sml-mlx-v2/sft/constraint_completion_1920/benchmark.py": "f436affaec9487f627cccb23d41eae44d4bb3d57becfcc03c2b8c530d66e90ca",
+    "sml-mlx-v2/sft/constraint_completion_1920/check.py": "042e945f641574345c35db0b78413c9d66820a527f8f6e49a162816cfe774d34",
+    "sml-mlx-v2/sft/constraint_completion_1920/config.json": "12e70633a46cd505cbe84522512b9165b69748e976ffcee99828dc359690ac70",
+    "sml-mlx-v2/sft/constraint_completion_1920/constraints.py": "15262eee48114b88d73ca66bf81ed03e10a586381114a156ba3e5c2c31a87e31",
+    "sml-mlx-v2/sft/constraint_completion_1920/data.py": "4dee1b53a67c247385c476852ce2846b149a97c206e5e42eca66575ba3edd80f",
+    "sml-mlx-v2/sft/constraint_completion_1920/engine.py": "3a52f0595cd7402659f0af4e2edab9a6eb77b623012b4a52d60df1f0c2b3c5ac",
+    "sml-mlx-v2/sft/constraint_completion_1920/evaluate.py": "846b41491f3cf25e344415cc116fb6068dddc1816bd065818c7aa11f898fb66d",
+    "sml-mlx-v2/sft/constraint_completion_1920/finalize.py": "9e964bd9c5cc442be398ede217ca1edaa1e9e0518f7ef90068844d7e5dbb3496",
+    "sml-mlx-v2/sft/constraint_completion_1920/launch.py": "4c2c7ae0967b46c3cd4635cd23260b881005e57a444877e7ccc33b5a00173190",
+    "sml-mlx-v2/sft/constraint_completion_1920/protocol.py": "feae9e5caa9de82b017e6471576b891feb644e7adfb649111879d695e7b2ca58",
+    "sml-mlx-v2/sft/context_reasoning_1024/README.md": "8dbc225c3b30d71215cbf80f6d9b0dd26a8b3431b5a13ab96a91ca271d06c831",
+    "sml-mlx-v2/sft/context_reasoning_1024/check.py": "f810ae0570bc3e2791b86f6f31670ed9c25e1318bfa0b57bd6d8eb5a59a1cb3b",
+    "sml-mlx-v2/sft/context_reasoning_1024/config.json": "2f9acdfb40517415ed1f59fe0c5f01d0e72d934a8bafde2876cfea064e957172",
+    "sml-mlx-v2/sft/context_reasoning_1024/data.py": "697b3e048168616d89e0c94c28efa92ae0d3f59da3f813f165ffc65b7b840e70",
+    "sml-mlx-v2/sft/context_reasoning_1024/engine.py": "001f7f867973015bf2e9bc34065cedf0ead6e7e76b6553262db4e64d88c5f992",
+    "sml-mlx-v2/sft/context_reasoning_1024/evaluate.py": "b17841ad6d85b2be846096378b1efff26160123fa5ea897d7bec85b6cd179c0b",
+    "sml-mlx-v2/sft/context_reasoning_1024/finalize.py": "2464f6782327ebf888c33bc15b56cdaf53e4185cb39d89a84a831e15791d0304",
+    "sml-mlx-v2/sft/context_reasoning_1024/launch.py": "d073d20bfb4468a5a7599caa5873177ccf698d5b4ffbf2001b66d41c3c7913e8",
+    "sml-mlx-v2/sft/context_reasoning_1024/protocol.py": "cb31b7e1df9b6e3140323e0b30a391fa18ddfb4f8e583cca35165abf132e956e",
+    "sml-mlx-v2/sft/context_reasoning_1024/runner.py": "7b19efc05bf77f00f31c33fb04026a0991ce116d3a60f1ee5b419e56fd730040",
+    "sml-mlx-v2/sft/context_reasoning_1024/test_context.py": "fea5239886a8e70949400f8d176aab9403088260aa8186e242ba2de878f16f76",
+    "sml-mlx-v2/sft/conversation_ab/README.md": "2d9858caf9f7a86d98b120e338d0550580a91e06660abe62354a85ae693f29fa",
+    "sml-mlx-v2/sft/conversation_ab/check.py": "7b59120225b6f366cb21dfb474d275e19588952b1d64dcff061214537b862941",
+    "sml-mlx-v2/sft/conversation_ab/config.json": "53069a468c1c344f24fc7bb19db8d0d7ceedabe9482eee1591d1a80043271f16",
+    "sml-mlx-v2/sft/conversation_ab/data.py": "6337eab601c82fb05fe7dcec5f98dd77d02c1dcbfd82bb555baaac3b212aa40e",
+    "sml-mlx-v2/sft/conversation_ab/engine.py": "c2d170933a1158ad2bb503cbf5038e8e3d7b578afcae171d9c52e25cfbdb3e60",
+    "sml-mlx-v2/sft/conversation_ab/evaluate.py": "eac6b2364ff8db5d104d0834449428e8bfac75899da53649668985d93ed2699c",
+    "sml-mlx-v2/sft/conversation_ab/launch.py": "6f576e32a765e06bf9c169730eb56299df226e66b939d5c10590b3abc08dd4aa",
+    "sml-mlx-v2/sft/conversation_ab/protocol.py": "17d60e860b279ce40c5237fd368fbb8ebcd75b7f66dda6e0141f64772343aa51",
+    "sml-mlx-v2/sft/conversation_b/README.md": "4fc7c0f833fbff647ede2e2086d762a5e22c7b12c7cc467b537d9010f31fe9d9",
+    "sml-mlx-v2/sft/conversation_b/check.py": "c63ea05cb7e3b3d4d3b993bc84b1d05c3e3de8fd613b1a38b5dcd2357f90ffb6",
+    "sml-mlx-v2/sft/conversation_b/config.json": "2e1b5a042a68fc01090a07525be4c226c94b31cd6ee47e2576f5bc636029b5d2",
+    "sml-mlx-v2/sft/conversation_b/engine.py": "7f5542afe740c50f2ddd4a771e9394c4d0282d4d60aa149b9ffd78426adad873",
+    "sml-mlx-v2/sft/conversation_b/launch.py": "4afbdedc0c15eee9b49ba7b09f41c6c8bd97d9303161779d2ce77170d401c03c",
+    "sml-mlx-v2/sft/conversation_b/protocol.py": "f8afebfbe4488b01c7288a7f7b024041d9c11297a78285d208f4fb573d8565fc",
+    "sml-mlx-v2/sft/conversation_b/test_unlikelihood.py": "3e22af1966c358f122927e2f1e8fd2149bf8ee23d03fb56c40435e6305dd6a8f",
+    "sml-mlx-v2/sft/conversation_completion_2048/README.md": "8bb6750153f4947659f4e3383557f4cde417c936ea4a890c095110c125f5b828",
+    "sml-mlx-v2/sft/conversation_completion_2048/__init__.py": "1270b76f94bd9a0551bc397e735b374e20d6ce9275e76ac75781e47f2bc0937e",
+    "sml-mlx-v2/sft/conversation_completion_2048/benchmark.py": "994303a50c7df3beb56902f47b3258c8567795263f3fe259e77eea7e0cf01c7e",
+    "sml-mlx-v2/sft/conversation_completion_2048/config.json": "63b59dc22ebe99c72c8bfe90574a0e82460dfd786ed7507fc408554b3cc93ec4",
+    "sml-mlx-v2/sft/conversation_completion_2048/data.py": "3b437ea213c03cb6e496aa42c99fdb1fd89a13223fe92542e6f0fa9596893b8a",
+    "sml-mlx-v2/sft/conversation_completion_2048/dialogues.py": "293d6cf9781dd72e84e6adad6b21bb39dfb10323883f0dc0f2b4e4e8a8e4b643",
+    "sml-mlx-v2/sft/conversation_completion_2048/evaluate.py": "2974e4aac9096f48f557cd0e7f8128f83258a876adfaf4fef8a6b9a776df66d8",
+    "sml-mlx-v2/sft/conversation_completion_2048/finalize.py": "959acf300e1857b8a19a58447d01684fce59b086f785f9d2d72746c09ca21963",
+    "sml-mlx-v2/sft/conversation_completion_2048/launch.py": "90d8e00b4506db3af11591437b6294f5c4309797a384f2dfb5801f65d6b1f5d7",
+    "sml-mlx-v2/sft/conversation_foundation_v1/README.md": "3339416d0ebd24484a9e766fc60e07ce243c4acc056bbb3b1f9b24c8b5a61397",
+    "sml-mlx-v2/sft/conversation_foundation_v1/__init__.py": "be7acee8c713f0dbbfe64899ecce4e08f03d678f63b22f68759452f3d18d390d",
+    "sml-mlx-v2/sft/conversation_foundation_v1/benchmark.py": "0eaf7feae8917384339b423c4e5422de1b19e92710e7e0fe05225bb3e6a3823a",
+    "sml-mlx-v2/sft/conversation_foundation_v1/config.json": "7e9b931bebd548908a72983a40d5222e286f17a075596a2dbd9e080058425258",
+    "sml-mlx-v2/sft/conversation_foundation_v1/data.py": "14c3d2b8f0b4ad0420b3af3b2e6b2167c0e3a76da281671be8fbb25c85c10c79",
+    "sml-mlx-v2/sft/conversation_foundation_v1/engine.py": "bfa25f966ab963183104cce634b848449da7d081178cdfa450c798aeb4ecd6e4",
+    "sml-mlx-v2/sft/conversation_foundation_v1/launch.py": "5ffc3bc973b1c2b983492aaf2e1a69294b3643a15a8fc0e101c5be90f9c19286",
+    "sml-mlx-v2/sft/conversation_foundation_v1/test_data.py": "7cd7875348c7145b975b8c70bab50afc6157979d399e05ff8b730b85f54b624d",
+    "sml-mlx-v2/sft/conversation_foundation_v2/README.md": "4a3dfbb8483f0f1fa398a20936a885c59f06ffef526149ff0f5ec26cb4ad1dbe",
+    "sml-mlx-v2/sft/conversation_foundation_v2/__init__.py": "4d05adedb2467bb45391942c1e48922d9c0b6240edfae5c511ad8ecb779bdb4d",
+    "sml-mlx-v2/sft/conversation_foundation_v2/baselines.py": "c6eeb3433d33ba8930fc94ebcf496b8f5fc60fc0d55be97219e36f2d8a927d25",
+    "sml-mlx-v2/sft/conversation_foundation_v2/behavior.py": "e46b7e122c8c6e5d9a2b41fa6d375590258f0e01f7ed61f46e75ca3acdfa36ca",
+    "sml-mlx-v2/sft/conversation_foundation_v2/benchmark.py": "14dd8861b4179bc69429d536ee69ba21d7bb8e4e6ae8324882c98f0796010155",
+    "sml-mlx-v2/sft/conversation_foundation_v2/config.json": "7aa49be86e4842fd0e0a6d8195c60f04948ac5ade8024768134b6e05ca44ba79",
+    "sml-mlx-v2/sft/conversation_foundation_v2/data.py": "a9c0ece58feeed857b45d106a5131ad2a212df78e862d9320cb78efe1badd36f",
+    "sml-mlx-v2/sft/conversation_foundation_v2/engine.py": "140b7c277939ce7a86a9f890d14657b850a08076a153ef3cb5de516537140509",
+    "sml-mlx-v2/sft/conversation_foundation_v2/full_benchmarks.py": "a0fa945f15f4683458c50de413246a8d7d03f1e402217a2baa085979381b8143",
+    "sml-mlx-v2/sft/conversation_foundation_v2/launch.py": "e5238b819bde3e696905514b0f5837a48e1ece13828bd91b51b37537682fdcc7",
+    "sml-mlx-v2/sft/corrective_640/README.md": "c774435517dde9667ee4af3c6e91b4a47b557bedc243d39187586f69217ea5c7",
+    "sml-mlx-v2/sft/corrective_640/__init__.py": "056079004e463f9253aa934afb927ef5b1b3621b7e964a9af10883a917e9edbb",
+    "sml-mlx-v2/sft/corrective_640/config.json": "97cb6129733fb69c638e897c155d470ae68b83d7974123ce72f8aca7a58c3cc0",
+    "sml-mlx-v2/sft/corrective_640/data.py": "c225f342ef232f362bd830deaddf3c3a5c917d219f7423eba149bfbdb5dde773",
+    "sml-mlx-v2/sft/corrective_640/engine.py": "013392ed1b9ba5b9de1f1c1bb0ac661c1fd9b215586ad5777037c7122c62b430",
+    "sml-mlx-v2/sft/corrective_640/evaluate.py": "e67824b63476b6f6375639f172e3fa09f19417532c8330cc48dd11845653c338",
+    "sml-mlx-v2/sft/corrective_640/launch.py": "be63e2fb76b526e66e734ae243b61b9bd5ba9259c374519eb50c4f1f7d33d95e",
+    "sml-mlx-v2/sft/corrective_640/protocol.py": "8a469e53981201b21c88b59f6d8d5c49a35d14cd00df79ccf764013ce04e42ac",
+    "sml-mlx-v2/sft/corrective_640/test_data.py": "3d2d139534ef69d040b517b0daae6fe68ab11f34b99538ca4c342d346ba401b1",
+    "sml-mlx-v2/sft/dpo_chat_768_v1/README.md": "71b30bdc289782461202cef474f7d659bd53418b1ac4a3a04591ff025154689d",
+    "sml-mlx-v2/sft/dpo_chat_768_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sml-mlx-v2/sft/dpo_chat_768_v1/config.json": "26ec0e6c41d1d77a1614699b51e5e9251fe8d727573cefc55a63c1ec917da5f9",
+    "sml-mlx-v2/sft/dpo_chat_768_v1/data.py": "168de4e185c0e4fcee5342e90f57ca372ff11d18799eafe169bd7ffa9a4baa49",
+    "sml-mlx-v2/sft/dpo_chat_768_v1/engine.py": "88bc5877758732bbdd2043f021cdd32a515dd0943d896a662436605237a9bdd1",
+    "sml-mlx-v2/sft/dpo_chat_768_v1/launch.py": "e52edb6b68b105062920467213333a58b56a6869cbc84cec68bd1fbc7a5ca915",
+    "sml-mlx-v2/sft/dpo_chat_768_v1/prepare_models.py": "000cef79c4cab09a03f78db7a40256d47ec7e25939f863443884e34e05cb131f",
+    "sml-mlx-v2/sft/explanation_transfer_1024/ESNLI_LICENSE.txt": "1346b2949ed1927b55d5067206ffa7c62923e97cd1e0149914842c3a177c38f5",
+    "sml-mlx-v2/sft/explanation_transfer_1024/README.md": "28a1dc1eaf3a8db43a4e40fe6862afafce664da79267dbe7d42ddc328bf601d2",
+    "sml-mlx-v2/sft/explanation_transfer_1024/benchmark.py": "94c359373d381812427c5717a2e3a1b3b929b6daa0e46474401dbe79a235b700",
+    "sml-mlx-v2/sft/explanation_transfer_1024/check.py": "2fb6162b5502a8deeb472f8d13c3d46807efeca0c151998d6a851dca71d89632",
+    "sml-mlx-v2/sft/explanation_transfer_1024/config.json": "b08c26c8a63b0193903d5d23495ff70f76ef7655d0eab9294c832964066dc519",
+    "sml-mlx-v2/sft/explanation_transfer_1024/data.py": "b5c80f55ed48f89a1ba734c67417be238608141cfe736311282dda86662a4bb7",
+    "sml-mlx-v2/sft/explanation_transfer_1024/evaluate.py": "9b5935d07abdc2198a914d9c647a4cfbef8b230a0b4fb6a36cbebf5c5eefbaa4",
+    "sml-mlx-v2/sft/explanation_transfer_1024/finalize.py": "f0af0a883a420f0155cf88203a2902214c391c43b2416289513098513aef69d4",
+    "sml-mlx-v2/sft/explanation_transfer_1024/launch.py": "6359247cf5b0ef04271d4735a700164a29c7d9057e32b1e9d67c1417c9948f8c",
+    "sml-mlx-v2/sft/explanation_transfer_1024/protocol.py": "48095b8bc56538872012a95e24c16ad884483b14b67c5202d8fc0347ade3ea4c",
+    "sml-mlx-v2/sft/grounded_rank_384/README.md": "a09b1355531c8f8f8564f604dff8e0681fc690647cf8273e0b59b4697f2380df",
+    "sml-mlx-v2/sft/grounded_rank_384/__init__.py": "056079004e463f9253aa934afb927ef5b1b3621b7e964a9af10883a917e9edbb",
+    "sml-mlx-v2/sft/grounded_rank_384/config.json": "4f3d91316c0e485b56bb4498dc8693860b52f8a19a90be3d8077e2384aba2885",
+    "sml-mlx-v2/sft/grounded_rank_384/data.py": "8dc6556b4ac273d57d70bd6bc0a7890f28ad527e7eff2681fb8318c9bbd63c2d",
+    "sml-mlx-v2/sft/grounded_rank_384/engine.py": "ced910ca0ca249d89d4ffbf0644b99f1a77a9b976a7b156b5416e3049aab656a",
+    "sml-mlx-v2/sft/grounded_rank_384/evaluate.py": "ee4e6a18c0c39bdd769e6757c1d0f570ef081c1aa36579ccb8bc6b2b1f0915e3",
+    "sml-mlx-v2/sft/grounded_rank_384/launch.py": "702ae01c492b232f351cb8b5459925dea1bcc34e356d7bbf9e982c14d35abc0e",
+    "sml-mlx-v2/sft/grounded_rank_384/protocol.py": "a54dfd911691337cd94bed7f14ff5efe67b345e74efb098932e65199a4b22b58",
+    "sml-mlx-v2/sft/grounded_rank_384/test_data.py": "fb6e35d9232aa0c563d9d41c9bfa8b337f615abee4d44abb8ed03407e87e0c12",
+    "sml-mlx-v2/sft/intact_smoltalk_base_pilot/README.md": "cc0b2c47f21c0824a1800e02b1590a61554fe26d509f47a0504b8fe537dc9219",
+    "sml-mlx-v2/sft/intact_smoltalk_base_pilot/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "sml-mlx-v2/sft/intact_smoltalk_base_pilot/benchmark.py": "b8cacaa26de60fa09eb90f6d53b69ea5eff46036f0f41ff0c286fa287359c347",
+    "sml-mlx-v2/sft/intact_smoltalk_base_pilot/config.json": "7c31967bcf4497a618e380530cf2ef6fb84dbd2d95fd67c75dec8a339562f817",
+    "sml-mlx-v2/sft/intact_smoltalk_base_pilot/data.py": "ed94e2130917493d0fe94c6412abdf01a62de0edfc81d7490119b57b70c8c419",
+    "sml-mlx-v2/sft/intact_smoltalk_base_pilot/data_review.md": "277eda27781fee969428b962e41c8313dba43c3ae2cc2447e0db6758c441e424",
+    "sml-mlx-v2/sft/intact_smoltalk_base_pilot/engine.py": "b6d497b37618de51c0fcb2a894d80312c293ea4bfb03ec73cd64e0e98f2a689c",
+    "sml-mlx-v2/sft/intact_smoltalk_base_pilot/evaluate.py": "7ff5bee0671495e3f914e950030edc6904d5709064c77b186b48f3e2876c9d58",
+    "sml-mlx-v2/sft/intact_smoltalk_base_pilot/finalize.py": "d9839e07a0ed3c7da546ac9201581a763e54b19113425dbe507dc217cce0db76",
+    "sml-mlx-v2/sft/intact_smoltalk_base_pilot/launch.py": "6544e5e8e2b42b10ee2f45826c52b73a4dcb4141763ced50d95547a46e942c77",
+    "sml-mlx-v2/sft/natural_control/PREPARATION.md": "89cf61613ac211c54dc0a4677eb845a0040eadb95fdf7f574e5958e54088c15f",
+    "sml-mlx-v2/sft/natural_control/README.md": "c20a217cf06ff829852a84cdf7c23d99c57c11a272be75a2b94aab704d388548",
+    "sml-mlx-v2/sft/natural_control/check.py": "e8a71c872a0e4dd930f0cf22059e61a90642f6c530872597eb2c254f58e7ef4d",
+    "sml-mlx-v2/sft/natural_control/config.json": "00e992f9d3942503f8f4ea30786022619044241681c881baa64f297d99f3d751",
+    "sml-mlx-v2/sft/natural_control/data.py": "2b53f6733a870807b579be247683de600c15f433c9146aeacbf084eeb5d29a29",
+    "sml-mlx-v2/sft/natural_control/engine.py": "c38f3b4c149079fda6ff1fc5ddd535026fdfde411e7c074f76f7ec3b65e16ce6",
+    "sml-mlx-v2/sft/natural_control/evaluate.py": "23fd4dfad98c10fe3465f7566dfe3e0bce1f22c91cc8aa36c4923f1ea9183abb",
+    "sml-mlx-v2/sft/natural_control/finalize.py": "bb2c95085beb78ecf82b94a43561b21878967069deb8e964028313c5f87fc2f4",
+    "sml-mlx-v2/sft/natural_control/launch.py": "64775a65e56848c3c9a6887394f5be2f0870abea385393589ac309612e003452",
+    "sml-mlx-v2/sft/natural_control/protocol.py": "a8ad3a29c1f0657c0bd35bdf8038e7f92434e599d7d1d945f171c3bc99eac482",
+    "sml-mlx-v2/sft/natural_control/test_protocol.py": "aee576d99f918faa80f63370bac1237dde76f38558cf71dfaeef6a6d987aa967",
+    "sml-mlx-v2/sft/preference_long_640/README.md": "4a409ae67db2565ac3d48a5badc1b4970a099e8a1f71bc5a4381dcccfd9890b3",
+    "sml-mlx-v2/sft/preference_long_640/__init__.py": "408d840d26f8c4538da086d5c6c430666d9a3ef0fcba558a34ed2f06d011ebc4",
+    "sml-mlx-v2/sft/preference_long_640/check.py": "1e7849dfbe80271dbbdb31dab9bd3c8fbb29d0fc80bb1d6f071ddbbeade9ee02",
+    "sml-mlx-v2/sft/preference_long_640/config.json": "dbabf36435b00ac1f5a238bc7a03144fbe9913af5945edca7b08f8c1493cb672",
+    "sml-mlx-v2/sft/preference_long_640/data.py": "945a19713518010079a0315b8106e1ca1659e46c4726b483334192986bb122bc",
+    "sml-mlx-v2/sft/preference_long_640/diagnostics.py": "3d994693c927756f5413e410cd24d82b11b4d5d0d05f3fc8850c4df9f89b71d0",
+    "sml-mlx-v2/sft/preference_long_640/engine.py": "f6071952f3f14a579eacdc7fe5216a874826ebb88973952a2d10ddd4330b2885",
+    "sml-mlx-v2/sft/preference_long_640/evaluate.py": "2f3ddb808f2b27cb654011264abaf2f66e2f941815afd9043b48f3698c6223ab",
+    "sml-mlx-v2/sft/preference_long_640/launch.py": "dcfda656b99839917927fe26a1d2651f16b30a8d8e40a5e7796f1b07fecae7eb",
+    "sml-mlx-v2/sft/preference_long_640/protocol.py": "12b1319fb87331ad49fa4f20357c564e4f13bb024afbd444b5af49c29dbe7e00",
+    "sml-mlx-v2/sft/preference_long_640/test_data.py": "13bb1ff8faddabd891e8e21caf920db51d78a7b6b9f67a3b0655b70b32d39836",
+    "sml-mlx-v2/sft/preference_long_640/verified.py": "426266a13c1f4e2ed0eee590f41e470efab6740a2e064c599682ba1761e830a3",
+    "sml-mlx-v2/sft/protected_update_1024/README.md": "bdf91c9a4bbeae79f102e7b2d97c0b2f7626f25c6f204997aa0a00d14c1ffaf5",
+    "sml-mlx-v2/sft/protected_update_1024/benchmark.py": "f395ec8281b8351e26f03c53a94d96f7015734dd9a19898ec4d38a0f73e6862d",
+    "sml-mlx-v2/sft/protected_update_1024/check.py": "15784b7133bcf1a52cc21d4ae5539bb5f2ccfd2f02ae5076f7579bd0e8d9c94d",
+    "sml-mlx-v2/sft/protected_update_1024/config.json": "c97c6b5781cfc83909b93ec5787ef735d01a6d25b853fdbec82286f6596bf060",
+    "sml-mlx-v2/sft/protected_update_1024/data.py": "f0de771fb891d2b12cb8c965c0470806f25d24390bf64833708f70146649be15",
+    "sml-mlx-v2/sft/protected_update_1024/engine.py": "6e6e044c79d1f619b30658574994d063ebecd746825756df8393a4cfadc3b262",
+    "sml-mlx-v2/sft/protected_update_1024/evaluate.py": "b9d9d5d17130658dd9ecc6a41ced6cdb1a0640eb456800698abd91de81ef3242",
+    "sml-mlx-v2/sft/protected_update_1024/finalize.py": "2059822c1d239c4bd380cf1156763a90e72083be0c2eaa67b2bb7457a3adb819",
+    "sml-mlx-v2/sft/protected_update_1024/launch.py": "bafc399fa495c27453d5414b92c5744403914687c5985a8755ccce77595975cd",
+    "sml-mlx-v2/sft/protected_update_1024/protocol.py": "7eb17438169a31fc950c396e4ba2fad6d002512ede9555753b5ae4d2c8ca3266",
+    "sml-mlx-v2/sft/protected_update_1024/runner.py": "573d17df5ba57510e5c7e992700106dd205a6c6ac74291a06de92a006bac599c",
+    "sml-mlx-v2/sft/protected_update_1024/test_projection.py": "b8b79f1efc3f35f023612e35d74ec80afa1a5519d6fe39e14533c9004f35d417",
+    "sml-mlx-v2/sft/reading_repair/DATA_LICENSE.md": "c8080b742ea3fa1d232a16b4faf5d237c58896519ff9d3e50bff9d13a44f20b2",
+    "sml-mlx-v2/sft/reading_repair/README.md": "cf59d38577f79c75f59d6ce718f59e1b25c727d0523ae0ae037fe87253b52d4c",
+    "sml-mlx-v2/sft/reading_repair/__init__.py": "4139efb937ae63af67a01cd9be72c8bf36f2631310f2164822fc6b7d15d6cde2",
+    "sml-mlx-v2/sft/reading_repair/cards.py": "90eced93c447e58337cb8e060918b152bb4a09c407dac4560bd8207ff3695920",
+    "sml-mlx-v2/sft/reading_repair/config.json": "5b12bea5aa51dc086e8d4a073f28cacf4179c8e60a2cf940c003f53f00b400c2",
+    "sml-mlx-v2/sft/reading_repair/evaluate.py": "44b9384d77f5a87c5626f66f1712932de9004e7e06722da7d2539a541ce445dd",
+    "sml-mlx-v2/sft/reading_repair/generation.py": "4ae25c44d79a21138e88aa4cdc64458a6e8ba739492c0480fc7ede0d92b5df22",
+    "sml-mlx-v2/sft/reading_repair/launch.py": "19c48a00614f8181bbd1330857af3a3669c7fb0d5001cab9287f2407cb88f62c",
+    "sml-mlx-v2/sft/reading_repair/source.py": "3c0367d631adf2f3690275fe8530dd5c4a75f4075abef17108146a8e448b7bc2",
+    "sml-mlx-v2/sft/reading_repair/test_reading.py": "b0eb56e00af3c3b9b6e270f6ce3fb28677c0a6c0d805cc6446fbeb57dca0a0fa",
+    "sml-mlx-v2/sft/response_expansion/README.md": "4cdc4dda89e9f1d22d03b6b568bd3f7bef318481878e2ba9151317e82a646bf1",
+    "sml-mlx-v2/sft/response_expansion/__init__.py": "a66fb5a256d87fdf60b81b909b1506e9e10ba3062bf7cc24f365ca29c22600bc",
+    "sml-mlx-v2/sft/response_expansion/cards.py": "5e1ae0cf807ed594c84839a71ac24b1882e78518312cb3800a10f69facc70f57",
+    "sml-mlx-v2/sft/response_expansion/config.json": "4404b70c0749fb0b68e9e23ecddb14d167f557eb23acccc31bd3161c36ad90dd",
+    "sml-mlx-v2/sft/response_expansion/data.py": "a7e107d391db51845d0c8bbf9273297cef62e3365624a920baa6b80ea839154e",
+    "sml-mlx-v2/sft/response_expansion/launch.py": "4ec948768754fc2a5c3b9662ebe6335ca73c1dfb4fd2c33ec7bc2d707df46e6f",
+    "sml-mlx-v2/sft/response_expansion/rubrics.py": "208001ad886e8353418acab970f3d561372267cbe8e25adb2e7b41ad1dfd0b43",
+    "sml-mlx-v2/sft/response_expansion/test_expansion.py": "3b6a91c879b993fc145b5c5e4880f2943bbba694b646aea59365cbf82be3676b",
+    "sml-mlx-v2/sft/response_repair/README.md": "6a22b6d17a013efff01ea3fba955d9c6542569991fd106ed8ad8d5bf93f1a424",
+    "sml-mlx-v2/sft/response_repair/__init__.py": "61321f3abf8a116b2b8f11712a3ddf4ac87102fc4942e898099ae5e5792ea987",
+    "sml-mlx-v2/sft/response_repair/cards.py": "ab35f4b7fb3da8c3262bc4f686563f6d41507f0cd6ca7fafedd38da8a5c15292",
+    "sml-mlx-v2/sft/response_repair/config.json": "f52a46a567d79c9e524b3b1a53236117778add9dc2654220e9c284b7f613df6a",
+    "sml-mlx-v2/sft/response_repair/data.py": "7684f669ce22d93d688af340c9e58f5679454899f885fa1de1921f0b794a1f9f",
+    "sml-mlx-v2/sft/response_repair/launch.py": "433a881abd6fc41f81d1dd1fbe0de1abb37735cd3f37f2284024ad0d5aaaaf8a",
+    "sml-mlx-v2/sft/response_repair/rubrics.py": "0f6b0928886c325137760d55ecf84152f67c5c6ea235dd4e207b8976b7b97cdd",
+    "sml-mlx-v2/sft/response_repair/test_repair.py": "a26ef0dad3e291d977d532ea1dd6f59bfb8d2046f61bf823dfcc60e57725a9f3",
+    "sml-mlx-v2/sft/skill_balance/README.md": "88eeeda5c20b3d813fb28b93ac82da04cec6f9e2e414e8534b15e2be733261c4",
+    "sml-mlx-v2/sft/skill_balance/__init__.py": "a15186393603a183b9d1991843e1520125024c699c85d4495798490caa8dab4f",
+    "sml-mlx-v2/sft/skill_balance/benchmark.py": "b863e0d49198fdfa54b45c4e3251f9a131e0963470ccd572edb34421811b86ad",
+    "sml-mlx-v2/sft/skill_balance/check.py": "55c4bd08024984e253af206d2cd1129b98f6438477dc52426a4c9ca180fcfaf8",
+    "sml-mlx-v2/sft/skill_balance/config.json": "8129ae914b250dbbbf0765f3d8a34cb08ff2a6b3e63e145c68d8a13822204de3",
+    "sml-mlx-v2/sft/skill_balance/data.py": "71fc04090d6eeb92b15ccdb98b921bf4a3ff0dd3fddcd8bd73c54dc61264b434",
+    "sml-mlx-v2/sft/skill_balance/engine.py": "e6defc8e20c5f5a262bd1ed6a9938c1b7d8946411c380b19e524b981605c5350",
+    "sml-mlx-v2/sft/skill_balance/evaluate.py": "e078ccf021ac7619289412efb26b6cb30934406b437691c06162c19f8b189819",
+    "sml-mlx-v2/sft/skill_balance/finalize.py": "524c0bfef412a1c30e741962f8e5cb80170d5a32a5150644aa09c8899f14916b",
+    "sml-mlx-v2/sft/skill_balance/launch.py": "ad836c94541b2a59098e48ead0c37db5c8344302b841c94d282739df203256d3",
+    "sml-mlx-v2/sft/skill_balance/protocol.py": "6d365c16d412ee718d51db040a4060148ade6f487e1ba7e9efc9b905e4251acc",
+    "sml-mlx-v2/sft/skill_balance/test_skill_balance.py": "b1a55a120029b501afd3597dd4961d28e5599b58845cbe8736ea1f328d10e831",
+    "sml-mlx-v2/sft/skill_balance_768/README.md": "78d6aa6c8ac7783cd3c1d0d7837c0036464dbdcd44976762febff6de8805d9a9",
+    "sml-mlx-v2/sft/skill_balance_768/check.py": "d8bd85e3d656ec090037ddfd133e21f0594ea494cd3c60a8f4d0477e33f7bacf",
+    "sml-mlx-v2/sft/skill_balance_768/config.json": "8f3cc597c45e4d6318fd49d0db4293672a4141350df32ec72b026e981fa91ea6",
+    "sml-mlx-v2/sft/skill_balance_768/data.py": "f94bb4015571a4d294f1425dec5a4de5e42effe51dfc07bfd6ed5d13aa307e1c",
+    "sml-mlx-v2/sft/skill_balance_768/engine.py": "9e2dcaed616222019ea7b8040f3c18d1c52c58de65ef05f4fb3d48276309c0bf",
+    "sml-mlx-v2/sft/skill_balance_768/evaluate.py": "309ae52b18fef5142fa172f39dbd5656b3bbbd76e8ab26ace593b2ff238dd9d4",
+    "sml-mlx-v2/sft/skill_balance_768/finalize.py": "846817648e121f0cac72f29a83f8c38001f22440369a757bb10cf6f33c40e3f3",
+    "sml-mlx-v2/sft/skill_balance_768/launch.py": "e54be34d0a231b422b22407509aa076a47f888059b30f484d0179a2691b61933",
+    "sml-mlx-v2/sft/skill_balance_768/protocol.py": "61889c32920beaea1f3bfed313fd3890ec71498758ee1af84b31e0e2c3c3913b",
+    "sml-mlx-v2/sft/skill_balance_768/test_skill_balance.py": "4a6e19cac97d41a002400e7d15e485b0f9871a41e4fd0ed33edd4785bda4f949",
+    "sml-mlx-v2/sft/skill_recovery_768/README.md": "14589eb8b86bde4fdefff51d6e7c235f09ff1e39b597794d563888cdcf65b452",
+    "sml-mlx-v2/sft/skill_recovery_768/check.py": "f7a0100d583154b68ce2061fce25d430ab1c8b32a3fee6bca89b2ae2936e1efb",
+    "sml-mlx-v2/sft/skill_recovery_768/config.json": "657c48546d5ef027613b13711a1eae0955b73b044502ca054057200cde3726ca",
+    "sml-mlx-v2/sft/skill_recovery_768/data.py": "9a69cf238c89b46ea110cfa2b310c25cc0e0c12fdf5e4857b60e7435b4dad3ae",
+    "sml-mlx-v2/sft/skill_recovery_768/engine.py": "f2298ac44a1a00ef1f97037e1ba9ac196b6f132f7b7b2fc35edad0cc9ad4bf8a",
+    "sml-mlx-v2/sft/skill_recovery_768/evaluate.py": "df8292d72ebcc21ce81853eb92d2be738a983aa613219e21fe310fa0df553ccb",
+    "sml-mlx-v2/sft/skill_recovery_768/finalize.py": "636c1fe4bdefe3005caeec058462346426a9648bf6dc737ec9d147b34d0c16cf",
+    "sml-mlx-v2/sft/skill_recovery_768/launch.py": "4a1482e4c9d0119635c7fc3c712eac0cfa27309dacbfa918f1f760d04a047bad",
+    "sml-mlx-v2/sft/skill_recovery_768/protocol.py": "656c21084e3819e0778738cb64d20a9cd4dabd1844108ea701a7a6929667a376",
+    "sml-mlx-v2/sft/skill_recovery_768/test_skill_balance.py": "1f6bc4beb34db4d5c90158a208711c46dec923574cae7dd533d4afe7f7e39595",
+    "sml-mlx-v2/sft/teacher_chat_768_v1/README.md": "c4ca1f264bd818b24ace775c145e10e4078107557b32467d8d77ecf2cae8b3b2",
+    "sml-mlx-v2/sft/teacher_chat_768_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sml-mlx-v2/sft/teacher_chat_768_v1/check.py": "b764296abc1998aabc1a7d0f825d49dbb7b96c8b698f5a468ca5189ae37de88c",
+    "sml-mlx-v2/sft/teacher_chat_768_v1/config.json": "7454e51aaf5e2f81cb03de0a8b45629b2f0a1c32beb931c4f8a742c933ecf862",
+    "sml-mlx-v2/sft/teacher_chat_768_v1/data.py": "cb699006d1ebc73ec03868ee4242cb0f71c9e2db8d2458a13b0727f1680a075c",
+    "sml-mlx-v2/sft/teacher_chat_768_v1/engine.py": "bf0d25efa0e0ab85ca69b652690339509820a9cff1fb912dca6a30d83c4cacc8",
+    "sml-mlx-v2/sft/teacher_chat_768_v1/launch.py": "5a1ddf05a3f3a4f124465e1e947e1be73efc5940258d086a764677a237b96bf0",
+    "sml-mlx-v2/sft/teacher_chat_768_v1/teacher.py": "9c18c05d384b3cbfd281c9cb50ec42852391ede5986341e0ce64a8f401ba2ff7",
+    "sml-mlx-v2/sft/teacher_chat_768_v1/test_pipeline.py": "e1ceec5ab2e33e367f95f85382a343b342cb846603eb094ebfd683bee066f266",
+    "sml-mlx-v2/sft/text_followup_512_v1/README.md": "d0a2ae3eb02fc754709ad422930bd689893001c4b8371227d1e80f5327bd8d05",
+    "sml-mlx-v2/sft/text_followup_512_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sml-mlx-v2/sft/text_followup_512_v1/config.json": "2b2feeee37f49888883e018c85c3b648f58ade2d72cbbac61b5ca3e8ca26bf33",
+    "sml-mlx-v2/sft/text_followup_512_v1/data.py": "2c7501a80fd7a671777886426170410a2d1f522b1711338780b7704945d978cc",
+    "sml-mlx-v2/sft/text_followup_512_v1/engine.py": "cc627395cfae216173cbad047acb2cdd253c0cc18ba4343e03a86edc79772fc0",
+    "sml-mlx-v2/sft/text_followup_512_v1/launch.py": "a2aee780e1538d1a0a5360b2e6a08076bfe1923bfdd7c27ddcd2dcfa51f180ac",
+    "sml-mlx-v2/sft/text_followup_512_v1/test_data.py": "43d0b4abe09262aa0c69b96ca3254d39b47b8fa3ec1fa422dcb0f43b0f9d2a38",
+    "sml-mlx-v2/sft/transfer_control/README.md": "7e8b688b1f2abca20ccb02af9bf4a9c400e56f721ea598b718a49f60b8fee553",
+    "sml-mlx-v2/sft/transfer_control/__init__.py": "4ea04042bb2bf91128d064eafc39b564d54d58901dc5130d7db151750a1a76fc",
+    "sml-mlx-v2/sft/transfer_control/config.json": "09da6ba0cd05b91c73d7fa49f7cb39bb6edff49d82241453a3db07f82afc0243",
+    "sml-mlx-v2/sft/transfer_control/data.py": "f313ca28ffc26fd6c312d34f6b223ffcf97a3f1b4d075e7daa99f298cff41f9a",
+    "sml-mlx-v2/sft/transfer_control/engine.py": "9a1a84b29a1cb2c46799154f2df971b5f15ebc7a65f2fb1e0183f9da445c5354",
+    "sml-mlx-v2/sft/transfer_control/launch.py": "d7ea2bfaf2f2db0a3cd2ca5592b73d33eea890fa8f8982650453519ec1893747",
+    "sml-mlx-v2/sft/transfer_control/test_transfer_control.py": "b6ddc848357acee2541cb1998c516fc6b8c8979200589a60cfc4fee3b8a6c687",
+    "sml-mlx-v2/sft/two_turn_640/README.md": "b291aee0b612ab033c0fed76c419f869eadbcc86e6207126971a7f033c8cce9b",
+    "sml-mlx-v2/sft/two_turn_640/check.py": "fb74f7c34785ee9e3e54a4d8d0dbe6d8912d51316b621b210405c3e20912dd66",
+    "sml-mlx-v2/sft/two_turn_640/config.json": "9031d2bac1210292990c63511be4d96e75e86f2727a2f4735481f64154613e67",
+    "sml-mlx-v2/sft/two_turn_640/data.py": "b519cbe8ec068fc9f20d379c34e33e60ad7c4d6cf5e3eb0092c21e3890a1e689",
+    "sml-mlx-v2/sft/two_turn_640/engine.py": "e98944fb42ff28dfaee42ddc8d17ab704243956d0b8abffb57d1924ec2fa2206",
+    "sml-mlx-v2/sft/two_turn_640/evaluate.py": "b3a90a93a9204eb944ae9a48ae4b700a680f2804e297fad3d054c2679867297f",
+    "sml-mlx-v2/sft/two_turn_640/launch.py": "c7295e987aa7ca1067b5b55a557d728854ac7be5917a8e90b56ab878c3eeee3c",
+    "sml-mlx-v2/sft/two_turn_640/protocol.py": "b7b71dde5873ef5220ac92575b925d4a3e4f9afe6bef675468d2aa34138ba20f",
+    "sml-mlx-v2/sml_v2/__init__.py": "673b3311a6dbd4af12001b1626a382bd773c5917243fb656fafa09c15176b92c",
+    "sml-mlx-v2/sml_v2/checkpoint_bundle.py": "73cbf0c17cf74a44bb7c74a8f9e5bb63671057a1f664a6a4af0e0777b2c8f1a4",
+    "sml-mlx-v2/sml_v2/checkpoint_metadata.py": "0aaa7019ab53fd8b5e6b0e397f970026b4e8d38e12bf5d5f0fcb7f686de9b82c",
+    "sml-mlx-v2/sml_v2/common.py": "ec4dda551cbe45cbd30d64c7c82379a8849ce02a3ad1a597a293844b5dc86351",
+    "sml-mlx-v2/sml_v2/continuation.py": "bef52d90c280cfe82e082c997f419cd2d9839c29f065468bf8c74ebc5ce78229",
+    "sml-mlx-v2/sml_v2/corpus.py": "be77769180342f6a8b1d5619e5b3b64f20ca40d3424219168cccf4789bb02038",
+    "sml-mlx-v2/sml_v2/data.py": "411284cda81b07f10bc624ebd8f7fe9debd2911e950971f96b204dfd1cee6a6d",
+    "sml-mlx-v2/sml_v2/data_review.py": "a71eabcc526344b6502cae999020da63c950b2d80c13077629bb86c8757a18ed",
+    "sml-mlx-v2/sml_v2/fast_loss.py": "f99edeedb6cb328ef728d05643f65ea20371437f7e5806009ae3ad0885bafbf1",
+    "sml-mlx-v2/sml_v2/fast_swiglu.py": "59d1adb31400e3c288914b4c0cc8a21681a73ca3dfa7c722ea4e13d21dc38528",
+    "sml-mlx-v2/sml_v2/jaccl_control.py": "a3dfbd61de43fda14daf4bbd921ccb382ea8af2c8342457fe16d1ad0908e88fe",
+    "sml-mlx-v2/sml_v2/launch.py": "ff78c92eda5ac69e7f91109cb72fd267c729774097226d9146c6dd4d8d95175d",
+    "sml-mlx-v2/sml_v2/lr_scheduler.py": "e141132efbd5f1beab4b187d4eab15efd46fcf9710d6a2ba7c882f62362a77cf",
+    "sml-mlx-v2/sml_v2/lr_trial.py": "2f643abaa6ac3f86e47b37632df4d25fa34d0b25e77b59ffecc0290b2385e7dc",
+    "sml-mlx-v2/sml_v2/model.py": "1eee6f8afe78767ff6b9c604ccf2328c98b24bc94dbad6291a0ad699dd7345fe",
+    "sml-mlx-v2/sml_v2/precision.py": "b9f535fca724153703ed57a300eceb5b34a8f8381fc65bf5c4c5a0f7e066303c",
+    "sml-mlx-v2/sml_v2/prepare_data.py": "3d78ed45dbab52a671d889fe937a210a832e55426bbdc4f905ddbd202ccf2336",
+    "sml-mlx-v2/sml_v2/pretrain.py": "e38e3424541558bf31e4a5152d3afe83fc56c57cf6a47d84394fd6e43c1ca4bd",
+    "sml-mlx-v2/sml_v2/recipe.py": "c274a426944fbdfb75d1f8edfa5fb37d1b095bf59e1f8be0a7653fadb1b618b2",
+    "sml-mlx-v2/sml_v2/stage_b.py": "f80f065f6892eea951e94a7ff6925d5a1bff9419a7384e0756cf2faeb92e4775",
+    "sml-mlx-v2/sml_v2/stage_b_data.py": "c065be118b0c6b8948a15d4b81e7fd7371f4e699ea3c49d34fa0abde258e0505",
+    "sml-mlx-v2/sml_v2/stage_b_eval.py": "943fd969994e896faff14481b94eb121d23b6fef00244874d5d5361df6bd8cce",
+    "sml-mlx-v2/sml_v2/stream.py": "9bb1a365e7e3da375e23187baefe5c36c5c2c1a8a94a0eb65004627eafcae602",
+    "sml-mlx-v2/sml_v2/tokenization.py": "7f9a93d4e0e60e1fb0630a603709450cee023373ef8dd09bb7f1b97499aa7ff0",
+    "sml-mlx-v2/sml_v2/topology_transition.py": "adc3a0a6f19e7cfb3073f4c1e0432f664e5fb709141ceb4148aca7cda08ddaab",
+    "sml-mlx-v2/sml_v2/train_tokenizer.py": "90c58a30a50cb625e36222825768a134aba5c81df87de8655ab95de2bd47402c",
+    "sml-mlx-v2/stage_b/README.md": "c5438c6cc5b8f76585473e46c1936dc39a626988d359b80dc79ae5f6a756c255",
+    "sml-mlx-v2/stage_b/audit_data.py": "1591e1fa6ddff19244fc8a0e5d31d3b900d89456f6d7202892fe739896603546",
+    "sml-mlx-v2/stage_b/corpus.json": "0374ac752e85e439dd5a0bc3789321237c4f973d1534c814ac86e8dbf44da959",
+    "sml-mlx-v2/stage_b/data_audit.json": "a1ec975d55b8f0fe6012303a76da2208d02ceec2b1ea539d3a7f4c2d38d5d808",
+    "sml-mlx-v2/stage_b/launch.py": "776b41757a5deb79119892752d03f9d7f1b24ffa155a5f75e25caab619b89834",
+    "sml-mlx-v2/tests/test_adaptive_launcher.py": "55cb450fc2f63feb7f248907b097ce54e6c5acc30995c31c917279f9fb0f92b9",
+    "sml-mlx-v2/tests/test_continuation.py": "f0ce640eed9701fb3235e442bfe66f3e27dca1e6573adfb8844eb0a401784969",
+    "sml-mlx-v2/tests/test_data_review.py": "1960080cc79186a2e14a6776d33c31361190eb154b84bc45fc07dbbad493f7a4",
+    "sml-mlx-v2/tests/test_five_mac_names.py": "08d9c7a3fd7b14b5ca0e2c544570d77418093a20c270888a38511fce246cfe8f",
+    "sml-mlx-v2/tests/test_five_mac_network.py": "bda87281efb691cd77168db1f68cad14907e400f2f905d90e54f770ae4d99ac5",
+    "sml-mlx-v2/tests/test_five_mac_ssh.py": "8808ba26b27fc9f6ebddb604dba0f0630a6e8ef0032935f110578baf9d389e2a",
+    "sml-mlx-v2/tests/test_five_mac_topology.py": "ff1a97d0c5523f2950f7ac615082fb714332f9b0427fb685ca2ea1f95daf918c",
+    "sml-mlx-v2/tests/test_five_mac_training.py": "220864fe71f09f974c8c2336389798e488ab296400feb7aedc6ff123a246333f",
+    "sml-mlx-v2/tests/test_five_mac_transport.py": "8647e609cc24a698c2182de4ed0d6b6b1b9d3b98171a18707ffcaf0121831f58",
+    "sml-mlx-v2/tests/test_full_launcher.py": "c37e7fd36a92bdc5e2870603b87fe83bf8d205570f6780579016638f3195bb0d",
+    "sml-mlx-v2/tests/test_launch_cli.py": "a00dc53e2196150eaf5822eb7674f74cabe8840a29456762a1062b6629e1941a",
+    "sml-mlx-v2/tests/test_lr_floor_transition.py": "b346a1ec8245d8b23cc3f1388698262f81de47fc9cb632732a13168999ed6453",
+    "sml-mlx-v2/tests/test_lr_scheduler.py": "5ef243fb906974098f27cb0589e2f711589588763191142fdd5f97ba36dcb1fd",
+    "sml-mlx-v2/tests/test_lr_trial.py": "8cb2bb3dc73bec5845b4af0697bb915212bd09439950420938185ad4d64549bb",
+    "sml-mlx-v2/tests/test_pipeline.py": "8085df4382eb2408382be13ab06cd8970c54f4a24c5fda3b1469ce6ee6b86a8d",
+    "sml-mlx-v2/tests/test_ring_control.py": "58e30af94468886fe6760c831b6c07871d136ff33a225be644fd34e62d9bec4c",
+    "sml-mlx-v2/tests/test_stage_b.py": "d4f7f7dabcff5747a9a6a765f1dac2ad45ee40bbc5f78095bc9f38a6fa13fbba",
+    "sml-mlx-v2/tokenizer/bytebpe32k_v1/corpus.json": "e4c47b7b6aba08f948de7c2c7cb94c58dbd09dde2ded6ac185c60856ee686d27",
+    "sml-mlx-v2/tokenizer/bytebpe32k_v1/manifest.json": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb",
+    "sml-mlx-v2/tokenizer/bytebpe32k_v1/report.json": "e871f690eabebf82da173f0e406f38b79a10cd7d2647bb3592c3fc35ae9a2f16",
+    "sml-mlx-v2/tokenizer/bytebpe32k_v1/tokenizer.json": "e095f0413a11fa91fbb58f37d00e4c6bcda59beb89b28f6f680db1436a7e8891",
+    "sml-mlx-v2/tokenizer/bytebpe32k_v1/tokenizer_config.json": "619f500553367eb76f5be00a98625130ec857b9c367561334984096c029ba2a9",
+    "train/__init__.py": "8f4f5243c26e18798d57bc7e0748943100cd5f0f1277f20cc3abb87cae2b35c9",
+    "train/jaccl_common.py": "1b5107a5d2762f31f83db5a5fbc6ef5e986fc12dc4b74bd3e5176530769c5cb9",
+    "train/jaccl_ring_transport.py": "da5d0b5d3d9762dd806ad0ed9da1e8f0edd3e69dc8d626f20d9e6af27673f375",
+    "train/jaccl_training_state.py": "b58b23ea32eb7653475b5ee35d645f43e6c2ce944e65c04214cafa35fee5bf24",
+    "train/model.py": "1eee6f8afe78767ff6b9c604ccf2328c98b24bc94dbad6291a0ad699dd7345fe",
+    "train/tokenization.py": "0598afe75750fb24a4f3fd7b666749fde8ad669ca8bedc6e7ae13b50f9ef258e",
+    "train/train.py": "b159a6ed1b04e895076fa9f8808576b4bf1db092749e5a77525a597fb08aadc6"
+  }
+}

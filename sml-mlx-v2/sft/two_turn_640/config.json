@@ -1,0 +1,19 @@
+{
+  "format": "opensml-two-turn-640-v1",
+  "source_bundle": "runs/sft_clean_reply_ab_v1/high/step_0000640_ee984b14a185",
+  "source_model_sha256": "ff794f16604ce25b87830ba169216710f1d16431b3afe76fb4d8a4850ee2c60b",
+  "source_step": 640,
+  "seed": 92664021,
+  "batch": 12,
+  "updates": 128,
+  "context": 1024,
+  "peak_lr": 0.000003,
+  "final_lr": 0.000001,
+  "warmup_updates": 8,
+  "betas": [0.9, 0.95],
+  "weight_decay": 0.0,
+  "clip_norm": 1.0,
+  "evaluation_updates": [0, 32, 64, 96, 128],
+  "checkpoint_every": 32,
+  "max_new_tokens": 96
+}

@@ -1,0 +1,22 @@
+{
+  "vendor/lm_eval/tasks/ifeval/utils.py": {
+    "url": "https://raw.githubusercontent.com/EleutherAI/lm-evaluation-harness/b954108c9baaaa934b4ad842033b31a97ee30816/lm_eval/tasks/ifeval/utils.py",
+    "sha256": "1ab8f14808c826f93f2364883487ed63cf4267980bf4761fda8053899c013632"
+  },
+  "vendor/lm_eval/tasks/ifeval/instructions.py": {
+    "url": "https://raw.githubusercontent.com/EleutherAI/lm-evaluation-harness/b954108c9baaaa934b4ad842033b31a97ee30816/lm_eval/tasks/ifeval/instructions.py",
+    "sha256": "511cc41a53787d818c292d8335c8e98aa833296a0789ac470db56bcd6496345e"
+  },
+  "vendor/lm_eval/tasks/ifeval/instructions_registry.py": {
+    "url": "https://raw.githubusercontent.com/EleutherAI/lm-evaluation-harness/b954108c9baaaa934b4ad842033b31a97ee30816/lm_eval/tasks/ifeval/instructions_registry.py",
+    "sha256": "9db1c062cdb70a91420d3789a588235a1064c2b9a1a66e09e5fb9df9e7584a6c"
+  },
+  "vendor/lm_eval/tasks/ifeval/instructions_util.py": {
+    "url": "https://raw.githubusercontent.com/EleutherAI/lm-evaluation-harness/b954108c9baaaa934b4ad842033b31a97ee30816/lm_eval/tasks/ifeval/instructions_util.py",
+    "sha256": "e8c4d9187bac1482d93941fb46469609c3ae78d896195bfcb300a0707d492567"
+  },
+  "vendor/HARNESS_LICENSE.md": {
+    "url": "https://raw.githubusercontent.com/EleutherAI/lm-evaluation-harness/b954108c9baaaa934b4ad842033b31a97ee30816/LICENSE.md",
+    "sha256": "a806e42547620dffbc2ec0333322c8b3523b4af11e059be14ef81aa5b1ae021f"
+  }
+}

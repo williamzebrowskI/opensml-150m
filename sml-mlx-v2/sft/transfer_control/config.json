@@ -1,0 +1,17 @@
+{
+  "format": "opensml-transfer-control-v1",
+  "seed": 24092491,
+  "arms": ["opensml", "reference"],
+  "context": 2048,
+  "batch": 8,
+  "microbatch": 2,
+  "peak_lr": 0.00003,
+  "final_lr": 0.000003,
+  "warmup_updates": 8,
+  "updates": 128,
+  "evaluation_steps": [0, 32, 64, 128],
+  "max_new_tokens": 48,
+  "weight_decay": 0.01,
+  "betas": [0.9, 0.95],
+  "clip_norm": 1.0
+}

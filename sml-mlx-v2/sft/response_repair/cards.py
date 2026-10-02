@@ -1,0 +1,181 @@
+"""Original short targets. Partitions fixed before any repair model evaluation."""
+GREETINGS={
+ 'train':['hello','hii','hello there','hey there','good morning','good evening','hi again','hiya',
+          'hello, can we begin','hi, can you assist','hey, are you there','hello, I need your help',
+          'hi friend','good afternoon to you','hello, nice to see you','hey, may I ask something',
+          'hi, thanks for helping','hello, can I talk to you','hey, I have a little question','hi, let us chat',
+          'hello, I have just arrived','hi, I am here for help','hey, good to see you','hello, how is it going',
+          'hi, are you free to chat','hello, I would like some advice','hey, can we talk briefly','hi, shall I ask my question',
+          'hello, glad to meet you','hi, I could use your help today','hey, I hope you can assist','hello, let us get started'],
+ 'dev':['Hi, is it all right if I ask something?','Hello, I am stopping by to chat.',
+        'Hey, I am ready to ask for advice.','Good evening, I have a small question.',
+        'Hi, are you around to give me a hand?','Hello, could we start with a question?',
+        'Hey, I have been hoping to chat.','Hi, I need a hand with something today.'],
+ 'test':['Hello, is someone here to help me?','Hey, may I have a moment of your time?',
+         'Hi, I am dropping in with a question.','Good morning, are you able to assist?',
+         'Hello, I would appreciate a moment to talk.','Hi, I am hoping we can discuss something.',
+         'Hey, please let me know if you can help.','Hello, I have something I want to ask you about.']}
+
+# Thirty-two different actions, rather than four paraphrases of sixteen actions.
+POLITE={
+ 'train':['pass me the pepper','move the box away from the doorway','bring me a glass of water','close the garden gate',
+          'turn the radio down','leave the curtains open','take your shoes off','put the dishes in the sink',
+          'return my umbrella','hold the door for me','send me the invitation','tell me the opening time',
+          'write your name here','wait until I finish','take a seat beside me','keep the path clear',
+          'check whether the window is closed','bring the ladder outside','hang the picture straight','put the flowers in water',
+          'move the lamp closer','leave a note on the desk','carry the shopping bag','open this jar for me',
+          'read the label aloud','put the lid on the tin','leave room on the bench','point out the nearest exit',
+          'help me find my coat','keep the music quiet','wash the empty cups','let the visitor come in'],
+ 'dev':['lift the curtain','place the tray on the cart','bring the spare cushion','straighten the rug',
+        'take the basket upstairs','turn the porch light on','open the blue folder','hold this package'],
+ 'test':['bring the watering can','place the mirror against the wall','take the empty crate outside','shut the screen door',
+         'put the folded sheets away','bring the clean napkins','leave the spare chair here','move the mat aside']}
+
+# (question, brief answer, complete answer). Common stable facts, no code/math tasks.
+FACTS={
+ 'train':[
+ ('What sound does a dog usually make?','barking','A dog usually barks.'),
+ ('What sound does a cat usually make?','meowing','A cat usually meows.'),
+ ('What do bees make from nectar?','honey','Bees make honey from nectar.'),
+ ('What is frozen water called?','ice','Frozen water is called ice.'),
+ ('What organ pumps blood around the body?','heart','The heart pumps blood around the body.'),
+ ('Which part of a plant takes in water from the soil?','roots','The roots take in water from the soil.'),
+ ('What do you use to measure temperature?','thermometer','A thermometer measures temperature.'),
+ ('What is the opposite of empty?','full','The opposite of empty is full.'),
+ ('Which season comes after spring?','summer','Summer comes after spring.'),
+ ('Which star provides daylight on Earth?','Sun','The Sun provides daylight on Earth.'),
+ ('What do birds use to fly?','wings','Birds use their wings to fly.'),
+ ('What is a young dog called?','puppy','A young dog is called a puppy.'),
+ ('What do you call someone who writes books?','author','Someone who writes books is an author.'),
+ ('Which sense do we use with our ears?','hearing','We use our ears for hearing.'),
+ ('What is the main gas in Earth\'s atmosphere?','nitrogen','Nitrogen is the main gas in Earth\'s atmosphere.'),
+ ('What material is a wooden chair made from?','wood','A wooden chair is made from wood.'),
+ ('Why does a ball slow down when it rolls across a carpet?','friction','Friction from the carpet slows the rolling ball.'),
+ ('Why does a bicycle have a bell?','to warn others','A bicycle bell warns other people that the bicycle is approaching.'),
+ ('Why does a candle flame go out when covered tightly with a jar?','it runs out of oxygen','The flame goes out because it no longer has enough oxygen to keep burning.'),
+ ('Why do we wear a raincoat in the rain?','to stay dry','A raincoat keeps rain from soaking our clothes and helps us stay dry.'),
+ ('Why do clothes dry more quickly on a windy day?','moving air helps evaporation','Moving air carries water vapor away and helps the water in clothes evaporate.'),
+ ('Why do plants need light?','to make food','Plants use light to make sugars through photosynthesis.'),
+ ('Why is a shadow formed behind an opaque object?','the object blocks light','A shadow forms because the opaque object blocks the light.'),
+ ('Why is a handle useful on a cup?','to hold the cup','A handle gives you a place to hold the cup without touching its hot sides.'),
+ ('Why does a rubber band return toward its original shape?','elasticity','A rubber band is elastic, so it tends to return to its original shape.'),
+ ('Why does a wet sponge become heavier?','it absorbs water','A wet sponge becomes heavier because it absorbs water.'),
+ ('Why does a coat help keep someone warm?','it slows heat loss','A coat traps air and slows the loss of heat from the body.'),
+ ('Why is a sieve used to drain pasta?','water passes through its holes','The holes let water drain away while the sieve holds the pasta.'),
+ ('Why do we use a bookmark?','to keep our place','A bookmark marks our place so we can find it when we return to the book.'),
+ ('Why can we smell flowers from nearby?','scent molecules travel through the air','Scent molecules from the flowers travel through the air to our noses.'),
+ ('Why are wheels useful for moving a cart?','rolling reduces resistance','Wheels let the cart roll, which usually requires less force than dragging it.'),
+ ('Why does a door stop keep a door open?','it blocks the door from closing','A door stop holds the door in place so it cannot swing shut.')],
+ 'dev':[
+ ('What is a young cat called?','kitten','A young cat is called a kitten.'),
+ ('Which sense do we use with our eyes?','sight','We use our eyes for sight.'),
+ ('What tool is used to cut paper?','scissors','Scissors are used to cut paper.'),
+ ('What do cows produce that people drink?','milk','Cows produce milk.'),
+ ('Why is a flashlight useful in a dark cupboard?','it provides light','A flashlight provides light so we can see inside the cupboard.'),
+ ('Why does an umbrella help in rain?','it blocks the rain','An umbrella blocks rain from falling on the person underneath it.'),
+ ('Why does a book need a cover?','to protect the pages','A cover helps protect the pages of a book.'),
+ ('Why does a pencil leave a mark on paper?','graphite rubs onto the paper','Graphite from the pencil rubs onto the paper and leaves a mark.')],
+ 'test':[
+ ('What is a young horse called?','foal','A young horse is called a foal.'),
+ ('Which sense do we use with our tongue?','taste','We use our tongue for taste.'),
+ ('What tool can tighten a screw?','screwdriver','A screwdriver can tighten a screw.'),
+ ('What do silkworms produce?','silk','Silkworms produce silk.'),
+ ('Why does a cushion make a hard seat more comfortable?','it spreads pressure','A cushion spreads pressure and provides a softer surface to sit on.'),
+ ('Why do we put a lid on a jar?','to cover the opening','A lid covers the opening and helps keep the contents inside the jar.'),
+ ('Why are gloves useful on a cold day?','they slow heat loss from hands','Gloves slow heat loss and help keep hands warm.'),
+ ('Why does a mirror show a reflection?','it reflects light','A mirror reflects light from objects back toward our eyes.') ]}
+
+# Each scenario has its own input facts and a short causal answer/summary.
+READING={
+ 'train':[
+ ('The bakery lost power, so it could not bake its morning bread.','Why could the bakery not bake?','The bakery could not bake because it lost power.'),
+ ('The ferry stayed at the dock because thick fog made the route unsafe.','Why did the ferry stay at the dock?','The ferry stayed at the dock because thick fog made the route unsafe.'),
+ ('The gardener covered the young plants because frost was expected.','Why did the gardener cover the plants?','The gardener covered the plants to protect them from the expected frost.'),
+ ('A leaking roof damaged the reading room. The library moved its reading group to the hall.','Summarize what happened in one sentence.','The library moved its reading group to the hall after a leaking roof damaged the reading room.'),
+ ('A loose branch blocked the cycle path. Workers removed it and reopened the path.','Summarize what happened in one sentence.','Workers removed a branch and reopened the blocked cycle path.'),
+ ('Rosa misplaced her scarf at the theater. An usher found it and returned it before she left.','Summarize what happened in one sentence.','An usher returned the scarf Rosa misplaced at the theater.'),
+ ('The shop closed early because its water supply was interrupted.','Why did the shop close early?','The shop closed early because its water supply was interrupted.'),
+ ('The class moved its picnic indoors after rain began.','Why did the class move its picnic?','The class moved its picnic indoors because it began to rain.'),
+ ('The food stall sold out of soup before lunch, so the cook made another pot.','Why did the cook make another pot?','The cook made more soup because the first pot had sold out.'),
+ ('The florist wrapped the bouquet carefully to keep its stems from breaking.','Why was the bouquet wrapped carefully?','The bouquet was wrapped carefully to protect its stems.'),
+ ('A torn sail forced the boat to return to the harbor for repairs.','Why did the boat return to the harbor?','The boat returned to the harbor because its sail was torn.'),
+ ('Vera left a parcel at reception. The receptionist delivered it to the correct office.','Summarize what happened in one sentence.','The receptionist delivered the parcel Vera left at reception to the correct office.'),
+ ('The playground gate broke. Volunteers repaired it before the children arrived.','Summarize what happened in one sentence.','Volunteers repaired the broken playground gate before the children arrived.'),
+ ('The station clock was slow. A technician adjusted it to show the correct time.','Summarize what happened in one sentence.','A technician corrected the slow station clock.'),
+ ('The cafe opened a shaded terrace so visitors could sit out of the sun.','Why did the cafe open a shaded terrace?','The cafe opened a shaded terrace to give visitors somewhere to sit out of the sun.'),
+ ('A missing sign confused visitors. The museum put up a replacement sign.','Summarize what happened in one sentence.','The museum replaced a missing sign that had confused visitors.')],
+ 'dev':[
+ ('The trail was muddy after rain, so the walking group chose a paved route.','Why did the group choose another route?','The group chose a paved route because rain had made the trail muddy.'),
+ ('The florist ran out of ribbon and used paper bands for the bouquets.','Summarize what happened in one sentence.','The florist used paper bands after running out of ribbon.'),
+ ('A cold wind entered through a gap, so the caretaker sealed it.','Why did the caretaker seal the gap?','The caretaker sealed the gap to keep out the cold wind.'),
+ ('The cafe repaired its broken sign and hung it over the door again.','Summarize what happened in one sentence.','The cafe repaired its sign and put it back over the door.')],
+ 'test':[
+ ('The tent fabric was torn, so the campers patched it before the rain.','Why did the campers patch the tent?','The campers patched the tent because its fabric was torn.'),
+ ('The mill stopped for repairs; It reopened after workers fixed the wheel.','Summarize what happened in one sentence.','The mill reopened after workers repaired its wheel.'),
+ ('The shop dimmed its bright display because the glare bothered customers.','Why did the shop dim its display?','The shop dimmed its display because the glare bothered customers.'),
+ ('The bus broke down. A replacement bus took the passengers to their destination.','Summarize what happened in one sentence.','A replacement bus carried the passengers after their bus broke down.') ]}
+
+CLARIFY={
+ 'train':[
+ ('I want to choose a backpack.','What will you need to carry in the backpack?'),
+ ('I am choosing a bicycle.','What kind of riding will you use the bicycle for?'),
+ ('I need a new sofa.','How much room do you have for the sofa?'),
+ ('I want to learn a language.','Which languages interest you?'),
+ ('I need a present for a friend.','What does your friend enjoy?'),
+ ('I want to grow some vegetables.','How much sunlight does your growing space get?'),
+ ('I want to select a board game.','How many people will usually play?'),
+ ('I want to start exercising outdoors.','What outdoor activities do you enjoy?'),
+ ('I am choosing a camera.','What would you like to photograph?'),
+ ('I want to bake something.','What ingredients do you have available?'),
+ ('I need somewhere to stay on a trip.','Where will you be visiting?'),
+ ('I want a new pair of boots.','What weather and ground conditions will you wear them in?'),
+ ('I would like to visit a museum.','What subjects interest you?'),
+ ('I need a chair for my workspace.','How long will you usually sit in the chair?'),
+ ('I want to pick a houseplant.','How much light is available where the plant will sit?'),
+ ('I would like to try a craft.','What kinds of things do you enjoy making?')],
+ 'dev':[
+ ('I want to choose a suitcase.','How long will your usual trips be?'),
+ ('I want a new lamp.','Where will you use the lamp?'),
+ ('I want to join a club.','What activities interest you?'),
+ ('I want to choose a picnic spot.','What area would you like to visit?')],
+ 'test':[
+ ('I want to choose a musical recording.','What kind of music do you enjoy?'),
+ ('I need a table for my room.','How much space do you have for the table?'),
+ ('I want to buy a sleeping bag.','How cold will it be where you plan to sleep?'),
+ ('I would like to start a collection.','What kinds of objects interest you?') ]}
+
+EVENTS={
+ 'train':['a neighborhood lunch','a paper craft afternoon','a woodland walk','a community breakfast',
+          'a garden planting day','a folk music gathering','a story circle','a sketching afternoon',
+          'a local history talk','a recipe exchange','a beach picnic','a shared supper',
+          'a lantern display','a quilting afternoon','a park cleanup','a fruit tasting'],
+ 'dev':['a basket weaving session','a watercolor workshop','a riverside stroll','a flower arranging class'],
+ 'test':['a printmaking demonstration','a star-watching evening','a pottery painting session','a nature sketch walk']}
+SOCIAL={
+ 'train':[
+ ('Welcome a new member to our walking group.','Welcome to our walking group; we are glad you are joining us.'),
+ ('Congratulate a friend who finished making a quilt.','Congratulations on finishing your quilt; your hard work paid off.'),
+ ('Thank a neighbor for watering your plants.','Thank you for watering my plants; I really appreciate your help.'),
+ ('Welcome a new volunteer to the library.','Welcome to the library team; we are happy to have your help.'),
+ ('Congratulate someone who completed their first long hike.','Congratulations on completing your first long hike!'),
+ ('Thank a friend for lending you a book.','Thank you for lending me your book; I appreciate it.'),
+ ('Welcome a new member to a reading circle.','Welcome to our reading circle; we look forward to reading with you.'),
+ ('Congratulate a friend who finished planting a garden.','Congratulations on finishing your garden; I hope you enjoy watching it grow.'),
+ ('Thank someone for helping carry your shopping.','Thank you for helping me carry my shopping; that was kind of you.'),
+ ('Welcome someone to their first pottery class.','Welcome to pottery class; we are glad you could join us.'),
+ ('Congratulate a neighbor who repaired an old table.','Congratulations on repairing your table; It is lovely to give it a new life.'),
+ ('Thank a friend for showing you around a new town.','Thank you for showing me around; I enjoyed exploring the town with you.'),
+ ('Welcome someone to a community choir.','Welcome to the choir; we are excited to sing with you.'),
+ ('Congratulate someone who finished a painting.','Congratulations on finishing your painting!'),
+ ('Thank a volunteer for cleaning the beach.','Thank you for helping clean the beach; your effort makes a difference.'),
+ ('Welcome a new participant to a craft group.','Welcome to our craft group; we are happy you are here.')],
+ 'dev':[
+ ('Welcome a new helper to the animal shelter.','Welcome to the shelter team; we are grateful for your help.'),
+ ('Congratulate a friend who built a bookshelf.','Congratulations on building your bookshelf!'),
+ ('Thank someone for returning your lost hat.','Thank you for returning my hat; I really appreciate it.'),
+ ('Welcome a new member to a photography club.','Welcome to our photography club; we are glad to have you with us.')],
+ 'test':[
+ ('Welcome a new volunteer to the community orchard.','Welcome to the orchard team; we are glad to have your help.'),
+ ('Congratulate a friend who restored a bicycle.','Congratulations on restoring your bicycle!'),
+ ('Thank someone for finding your lost notebook.','Thank you for finding my notebook; I really appreciate your help.'),
+ ('Welcome a newcomer to a knitting circle.','Welcome to our knitting circle; we are happy you could join us.') ]}

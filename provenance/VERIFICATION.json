@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-02",
+  "checks": {
+    "source_integrity": "passed",
+    "python_ast": "379 modules parsed before dependency completion",
+    "json_parsing": "passed",
+    "credential_pattern_scan": "passed",
+    "wheel_build": "passed",
+    "cli_help_entry_points": 8,
+    "offline_pipeline_unit_tests": 27
+  },
+  "scope": "Existing offline fixtures and tiny CPU test models; no production checkpoint training or benchmark model evaluations.",
+  "limitations": [
+    "Exact training replay requires external weights and frozen prepared data inputs.",
+    "Site-specific cluster setup and relocated integrity manifests require review.",
+    "Baseline dependency pins differ from the production custom MLX build."
+  ]
+}

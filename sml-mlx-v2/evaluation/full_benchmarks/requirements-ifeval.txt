@@ -1,0 +1,10 @@
+nltk==3.9.2
+langdetect==1.0.9
+immutabledict==4.2.2
+absl-py==2.3.1
+packaging==25.0
+click==8.3.0
+joblib==1.5.2
+regex==2025.11.3
+tqdm==4.67.1
+six==1.17.0

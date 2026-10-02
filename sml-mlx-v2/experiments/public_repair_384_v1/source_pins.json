@@ -1,0 +1,22 @@
+{
+  "allenai/tulu-3-sft-personas-instruction-following": {
+    "revision": "fe0c7d350c9b4542b8d829a6f1daa1c259f0ba0e",
+    "files": [
+      "data/train-00000-of-00001.parquet"
+    ],
+    "selected_file": "data/train-00000-of-00001.parquet",
+    "local": "<SOURCE_WORKSPACE>/sml-mlx-v2/experiments/public_repair_384_v1/raw/tulu.parquet",
+    "sha256": "19a16c5f1649d367f69899b3cfadbbeb5ffef91f24e20c6617588bdd87cd3e60",
+    "bytes": 39171921
+  },
+  "databricks/databricks-dolly-15k": {
+    "revision": "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a",
+    "files": [
+      "databricks-dolly-15k.jsonl"
+    ],
+    "selected_file": "databricks-dolly-15k.jsonl",
+    "local": "<SOURCE_WORKSPACE>/sml-mlx-v2/experiments/public_repair_384_v1/raw/dolly.jsonl",
+    "sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+    "bytes": 13085339
+  }
+}

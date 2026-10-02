@@ -1,0 +1,65 @@
+{
+  "assistant_turns": 9279,
+  "benchmark_examples_used_for_training": false,
+  "constraint_families": {
+    "bullets": 484,
+    "ending": 141,
+    "frequency": 364,
+    "highlights": 266,
+    "keywords": 344,
+    "lowercase": 56,
+    "paragraphs": 395,
+    "placeholders": 345,
+    "postscript": 344,
+    "sentences": 483,
+    "title": 47,
+    "uppercase": 2,
+    "words": 421
+  },
+  "dataset_mix": {
+    "parent_replay": 2048,
+    "sciq": 1024,
+    "smol_constraints": 3072,
+    "squad": 2048
+  },
+  "development_check_updates": [
+    128,
+    256,
+    384,
+    512
+  ],
+  "eligible": {
+    "constraints": 7892,
+    "sciq": 10368,
+    "squad": 4803
+  },
+  "fresh_dev": 96,
+  "fresh_passes": 2,
+  "fresh_public_examples": 3072,
+  "fresh_reserved_test": 96,
+  "interpretation": "Reuses trial21 source selection and broad format coverage. Longer exposure plus fixed controls are tested together; causal contribution is not isolated.",
+  "limitations": "Named format checks and SQuAD spans checked mechanically. Public generated answer facts are not independently guaranteed correct. SciQ labels preserved; no invented explanations. SQuAD is a previously used source, with unused contexts and TRAIN articles selected.",
+  "maximum_updates": 512,
+  "parent_replay_fraction": 0.25,
+  "rejections": {
+    "benchmark_overlap": 3753,
+    "duplicate_or_prior_data": 17562,
+    "format_only_without_task": 11666,
+    "long_target": 44,
+    "meta_answer": 110,
+    "specialist_scope": 32,
+    "structure_quality": 5,
+    "target_constraint_failure": 809,
+    "unsupported_constraints": 9090
+  },
+  "stability_controls": {
+    "anchor_replay_only": true,
+    "kl": 2,
+    "negative_replay_only": true,
+    "ul": 0.3
+  },
+  "targets_truncated": false,
+  "training_conversations": 8192,
+  "unique_conversations": 5120,
+  "whole_answers": true
+}

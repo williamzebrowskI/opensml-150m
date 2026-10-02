@@ -1,0 +1,46 @@
+{
+  "format": "opensml-natural-control-v1",
+  "models": [
+    "opensml",
+    "reference"
+  ],
+  "learning_rates": [
+    5e-05,
+    0.0002
+  ],
+  "seed": 25092631,
+  "batch": 16,
+  "microbatch": 1,
+  "updates": 1280,
+  "warmup_updates": 128,
+  "final_lr_fraction": 0.1,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "weight_decay": 0.01,
+  "clip_norm": 1.0,
+  "context": 1024,
+  "max_new_tokens": 384,
+  "checkpoint_every": 160,
+  "evaluation_updates": [
+    0,
+    320,
+    640,
+    960,
+    1280
+  ],
+  "training_counts": {
+    "conversation": 14848,
+    "rewrite": 4096,
+    "summary": 512,
+    "everyday": 1024
+  },
+  "validation_per_source": 32,
+  "min_answer_tokens": 16,
+  "max_answer_tokens": 384,
+  "minimum_answer_targets": 1000000,
+  "max_answer_words": 256,
+  "dev_percent": 10,
+  "test_percent": 10
+}
