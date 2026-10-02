@@ -1,5 +1,7 @@
 # Run guide
 
+For stage boundaries, prerequisite assets, and validation limits, see [Training and reproducibility](TRAINING_AND_REPRODUCIBILITY.md).
+
 Commands below identify the archived pipeline entry points. They do not start
 training unless an explicit run flag/subcommand is supplied. Run commands from
 the repository root with the virtual environment active. Frozen tokenizers,

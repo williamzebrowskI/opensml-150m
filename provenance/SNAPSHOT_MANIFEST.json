@@ -1870,11 +1870,11 @@
     "abandoned local external baseline evaluations"
   ],
   "packaged_files": {
-    "SOURCE_NOTICE.md": "0aa70a3694bcdd5fe59a9e4deb299ca8228aca5403d992c399b1a6393e27a906",
+    "SOURCE_NOTICE.md": "f23e5289cac871e325fd06edc4b538167e8c4cb737491adabc591d1535810c1d",
     "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "requirements.txt": "edaec84d6d71ffcdd65042c0ac9b4e3e5a36875ba27b8210613024d9c4624463",
-    "RUN_GUIDE.md": "865df0b00980aebea2680480c897bc12e2fb0dd492f4c599abbde496d03ab178",
-    "README.md": "33f3124dcfec57e6bb47220a8dd3f6073816de46f12ff65659d2f24b61177b10",
+    "RUN_GUIDE.md": "27952136298aee5a1a0ed29d1215c251d59eae48d02e65a133d533d0de62ab13",
+    "README.md": "eb129bde94ba8b5ad6ca526e1694a64ed66537fb5e51e6c8e180ff84c1540b12",
     ".gitignore": "62616103e3963e28a3df4a1d3675039bfc1e1f9b5cb9193f4b932fb602f43c04",
     "sml-mlx-v1/provenance.json": "4618f4a4ccbc23a07de762d941a37c943033d7876942f5335e3937ecc57302e3",
     "sml-mlx-v1/pyproject.toml": "6b57345b5c5046cea1e491e6b5951428072a65b068e95701a20ef6db716e2946",
@@ -2367,7 +2367,10 @@
     "provenance/checkpoints/v2-base/model.safetensors.json": "602e96af792ed3255694e86701c00d953490bd0738d32c10860bc9a766fc249d",
     "provenance/checkpoints/v2-base/manifest.json": "34cbe6682d6475218b811c43fbf307c10ce98bc2ce7d0f11328575952218cd00",
     "scripts/verify_snapshot.py": "98d13b8f8d800e3d2ecdcac4c65ac9ac7c00e81b6b7fb269b947851be357a897",
-    "model-card/README.md": "383877e2b7240a85cf27fe4624d3c277ad1ab2a858a82582e80863359468c8ce"
+    "model-card/README.md": "383877e2b7240a85cf27fe4624d3c277ad1ab2a858a82582e80863359468c8ce",
+    "CITATION.cff": "618942ead46246e82fae9777193f4d93acb5370300d001b98e279f8d802ea6a7",
+    "THIRD_PARTY_NOTICES.md": "7d5e0edccfe69bed72de19aa6a004256262da3c271e8397e7ba72ec67767948f",
+    "TRAINING_AND_REPRODUCIBILITY.md": "b822454cb3e2ea9e5dbee732f1db0af6cd081ca7519ec8a096a124a19511f927"
   },
   "cleanup": "Removed V1 trainer, architecture, tokenizer adapters and duplicate trees; consolidated required transport and inference helpers under V2.",
   "release_naming": "Dedicated pipeline renamed V2 to V1; historical receipts, dataset names and serialized contract identifiers preserved."

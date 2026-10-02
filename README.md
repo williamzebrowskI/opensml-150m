@@ -4,11 +4,11 @@
 
 **Author:** William Zebrowski
 
-[Model card](https://huggingface.co/wzebrowski/OpenSML-150M) · [Tokenizer](sml-mlx-v1/tokenizer/bytebpe32k_v1/) · [Technical report](sml-mlx-v1/docs/TECHNICAL_REPORT.md) · [Run guide](RUN_GUIDE.md) · [Source notice](SOURCE_NOTICE.md)
+[Model card](https://huggingface.co/wzebrowski/OpenSML-150M) · [Tokenizer](sml-mlx-v1/tokenizer/bytebpe32k_v1/) · [Technical report](sml-mlx-v1/docs/TECHNICAL_REPORT.md) · [Training and reproducibility](TRAINING_AND_REPRODUCIBILITY.md) · [Run guide](RUN_GUIDE.md) · [Source notice](SOURCE_NOTICE.md)
 
 OpenSML-150M explores small-language-model training on Apple Silicon with a custom byte-level BPE tokenizer, **7.800B pretraining tokens**, three supervised fine-tuning stages, and evaluations of both completion likelihood and instruction following.
 
-The selected **research checkpoint is OpenSML-150M, SFT step 768**. This private repository contains its code, recipes, tokenizer, recorded results, and documentation. Model weights are not yet published.
+The selected **research checkpoint is OpenSML-150M, SFT step 768**. This repository contains its code, recipes, tokenizer, recorded results, and documentation. Model weights are not yet published.
 
 ## At a glance
 
@@ -124,3 +124,5 @@ This dedicated repository names its pipeline V1. Frozen tokenizer/checkpoint con
 ## Licensing and sources
 
 Author-controlled contributions use [Apache-2.0](LICENSE). Third-party code and training materials retain their own terms; see the [source notice](SOURCE_NOTICE.md). SFT includes SQuAD v2 and SciQ with differing upstream terms. Repository metadata does not grant blanket commercial rights to all training materials; weight-release licensing review remains pending.
+
+Citation metadata is available in [CITATION.cff](CITATION.cff). See [third-party notices](THIRD_PARTY_NOTICES.md) for component attribution.

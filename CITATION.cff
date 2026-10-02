@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use OpenSML-150M code, tokenizer, or documented research, please cite this repository."
+type: software
+title: "OpenSML-150M: Small Language Model Research with Native MLX"
+authors:
+  - family-names: Zebrowski
+    given-names: William
+repository-code: "https://github.com/williamzebrowskI/opensml-150m"
+url: "https://github.com/williamzebrowskI/opensml-150m"
+abstract: >-
+  A 150.44M-parameter language-model research project on Apple Silicon,
+  including byte-level BPE tokenizer training, Stage A/B pretraining,
+  three supervised fine-tuning stages, native MLX code, recorded benchmark
+  results, and technical documentation. Model weights are not included
+  in this source repository.
+keywords:
+  - small language models
+  - MLX
+  - Apple Silicon
+  - pretraining
+  - supervised fine-tuning
+  - evaluation
+license: Apache-2.0

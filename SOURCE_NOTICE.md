@@ -8,7 +8,7 @@ Other helper recipe names identify code dependencies, not additional ancestors.
 Author-controlled contributions use the included Apache-2.0 license.
 The vendored IFEval implementation retains its harness license and notice under
 sml-mlx-v1/evaluation/full_benchmarks/vendor/. MT-Bench source attribution is
-preserved in evaluation/mt_bench_local/sources.json and upstream files.
+preserved in sml-mlx-v1/evaluation/mt_bench_local/sources.json and upstream files.
 
 Pretraining dataset repositories: HuggingFaceTB/smollm-corpus (FineWeb-Edu and
 Cosmopedia v2), HuggingFaceTB/dclm-edu, HuggingFaceFW/finewiki.
@@ -22,3 +22,5 @@ CC-BY-SA-4.0, Dolly CC-BY-SA-3.0, Tulu Persona ODC-BY and SciQ CC-BY-NC-3.0.
 This notice is not a completed public weight-release licensing determination.
 Raw and prepared dataset pools and model/optimizer weights are excluded.
 No credentials, SSH private keys, or existing network-plan files are packaged.
+
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the consolidated component index and [TRAINING_AND_REPRODUCIBILITY.md](TRAINING_AND_REPRODUCIBILITY.md) for archive prerequisites.
